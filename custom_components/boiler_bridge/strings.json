@@ -1,0 +1,14 @@
+{
+  "title": "Котёл UART Bridge",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Котёл UART Bridge",
+        "description": "Создать устройство котла поверх ESP32 UART bridge."
+      }
+    },
+    "abort": {
+      "already_configured": "Интеграция уже настроена."
+    }
+  }
+}
