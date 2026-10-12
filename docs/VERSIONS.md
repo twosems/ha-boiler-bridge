@@ -4,9 +4,16 @@
 
 `2026.10.12.5` / `firmware/candidates/2026.10.12.5` / ветка
 `feature/boiler-fw-2026-10-12-5`: private office profile for `2Soffice`, local
-ignored secrets. ESPHome config validation PASS; the build host disconnected during C++ compilation, so no image/hash is available yet.
+ignored secrets. ESPHome 2026.9.0 / ESP-IDF 5.5.5; BUILD_PASS locally. OTA
+1066816 bytes, SHA256 `b92c7feb47d71f0af486df62e5f20d70efd7ada65a1636fa25629970b422f1f7`.
 Passive observer only; full active GET and boiler controls disabled. Hardware NOT
-TESTED, NOT DEPLOYED, NOT OFFICE_READY. It is not a complete replacement for `.1`.
+TESTED, OFFICE_READY=false. OTA was attempted; POST `/update` returned HTTP 408.
+Device is currently UNCONFIRMED/UNREACHABLE by HTTP and OTA at `.172`; IP scanner
+still identifies `boiler-proxy` there. Do not report installed version or repeat
+OTA until connectivity and firmware status are verified. Recovery `.1` was staged
+on office-pc (SHA256 `e99f27b74c0c9d05246dc97604359034bfabd70fb9eade909c5b1e39bdb1a0c3`),
+but contains the historical home Wi-Fi profile. `.5` is not a complete replacement
+for `.1`.
 Do not publish private OTA/factory binaries because they include office credentials.
 See candidate `BUILD-MANIFEST.json`, `CONTRACT.md`, and `COMMISSIONING.md`.
 
