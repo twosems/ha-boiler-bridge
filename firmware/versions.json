@@ -526,5 +526,23 @@
     },
     "generated_cpp_h_match": true,
     "bootloader_rollback_compiled": true
+  },
+  {
+    "version": "2026.10.12.6",
+    "status": "FULL_CANDIDATE_BUILT_HARDWARE_NOT_TESTED",
+    "path": "firmware/candidates/2026.10.12.6",
+    "office_ready": false,
+    "artifacts": {
+      "factory": {
+        "filename": "boiler-2026.10.12.6.factory.bin",
+        "size": 1143552,
+        "sha256": "582c36eb453d228d88f5a562e1537b0fb460864d3b5a2ceaf251ac8865c640cb"
+      },
+      "ota": {
+        "filename": "boiler-2026.10.12.6.ota.bin",
+        "size": 1078016,
+        "sha256": "dc433de50f7f0699f379c78502f5baee7ba2498fd1047f602f919a4ebba6cc04"
+      }
+    }
   }
 ]

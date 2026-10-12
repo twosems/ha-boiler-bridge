@@ -1,0 +1,167 @@
+#include "boiler_transport_v4.h"
+#include <esp_timer.h>
+#include <cstdio>
+
+namespace esphome::boiler_transport_v4 {
+uint32_t BoilerTransportV4::submit(Request r){
+  r.id=request_sequence_.fetch_add(1)+1;
+  r.created_ms=static_cast<uint32_t>(esp_timer_get_time()/1000ULL);
+  if(!requests_||!active_enabled_.load()||maintenance_.load()||!ready_.load())return false;
+  if(xQueueSend(requests_,&r,0)!=pdTRUE){request_drops_.fetch_add(1);return false;}
+  return r.id;
+}
+bool BoilerTransportV4::pop_result(Result &r){return results_&&xQueueReceive(results_,&r,0)==pdTRUE;}
+void BoilerTransportV4::result(const Request &r,ResultCode c,const uint8_t *bytes,size_t n){
+  Result out{};out.request=r;out.code=c;out.length=std::min(n,out.bytes.size());
+  if(bytes&&out.length)std::memcpy(out.bytes.data(),bytes,out.length);
+  if(xQueueSend(results_,&out,0)!=pdTRUE){result_drops_.fetch_add(1);epoch_.fetch_add(1);active_enabled_.store(false);}
+}
+void BoilerTransportV4::ownership_failure(){
+  ownership_fault_=true;active_enabled_.store(false);epoch_.fetch_add(1);
+  // Keep the ledger, including timed-out OWN tombstones. A late response must
+  // never be re-labelled as the next stock response or the next own request.
+}
+void BoilerTransportV4::wire_command(uint8_t b,uint32_t now){
+  command_byte_ms_=now;wire_generation_++;
+  if(stock_command_.size()==512)ownership_failure();
+  if(!stock_command_.append(b,false))return;
+  const uint8_t *p=stock_command_.data();const size_t n=stock_command_.size();
+  RequestKind kind;
+  if(tracked_stock_command(p,n,kind)){
+    Owner owner{};owner.reply=kind;owner.sent_ms=now;
+    if(!owners_.push(owner))ownership_failure();
+  }
+  // bkcmd is global panel state; never change it ourselves. The validated
+  // query/click contract supports bkcmd=0. Revalidate if the boiler changes it.
+  if(n>=9&&std::memcmp(p,"bkcmd=",6)==0){bkcmd_zero_=false;active_enabled_.store(false);}
+  stock_command_.reset();
+}
+void BoilerTransportV4::wire_response(Direction &d,uint8_t b,uint32_t now){
+  response_byte_ms_=now;wire_generation_++;
+  const Owner *owner=owners_.front();
+  const bool withholding=held_length_!=0||(response_frame_.size()==0&&owner&&owner->own&&!ownership_fault_);
+  if(withholding){
+    if(held_length_==held_.size()){
+      emit_stock(d,held_.data(),held_length_,now);held_length_=0;ownership_failure();
+    }
+    if(!ownership_fault_)held_[held_length_++]=b;else emit_stock(d,&b,1,now);
+  }else emit_stock(d,&b,1,now);
+  if(response_frame_.append(b,true)){
+    finish_response(d,now,held_length_!=0);response_frame_.reset();
+  }else if(response_frame_.size()==0&&held_length_!=0){
+    emit_stock(d,held_.data(),held_length_,now);held_length_=0;ownership_failure();
+  }
+}
+void BoilerTransportV4::finish_response(Direction &d,uint32_t now,bool withheld){
+  const uint8_t *p=response_frame_.data();const size_t n=response_frame_.size();
+  Owner *owner=owners_.front();bool consume=false;
+  if(owner&&response_matches(owner->reply,p,n)){
+    consume=owner->own&&!ownership_fault_;
+    if(owner->own){
+      if(!owner->expired&&!ownership_fault_){
+        const Request r=owner->request;
+        if(r.kind==RequestKind::BKCMD){
+          bkcmd_zero_=p[1]==0&&p[2]==0&&p[3]==0&&p[4]==0;
+          if(!bkcmd_zero_)active_enabled_.store(false);
+          result(r,bkcmd_zero_?ResultCode::OK:ResultCode::REJECTED,p,n);
+        }else if(owner->reply==RequestKind::PAGE&&r.kind!=RequestKind::PAGE){
+          if(p[1]!=r.page)result(r,ResultCode::WRONG_PAGE,p,n);
+          else {deferred_click_=r;click_pending_=true;click_due_ms_=now+20;verified_generation_=wire_generation_;}
+        }else result(r,ResultCode::OK,p,n);
+      }
+    }
+    if(owner->own&&owner->expired)timeout_latched_.store(false);
+    owners_.pop();
+  }else if(instruction_error(p,n)||(n==4&&p[0]==0x01&&bkcmd_zero_)){
+    // An error has no transaction ID. Do not guess whether a stock assignment
+    // or query failed. Preserve the bytes and disable every active injection.
+    ownership_failure();
+  }
+  if(withheld){
+    if(consume)suppressed_.fetch_add(held_length_);
+    else emit_stock(d,held_.data(),held_length_,now);
+    held_length_=0;
+  }
+  if(n==4&&p[0]==0x88){
+    // A real panel startup is a protocol reset boundary, not a parser guess.
+    owners_.clear();bkcmd_zero_=false;active_enabled_.store(false);ownership_fault_=false;timeout_latched_=false;click_pending_=false;
+  }
+}
+bool BoilerTransportV4::injection_window(uint32_t now){
+  if(ownership_fault_||maintenance_.load()||owners_.size()!=0||held_length_!=0||
+     stock_command_.size()!=0||response_frame_.size()!=0||age_ms(now,last_wire_ms_)<30)return false;
+  if(dirs_[0].tx.size()!=0||dirs_[1].tx.size()!=0)return false;
+  size_t n=0;
+  for(auto &d:dirs_){
+    if(uart_get_buffered_data_len(d.port,&n)!=ESP_OK||n!=0||uart_wait_tx_done(d.port,0)!=ESP_OK)return false;
+  }
+  return true;
+}
+bool BoilerTransportV4::inject(const char *command,uint32_t now){
+  const size_t n=std::strlen(command);auto &d=dirs_[1];
+  if(n+3>d.tx.free())return false;
+  static const uint8_t tail[]{0xff,0xff,0xff};
+  d.health_revision.fetch_add(1);
+  d.tx.push(reinterpret_cast<const uint8_t*>(command),n);d.tx.push(tail,3);
+  d.oldest_ms.store(now);d.last_progress.store(now);d.pending.store(d.tx.size());
+  injected_.fetch_add(n+3);d.health_revision.fetch_add(1);last_injection_ms_=now;
+  return true;
+}
+void BoilerTransportV4::service_requests(uint32_t now){
+  if(stock_command_.size()!=0&&age_ms(now,command_byte_ms_)>250){stock_command_.reset();ownership_failure();}
+  if(response_frame_.size()!=0&&age_ms(now,response_byte_ms_)>250){
+    if(held_length_){emit_stock(dirs_[0],held_.data(),held_length_,now);held_length_=0;}
+    response_frame_.reset();ownership_failure();
+  }
+  auto *owner=owners_.front();
+  if(owner&&owner->own&&!owner->expired&&age_ms(now,owner->sent_ms)>1500){
+    owner->expired=true;timeout_latched_.store(true);own_timeouts_.fetch_add(1);result(owner->request,ResultCode::TIMEOUT);
+    active_enabled_.store(false);click_pending_=false;
+    // Keep this tombstone to swallow a late exact reply. No automatic retry.
+  }
+  if(ownership_fault_||timeout_latched_)active_enabled_.store(false);
+  const bool enabled=active_enabled_.load();
+  if(enabled&&!was_enabled_){bkcmd_zero_=false;}
+  was_enabled_=enabled;
+  if(!enabled||maintenance_.load()){
+    Request r;for(size_t i=0;i<8&&xQueueReceive(requests_,&r,0)==pdTRUE;i++)result(r,ResultCode::REJECTED);
+    if(click_pending_){result(deferred_click_,ResultCode::REJECTED);click_pending_=false;}
+    return;
+  }
+  if(click_pending_){
+    if(request_expired(deferred_click_,now)){result(deferred_click_,ResultCode::EXPIRED);click_pending_=false;expired_.fetch_add(1);return;}
+    if(static_cast<int32_t>(now-click_due_ms_)<0||!injection_window(now))return;
+    // Verified current page immediately precedes the command. Any new stock
+    // packet cancels this click (including a page transition). Never replay.
+    if(wire_generation_!=verified_generation_){result(deferred_click_,ResultCode::DESYNC);click_pending_=false;return;}
+    char command[64];
+    if(deferred_click_.kind==RequestKind::CLICK){
+      // A single contiguous pair cannot leave a virtual finger held when the
+      // observer freezes; neither part is replayed after a timeout.
+      std::snprintf(command,sizeof(command),"click %u,1\xff\xff\xff" "click %u,0",deferred_click_.component,deferred_click_.component);
+      if(inject(command,now))result(deferred_click_,ResultCode::SENT_UNCONFIRMED);
+      else result(deferred_click_,ResultCode::REJECTED);
+    }else{
+      if(deferred_click_.page==10&&deferred_click_.component==254)std::snprintf(command,sizeof(command),"get page10.TsR.val");
+      else std::snprintf(command,sizeof(command),"get b[%u].%s",deferred_click_.component,deferred_click_.kind==RequestKind::TEXT?"txt":"val");
+      Owner own{};own.own=true;own.request=deferred_click_;own.reply=deferred_click_.kind;own.sent_ms=now;
+      if(inject(command,now))owners_.push(own);else result(deferred_click_,ResultCode::REJECTED);
+    }
+    click_pending_=false;return;
+  }
+  Request r;
+  if(xQueuePeek(requests_,&r,0)!=pdTRUE)return;
+  if(request_expired(r,now)){xQueueReceive(requests_,&r,0);expired_.fetch_add(1);result(r,ResultCode::EXPIRED);return;}
+  if(!injection_window(now)||age_ms(now,last_injection_ms_)<150)return;
+  if(!bkcmd_zero_){
+    Owner check{};check.own=true;check.reply=RequestKind::NUMBER;check.sent_ms=now;check.request.kind=RequestKind::BKCMD;
+    if(inject("get bkcmd",now))owners_.push(check);
+    return;
+  }
+  xQueueReceive(requests_,&r,0);
+  Owner own{};own.own=true;own.request=r;own.sent_ms=now;
+  char command[64];
+  own.reply=RequestKind::PAGE;std::snprintf(command,sizeof(command),"sendme");
+  if(inject(command,now))owners_.push(own);else result(r,ResultCode::REJECTED);
+}
+}

@@ -1,0 +1,43 @@
+{
+  "version": "2026.10.12.6",
+  "chip": "esp32",
+  "board": "esp32dev",
+  "hardware_status": "NOT_TESTED",
+  "office_ready": false,
+  "installed_version": "UNKNOWN",
+  "active_requests_default": "OFF",
+  "esphome": "2026.9.0",
+  "idf": "5.5.5",
+  "ram_bytes": 101864,
+  "flash_image_bytes": 1077899,
+  "artifacts": {
+    "factory": {
+      "filename": "boiler-2026.10.12.6.factory.bin",
+      "size": 1143552,
+      "sha256": "582c36eb453d228d88f5a562e1537b0fb460864d3b5a2ceaf251ac8865c640cb"
+    },
+    "ota": {
+      "filename": "boiler-2026.10.12.6.ota.bin",
+      "size": 1078016,
+      "sha256": "dc433de50f7f0699f379c78502f5baee7ba2498fd1047f602f919a4ebba6cc04"
+    }
+  },
+  "source_files": {
+    ".gitignore": "6a6bda99854cb9a22ea2948828906c37b02cba0422b735ffb46f18b58baa027f",
+    "boiler-proxy.yaml": "3445f556b4ef9c128e8e61dcfa2cd50e51b27ada017abb6f85bcb72a5bca9132",
+    "components/boiler_network/__init__.py": "0f791a0fe472c301b2af93cadcb6c2faaba949380a4c89732e2bc3e702830025",
+    "components/boiler_network/boiler_network.h": "264a2ae21d38669aa7cc5aedbeef771c97bcc42a602a6590ab40145792781efd",
+    "components/boiler_proxy/__init__.py": "165813a23fa38b13d2d2717a6c48f6a04a691bfbfd1d9f597048cb914148c73e",
+    "components/boiler_proxy/boiler_proxy.cpp": "fa93da342393a51991bcec0d82ba70622fb50e41453d4f6a571c63d798dc0423",
+    "components/boiler_proxy/boiler_proxy.h": "5431d9b3d83af2c4ea8280f6e7c99caeb8ce84b688f7dae1c39a6b6ed2633f2d",
+    "components/boiler_transport_v4/__init__.py": "0506bd9e727c2015e4eafd960ed6fe642bdeaba227159d37550282652030a7af",
+    "components/boiler_transport_v4/boiler_transport_v4.cpp": "f65554e071428467449a286416b52b923956a679b718d6f73b328e96281721a6",
+    "components/boiler_transport_v4/boiler_transport_v4.h": "6cdbd3c85c3c048722552922721e87155a802d0a0b75074461ffe036231a901a",
+    "components/boiler_transport_v4/bridge_core.h": "95a5bed6b3e8fca0e04984f9277bc09ad58d7e4872770726c2f725763893a200",
+    "components/boiler_transport_v4/transaction_core.h": "07aa8b1d8f98c7e4b1e3ded3697e89c8b6a2284f0a8837e59ddd10f66aceacff",
+    "components/boiler_transport_v4/transactions.cpp": "74ace9ca8c9fdd24bbca40edbcef5edb488a8185f80c40e18fe5ab5a74566ff4",
+    "secrets.example.yaml": "2c44f41f72b78da86e17bafaacfe30fc27e9a0e2b9338ad55271fd508be8fe61",
+    "www/boiler.css": "64976c6c593cac316210f97bf36ec340a4812c476d015233e9cd2a6b6b65849a",
+    "www/boiler.js": "f287b46f55fe0f6e0d7320185adcda50e66b4ba1ebbc848e517ba50a872a51bc"
+  }
+}
