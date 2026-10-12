@@ -1,5 +1,23 @@
 # Контекст продолжения «ХА — котёл»
 
+## OFFICE DEVICE_VERIFIED 12.10 около 17:14 Tomsk
+
+У пользователя только действующий ESP; штатный экран работает (USER_REPORT).
+С офисного ноутбука 2S-LapTop / host_637532310b5cb99d подтверждены HTTP200,
+ESP 192.168.1.172, MAC A0-A3-B3-2A-87-F8, firmware **2026.10.12.1**,
+SSID **2Soffice**. Ноутбук 192.168.1.89, офисный HA 192.168.1.203.
+В начале доступа были timeout/ARP incomplete, затем устройство появилось;
+причина непостоянной доступности не установлена, ESP не перезагружался нами.
+Live JS содержит полный rerender на каждом SSE state; MQTT input теряется.
+MQTT host был некорректным `йзья1`; через штатный text/set API исправлен на
+192.168.1.203 и подтверждён read-back. MQTT apply вызван, без UART/actuator commands.
+Broker port1883 доступен, но CONNECT с текущими ESP credentials получает CONNACK5;
+одна проверка ранее известных credentials также CONNACK5. MQTT OFF.
+Пароль не изменён. Нужны действительные офисные MQTT credentials.
+Пользователь срочно требует stable reflash; готового проверенного office replacement
+нет, .4 остаётся BENCH_ONLY без MQTT/прежнего управления и НЕ УСТАНОВЛЕНА.
+Не объявлять изменение MQTT или BUILD_PASS выполненной stable перепрошивкой.
+
 ## Последний результат: .4 BUILD_PASS (12.10)
 
 Окончательный job_8a7cc4fe3ffb succeeded / exit 0; source Git
