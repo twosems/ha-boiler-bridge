@@ -1,7 +1,7 @@
 # FW 2026.10.12.5 — office integration candidate
 
-Status: source integration in progress. This is not built, hardware-tested, or
-approved for installation on the live inline ESP.
+Status: local ESPHome/ESP-IDF build PASS. It is not hardware-tested or approved
+for installation on the live inline ESP.
 
 ## Current candidate behavior
 
@@ -25,10 +25,11 @@ approved for installation on the live inline ESP.
   OTA password and fallback AP password are unique local secrets. MQTT settings
   rely on the existing ESPHome restore-value preferences; migration must be
   confirmed on the target image before deployment.
-- `safe_mode` remains enabled so ESPHome keeps OTA rollback support active. The
-  transport supervisor confirms a pending image only after bridge startup and
-  observed two-way traffic; otherwise it remains pending for rollback after reset.
-  Installed bootloader rollback support is unknown.
+- ESPHome `safe_mode` is disabled because its recovery mode can stop the inline
+  UART bridge. IDF rollback is explicitly enabled in the custom component; only
+  the transport supervisor may confirm a pending image, and only after bridge
+  startup plus observed traffic in both directions. If traffic is absent the
+  image remains pending. Installed bootloader rollback support is unknown.
 - OTA can interrupt UART traffic and is not lossless. No claim of continued bridge
   service during flash/reset/power loss is made.
 

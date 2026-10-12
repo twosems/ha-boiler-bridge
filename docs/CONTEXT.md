@@ -1,6 +1,15 @@
 # Контекст продолжения «ХА — котёл»
 
-## Новая команда на офисную замену: 12.10 около 20:02 Tomsk
+## Актуальный результат — .5 собрана локально, 12.10 около 21:09 Tomsk
+
+Пользователь попросил сделать прошивку в текущем окружении и загрузить её на GitHub, без использования рабочего ПК. Кандидат `2026.10.12.5` собран локально: ESPHome 2026.9.0 / ESP-IDF 5.5.5. Финальный build manifest: `firmware/candidates/2026.10.12.5/BUILD-MANIFEST.json`. OTA SHA256 `b92c7feb47d71f0af486df62e5f20d70efd7ada65a1636fa25629970b422f1f7` (1066816 bytes); factory SHA256 `ac373c4935e985a5a0d12e3e55e9ea105808945d280e1d8eb8088ddafcb17ba3` (1132352 bytes). Артефакты локально: `/workspace/scratch/f608745efdda/boiler-firmware-output/`. Они содержат офисные секреты; в публичный GitHub бинарники не загружать. Исходники и manifest публикуются в `feature/boiler-fw-2026-10-12-5`.
+
+Во время финальной проверки отключён стандартный ESPHome `safe_mode` (иначе recovery path мог завершиться до запуска моста), IDF rollback отдельно проверен включённым, диагностическая версия исправлена с `.4` на `.5`. Generated C++/H byte-identical исходникам; `should_enter_safe_mode` early return отсутствует; wrappers watchdog/OTA есть в ELF. Portable ASan/UBSan core tests PASS.
+
+**Критическое ограничение:** это пассивный кандидат. Управление котлом и активные `get`-опросы выключены, sensor freshness и MQTT restored preferences не проверены. Нет двух-peer UART стенда, hardware fault-injection и подтверждения rollback на установленном bootloader. Поэтому `OFFICE_READY=false`, NOT_DEPLOYED; не выдавать `.5` за полную замену `.1` и не прошивать живой inline ESP без завершения commissioning. Живой ESP не трогался.
+
+## Предыдущий статус запроса на офисную замену
+
 
 Пользователь приложил скрин, на нём SSID `2Soffice`, и передал пароль сети
 (не записывать его в Git/обычные логи). С office-pc повторно проверен живой ESP:
@@ -16,8 +25,7 @@
 активные GET и кнопки котла отключены, UI предупреждает об этом; поэтому `.5` пока
 не сохраняет полную функциональность HA и не заменяет `.1` на живом ESP. Wi-Fi
 профиль берёт офисную сеть из ignored local secrets; пароль не хранить здесь/Git.
-ESPHome config и Python/JS syntax PASS. Build host DE отключился во время компиляции; job `job_ad51fd2eb7de` ожидает результат, проверенного бинарника нет. Hardware bench,
-свежесть сенсоров, миграция MQTT prefs и OTA rollback на установленном ESP не проверены.
+На момент той записи локальной сборки ещё не было, DE job считался ожидающим результат. Этот статус заменён верхней актуальной записью о локальной BUILD_PASS. Hardware bench, свежесть сенсоров, миграция MQTT prefs и OTA rollback на установленном ESP не проверены.
 
 ## Новая точка доступа: office-pc, 12.10 19:44 Tomsk
 

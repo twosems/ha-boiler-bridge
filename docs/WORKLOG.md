@@ -132,3 +132,12 @@ Baseline Git: 878f007d78ff2c01e6b62793e10e556b8644c7f1. Проверены об�
 Offline checks: 8 групп проверок извлечённых C++ pure functions (ring/Nextion numeric), 3 structural assertions, 2 illustrative failure models; PASS. Это не FreeRTOS/hardware PASS и не диагноз причины прошлой остановки котла.
 Результат: docs/ARCHITECTURE-AUDIT-20261012.md; обновлены AGENTS/CONTEXT/DEVELOPMENT. Firmware snapshots, бинарники, HA, ESP, котельные настройки не изменены.
 Next step: реализация нового пассивного .4 по скорректированному контракту и стенд, затем отдельный этап transaction-safe управления. Старые .3 остаются архивом, deployment blocked.
+
+
+## 2026-10-12 около 21:09 Tomsk — .5 собрана локально
+
+По прямой просьбе пользователя сборка выполнена в текущем изолированном workspace; office-pc и DE не использовались. ESPHome 2026.9.0 / ESP-IDF 5.5.5. Конфигурация прошла `esphome config`; финальная правка отключила стандартный `safe_mode`, который мог пропустить запуск UART-моста, и исправила диагностическую метку версии с .4 на .5.
+
+BUILD_PASS: OTA 1066816 bytes / SHA256 `b92c7feb47d71f0af486df62e5f20d70efd7ada65a1636fa25629970b422f1f7`; factory 1132352 bytes / SHA256 `ac373c4935e985a5a0d12e3e55e9ea105808945d280e1d8eb8088ddafcb17ba3`. RAM92360/180736, flash1066695/1835008. Generated C++/H match source, `should_enter_safe_mode` early-return отсутствует, rollback=`CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE=y`, оба linker wrappers есть в ELF. Portable ASan/UBSan core tests PASS (100000 ring ops и mirror records).
+
+Артефакты находятся в `/workspace/scratch/f608745efdda/boiler-firmware-output/`; OTA/factory binary содержат офисные секреты и не добавляются в публичный GitHub. Ветка GitHub получает исправленные исходники, manifest, хэши и статус. `.5` остаётся PASSIVE: controls и active GET выключены; hardware/bench, MQTT preference migration и sensor freshness не проверены; `OFFICE_READY=false`, NOT_DEPLOYED. Живой ESP не затрагивался.

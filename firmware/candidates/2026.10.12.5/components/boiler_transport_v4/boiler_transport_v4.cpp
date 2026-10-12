@@ -214,7 +214,7 @@ void BoilerTransportV4::publish_diagnostics(uint32_t now){
   if(!diagnostics_)return;
   char out[768];
   std::snprintf(out,sizeof(out),
-    "{\"fw\":\"2026.10.12.4\",\"mode\":\"PASSIVE\",\"write_capable\":false,"
+    "{\"fw\":\"2026.10.12.5\",\"mode\":\"PASSIVE\",\"write_capable\":false,"
     "\"ready\":%s,\"fault\":%" PRIu32 ",\"bridge_age_ms\":%" PRIu32 ",\"main_age_ms\":%" PRIu32 ","
     "\"bridge_wdt\":%s,\"loop_detached\":%s,\"rx\":[%" PRIu32 ",%" PRIu32 "],\"tx_fifo_accepted\":[%" PRIu32 ",%" PRIu32 "],"
     "\"pending\":[%" PRIu32 ",%" PRIu32 "],\"high_water\":[%" PRIu32 ",%" PRIu32 "],\"fifo_loss\":%" PRIu32 ",\"rx_full\":%" PRIu32 ","

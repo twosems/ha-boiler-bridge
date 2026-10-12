@@ -2,8 +2,8 @@
 
 Current state: source candidate only. Do not install on the inline office ESP.
 
-1. Complete ESPHome config/compile. Keep `secrets.yaml` local and ignored; verify
-   the office SSID and MQTT restore values without printing credentials.
+1. ESPHome config and local compile PASS. Keep `secrets.yaml` local and ignored;
+   verify the office SSID and MQTT restore values without printing credentials.
 2. Inspect generated `main.cpp`, UART drivers/ports, task placement, sdkconfig,
    partitions, rollback flags and linker wrappers. Confirm exactly one UART owner
    and that observer failure/overload cannot change physical forwarding.

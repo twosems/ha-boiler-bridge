@@ -13,6 +13,9 @@ esp32:
   board: esp32dev
   framework:
     type: arduino
+    advanced:
+      # The custom transport owns boot validation and enables IDF rollback.
+      enable_ota_rollback: false
 
 # UART0 goes only to the USB CP210x adapter. It is intentionally kept
 # separate from the two boiler/display UART links on GPIO16/17/18/19.
@@ -47,6 +50,9 @@ api:
   encryption:
     key: !secret api_encryption_key
 
+safe_mode:
+  disabled: true
+
 ota:
   - platform: esphome
     password: !secret ota_password
@@ -56,7 +62,6 @@ ota:
     on_error:
       then:
         - lambda: id(transport).set_maintenance(false);
-safe_mode:
 external_components:
   - source:
       type: local

@@ -47,3 +47,11 @@ optional observer PAGE-only, main-TWDT handoff, guarded OTA validation (disabled
 - .1: исторически Update Successful 12.10 02:23, затем пропала сеть; домашние Wi-Fi настройки. Повторно не устанавливать без исправленного целевого профиля.
 - Два разных .3 — выявленная коллизия: rtbridge (priority18, streams) и isolated-transport (priority20, отдельный класс/queue). Следующий изменённый кандидат должен иметь новый номер.
 - Наличие factory/OTA в каталоге не подтверждает соответствие текущему исходнику: перед выпуском сопоставить generated main.cpp, toolchain, журнал и manifest.
+
+
+
+## Candidate 2026.10.12.5
+
+| Variant | FW | OTA | Factory | Status |
+|---|---|---|---|---|
+| office-passive | 2026.10.12.5 | 1066816 bytes, SHA256 `b92c7feb47d71f0af486df62e5f20d70efd7ada65a1636fa25629970b422f1f7` | 1132352 bytes, SHA256 `ac373c4935e985a5a0d12e3e55e9ea105808945d280e1d8eb8088ddafcb17ba3` | Local build PASS; ESPHome 2026.9.0 / IDF 5.5.5; binaries contain office secrets and are kept outside public GitHub; PASSIVE controls/active GET disabled; hardware NOT_TESTED; NOT_DEPLOYED; OFFICE_READY=false |

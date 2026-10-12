@@ -3,8 +3,8 @@
   "variant": "office-passive-observer-candidate",
   "repository": "twosems/ha-boiler-bridge",
   "branch": "feature/boiler-fw-2026-10-12-5",
-  "build_status": "INTERRUPTED_HOST_DISCONNECTED",
-  "generated_checks": "PENDING",
+  "build_status": "BUILD_PASS_LOCAL",
+  "generated_checks": "PASS",
   "hardware_status": "NOT_TESTED",
   "deployment_status": "NOT_DEPLOYED",
   "office_ready": false,
@@ -29,16 +29,52 @@
     "esphome_config": "PASS",
     "python_syntax": "PASS",
     "javascript_syntax": "PASS",
-    "single_transport_owner": "SOURCE_REVIEWED",
+    "single_transport_owner": "PASS: generated component C++ matches candidate source; sole uart_read_bytes/uart_tx_chars owner",
+    "generated_cpp_h": "PASS: exact byte comparison with source",
+    "safe_mode": "PASS: explicitly disabled; no should_enter_safe_mode early return in generated main.cpp",
+    "idf_rollback": "PASS: CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE=y; two 0x1c0000 OTA app partitions",
+    "linker_wrappers": "PASS: watchdog feed exemption and OTA mark-valid guards present in ELF",
     "controls_and_active_get": "DISABLED",
-    "compile": "BLOCKED: SentinelX build host went offline during full IDF/C++ build; job job_ad51fd2eb7de has no result yet"
+    "compile": "PASS: ESPHome 2026.9.0 / ESP-IDF 5.5.5",
+    "portable_core": "PASS: 100000 randomized ring operations, 100000 concurrent mirror records and framing/health checks under ASan/UBSan",
+    "hardware": "NOT_RUN"
   },
   "limits": [
     "no two-peer UART bench test",
     "no hardware fault-injection pass",
+    "controls and active sensor GET remain disabled; not a functional HA replacement",
     "sensor freshness and restored MQTT preferences unverified",
     "OTA interrupts UART and reset/power loss are not lossless",
     "installed bootloader rollback support unknown",
-    "not a full-function replacement for the current firmware"
-  ]
+    "not approved for installation on the live inline ESP",
+    "binary contains private office credentials and is intentionally excluded from the public GitHub repository"
+  ],
+  "safe_mode_enabled": false,
+  "rollback_enabled_in_built_sdkconfig": true,
+  "artifacts_public_github": false,
+  "build_environment": "Current isolated workspace runtime; office-pc and DE host not used",
+  "toolchain": {
+    "esphome": "2026.9.0",
+    "esp_idf": "5.5.5",
+    "framework": "Arduino ESP32 3.3.11",
+    "board": "esp32dev"
+  },
+  "resource_use": {
+    "ram_bytes": 92360,
+    "ram_total_bytes": 180736,
+    "flash_bytes": 1066695,
+    "app_partition_bytes": 1835008
+  },
+  "artifacts": {
+    "ota": {
+      "local_path": "/workspace/scratch/f608745efdda/boiler-firmware-output/boiler-fw-2026.10.12.5-office-private-ota.bin",
+      "bytes": 1066816,
+      "sha256": "b92c7feb47d71f0af486df62e5f20d70efd7ada65a1636fa25629970b422f1f7"
+    },
+    "factory": {
+      "local_path": "/workspace/scratch/f608745efdda/boiler-firmware-output/boiler-fw-2026.10.12.5-office-private-factory.bin",
+      "bytes": 1132352,
+      "sha256": "ac373c4935e985a5a0d12e3e55e9ea105808945d280e1d8eb8088ddafcb17ba3"
+    }
+  }
 }

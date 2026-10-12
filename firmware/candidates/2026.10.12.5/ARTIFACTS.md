@@ -1,10 +1,7 @@
-# FW 2026.10.12.5 — build blocked
+# FW 2026.10.12.5 — locally built office candidate
 
-Private office candidate. No verified firmware image is available yet. The build host disconnected during compilation; check `BUILD-MANIFEST.json` before resuming. The firmware image is not approved for installation.
-`secrets.yaml` stays local and ignored; never publish the office image or local
-secrets. Build and hardware status are tracked in `BUILD-MANIFEST.json`.
+ESPHome 2026.9.0 / ESP-IDF 5.5.5 compiled successfully in the current isolated workspace. The generated source matches the candidate component byte-for-byte; the build has explicit IDF rollback and no ESPHome safe-mode early return. See `BUILD-MANIFEST.json` for resource use and SHA-256 values.
 
-This profile is passive: it forwards the stock serial link through one transport
-owner and exposes observer telemetry. Active reads and boiler controls are disabled.
-It is not a full replacement for the currently installed firmware until HA/MQTT
-state, sensor freshness, controls, rollback, and UART behavior pass commissioning.
+The OTA and factory images are stored only in the current private workspace output folder. They include compiled office Wi-Fi/API/OTA credentials and are deliberately excluded from this public GitHub repository. The repository contains source and non-secret hashes/status only.
+
+This is a passive candidate: HA boiler controls and active sensor GET requests are disabled. It has not passed a two-peer UART bench, hardware fault injection, office preference migration, or device commissioning. `BUILD_PASS` does not mean `OFFICE_READY`; do not install it on the live inline ESP as a full replacement.
