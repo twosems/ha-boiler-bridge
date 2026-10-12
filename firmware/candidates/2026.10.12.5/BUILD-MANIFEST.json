@@ -3,7 +3,7 @@
   "variant": "office-passive-observer-candidate",
   "repository": "twosems/ha-boiler-bridge",
   "branch": "feature/boiler-fw-2026-10-12-5",
-  "build_status": "IN_PROGRESS",
+  "build_status": "INTERRUPTED_HOST_DISCONNECTED",
   "generated_checks": "PENDING",
   "hardware_status": "NOT_TESTED",
   "deployment_status": "NOT_DEPLOYED",
@@ -31,7 +31,7 @@
     "javascript_syntax": "PASS",
     "single_transport_owner": "SOURCE_REVIEWED",
     "controls_and_active_get": "DISABLED",
-    "compile": "RUNNING"
+    "compile": "BLOCKED: SentinelX build host went offline during full IDF/C++ build; job job_ad51fd2eb7de has no result yet"
   },
   "limits": [
     "no two-peer UART bench test",

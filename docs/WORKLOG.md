@@ -6,8 +6,9 @@ TransportV4 и прежний parser только как observer mirror consume
 удалены UART read/write task и fallback; loop обрабатывает только зеркало. Команды
 котлу и активные GET отключены, веб-интерфейс явно помечен PASSIVE.
 `esphome config`, py_compile и node --check PASS. Первый compile запуск превысил
-90s tool limit и был остановлен; второй запущен фоновым job `job_7a53a89ba4e6`,
-результат пока ожидается. .1 не перепрошивалась; ни офисный ESP, HA, ни MQTT не
+90s tool limit и был остановлен; второй job `job_7a53a89ba4e6` превысил лимит 600s. Повторный job `job_ad51fd2eb7de`
+запущен на DE; во время длительного C++ этапа SentinelX agent DE перешёл offline.
+Job пока числится running, его результат и наличие бинарника не подтверждены. .1 не перепрошивалась; ни офисный ESP, HA, ни MQTT не
 изменялись. Никаких hardware/serial-peer тестов не было. Это не full-function office
 replacement и не разрешённый к установке образ, пока компиляция и gates не закрыты.
 

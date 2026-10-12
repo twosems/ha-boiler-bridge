@@ -4,7 +4,7 @@
 
 `2026.10.12.5` / `firmware/candidates/2026.10.12.5` / ветка
 `feature/boiler-fw-2026-10-12-5`: private office profile for `2Soffice`, local
-ignored secrets. ESPHome config validation PASS; C++ compile currently running.
+ignored secrets. ESPHome config validation PASS; the build host disconnected during C++ compilation, so no image/hash is available yet.
 Passive observer only; full active GET and boiler controls disabled. Hardware NOT
 TESTED, NOT DEPLOYED, NOT OFFICE_READY. It is not a complete replacement for `.1`.
 Do not publish private OTA/factory binaries because they include office credentials.

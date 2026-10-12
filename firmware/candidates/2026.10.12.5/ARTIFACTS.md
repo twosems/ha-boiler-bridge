@@ -1,6 +1,6 @@
-# FW 2026.10.12.5 — build in progress
+# FW 2026.10.12.5 — build blocked
 
-Private office candidate. The firmware image is not approved for installation.
+Private office candidate. No verified firmware image is available yet. The build host disconnected during compilation; check `BUILD-MANIFEST.json` before resuming. The firmware image is not approved for installation.
 `secrets.yaml` stays local and ignored; never publish the office image or local
 secrets. Build and hardware status are tracked in `BUILD-MANIFEST.json`.
 

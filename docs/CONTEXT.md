@@ -16,7 +16,7 @@
 активные GET и кнопки котла отключены, UI предупреждает об этом; поэтому `.5` пока
 не сохраняет полную функциональность HA и не заменяет `.1` на живом ESP. Wi-Fi
 профиль берёт офисную сеть из ignored local secrets; пароль не хранить здесь/Git.
-ESPHome config и Python/JS syntax PASS. Компиляция выполняется на DE; hardware bench,
+ESPHome config и Python/JS syntax PASS. Build host DE отключился во время компиляции; job `job_ad51fd2eb7de` ожидает результат, проверенного бинарника нет. Hardware bench,
 свежесть сенсоров, миграция MQTT prefs и OTA rollback на установленном ESP не проверены.
 
 ## Новая точка доступа: office-pc, 12.10 19:44 Tomsk
