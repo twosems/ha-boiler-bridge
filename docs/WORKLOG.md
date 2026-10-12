@@ -1,5 +1,14 @@
 # Журнал контрольных точек
 
+## 2026-10-12 19:44 Tomsk — office-pc enrolled and checked
+
+По прямой команде пользователя проверен DESKTOP-H0NBTQ5 / office-pc /
+host_6d74202de72b5430, SentinelX0.23.17 operational. IP192.168.1.144.
+ESP FW.1 и WiFi2Soffice подтверждены live GET; HA8123 и MQTT1883 доступны.
+MQTT OFF повторно, broker/login сохранены правильно; причина требует диагностики.
+Uptime8344s, BTEMP40.2 не считать свежей температурой без UART/physical evidence.
+SerialPort inventory пуст. Работа только read-only, без restart/config/firmware changes.
+
 ## 2026-10-12 около 17:20 Tomsk — MQTT восстановлен
 
 Пользователь дал актуальные office credentials и уточнил регистр login.
