@@ -1,6 +1,7 @@
 import esphome.codegen as cg
 import esphome.config_validation as cv
 from esphome.components import sensor, text_sensor
+from esphome.components.esp32 import add_idf_sdkconfig_option
 from esphome.const import CONF_ID
 
 DEPENDENCIES = ['esp32']
@@ -19,6 +20,10 @@ CONFIG_SCHEMA = cv.Schema({
 }).extend(cv.COMPONENT_SCHEMA)
 
 async def to_code(config):
+    # ESPHome disables its rollback setting when standard safe_mode is disabled.
+    # This component owns commissioning, so enable IDF rollback explicitly.
+    add_idf_sdkconfig_option('CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE', True)
+    cg.add_define('USE_OTA_ROLLBACK')
     var = cg.new_Pvariable(config[CONF_ID])
     await cg.register_component(var, config)
     cg.add(var.set_observer_enabled(config['observer_enabled']))

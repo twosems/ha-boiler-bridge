@@ -19,6 +19,14 @@ Host host_b5648365d9b64ade; build dir /var/lib/sentinelx/uploads/boiler-fw-20261
 ESP, HA, GPIO исполнительных механизмов, сеть офиса не изменены.
 Next: финальная сборка → actual hashes/generated checks → USB/стенд/recovery gate.
 
+Дополнение: промежуточные b/c BUILD_PASS; compiled .4 ещё не frozen binary.
+Исправлена межъядерная гонка age: timestamp может быть новее sampled now;
+unsigned subtraction не должен давать ложный fatal stall. Tests PASS.
+Generated sdkconfig показал rollback disabled: ESPHome final_validate выключает
+standard rollback без safe_mode. Компонент включает IDF option/define напрямую;
+16 structural checks PASS. Финальный build d: job_e7d85d58cc0f на том же DE;
+лог /var/lib/sentinelx/uploads/boiler-fw-20261012-4-build-d.log. Ждём actual результат.
+
 ## 2026-10-12 — перенос ветки в GitHub
 Запрос: перечитать историю 2–3 раза, сохранить текущие firmware/версии и рекомендации для восстановления диалога.
 История изучена по хронологии, затем отдельно по артефактам/сетям и по финальным решениям/открытым задачам. Переданная копия: 3645 строк; изображения не вложены.

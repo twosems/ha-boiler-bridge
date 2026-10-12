@@ -51,8 +51,13 @@ template<size_t N> class MirrorRing {
 
 enum class Fault:uint32_t { NONE, STARTUP, DRIVER, TASK_STALL, TX_STALL, BACKLOG_AGE, WATCHDOG, MAINTENANCE_TIMEOUT };
 inline uint32_t elapsed(uint32_t now,uint32_t before){return now-before;}
+// Another core can publish a timestamp AFTER the reader sampled `now`.
+// For bounded (<2^31 ms) health deadlines that is age zero, not UINT32_MAX.
+inline uint32_t age_ms(uint32_t now,uint32_t before){
+  const uint32_t delta=elapsed(now,before);return delta<0x80000000U?delta:0;
+}
 inline bool tx_stalled(uint32_t pending,uint32_t now,uint32_t last_progress,uint32_t timeout){
-  return pending!=0 && elapsed(now,last_progress)>timeout;
+  return pending!=0 && age_ms(now,last_progress)>timeout;
 }
 inline bool boot_can_confirm(bool ready,bool wdt,bool loop_detached,uint32_t uptime,
                              uint32_t rx0,uint32_t rx1,uint32_t tx0,uint32_t tx1,

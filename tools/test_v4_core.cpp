@@ -52,6 +52,8 @@ int main(){
   assert(frame.data()[1]==7);
 
   assert(elapsed(2,0xfffffffeU)==4);
+  assert(age_ms(10,11)==0);assert(age_ms(2,0xfffffffeU)==4);
+  assert(!tx_stalled(1,10,11,500));
   assert(!tx_stalled(0,10000,0,500));
   assert(!tx_stalled(1,500,0,500));assert(tx_stalled(1,501,0,500));
   assert(!tx_stalled(1,2,0xfffffffeU,500));

@@ -10,7 +10,9 @@ esp32:
   framework:
     type: arduino
     advanced:
-      enable_ota_rollback: true
+      # Standard ESPHome rollback requires its safe_mode. Our component explicitly
+      # enables the IDF option and owns validation instead.
+      enable_ota_rollback: false
 
 logger:
   baud_rate: 115200

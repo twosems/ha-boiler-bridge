@@ -9,6 +9,7 @@ Base Git: cc642c0ed76f6697ed542a9bab470314718da7c2.
 - Bridge initializes before network. Standard safe_mode is disabled; no network-only recovery mode can replace this transport. Startup failure is explicitly fatal/degraded, never an active downgrade.
 - Main loop unsubscribes from fatal TWDT only after driver+task+bridge-WDT readiness and supervisor creation are confirmed. IWDT and bridge TWDT remain. Main liveness is diagnostic only.
 - ESPHome HAL feeds unconditionally: a linker wrapper skips feeds only for the exact detached loop task, avoiding IDF task-not-found log floods. Every other task still calls the real watchdog reset API.
+- ESPHome validation disables its own rollback feature when safe_mode is disabled. The external component explicitly enables IDF CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE and USE_OTA_ROLLBACK instead; verify the generated sdkconfig, not merely YAML intent.
 - Supervisor separates normal silent idle from pending-TX stall and stalled bridge task. Irrecoverable transport/task faults reset the ESP as LAST RESORT; reset interrupts UART and is not hardware bypass.
 - UART FIFO loss is counted and invalidates observer/boot validation. A UART_BUFFER_FULL warning alone is not claimed as proven loss. Frame/parity events do not autonomously reset a healthy forwarding task.
 - Mirror blocks carry sequence, epoch and capture time. Gap detection precedes decoding; stale/missing data never becomes zero. Observer here is a deliberately minimal stock-protocol observer, not full parity with the old UI.

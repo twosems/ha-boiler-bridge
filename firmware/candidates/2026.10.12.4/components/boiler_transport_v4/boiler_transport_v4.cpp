@@ -5,6 +5,7 @@
 #include <esp_timer.h>
 #include <cstdio>
 #include <cmath>
+#include <cinttypes>
 
 extern "C" esp_err_t __real_esp_ota_mark_app_valid_cancel_rollback(void);
 // Linker guard: time/shutdown/other framework callers cannot bypass transport health.
@@ -133,13 +134,13 @@ void BoilerTransportV4::supervisor_run(){
     if(!ready_.load()){
       if(elapsed(now,start_ms_)>1000)fail(Fault::STARTUP);
     }else if(!maintenance_.load()){
-      if(elapsed(now,bridge_beat_.load())>250)fail(Fault::TASK_STALL);
+      if(age_ms(now,bridge_beat_.load())>250)fail(Fault::TASK_STALL);
       for(auto &d:dirs_){
         if(tx_stalled(d.pending.load(),now,d.last_progress.load(),500))fail(Fault::TX_STALL);
-        if(d.pending.load()>256 && elapsed(now,d.oldest_ms.load())>2000)fail(Fault::BACKLOG_AGE);
+        if(d.pending.load()>256 && age_ms(now,d.oldest_ms.load())>2000)fail(Fault::BACKLOG_AGE);
       }
     }
-    if(maintenance_.load() && elapsed(now,maintenance_ms_.load())>120000)fail(Fault::MAINTENANCE_TIMEOUT);
+    if(maintenance_.load() && age_ms(now,maintenance_ms_.load())>120000)fail(Fault::MAINTENANCE_TIMEOUT);
     if(fault_.load()!=0){
       // No software-only bypass exists. Reset/rollback is explicitly a last resort.
       if(state==ESP_OTA_IMG_PENDING_VERIFY)esp_ota_mark_app_invalid_rollback_and_reboot();
@@ -202,12 +203,12 @@ void BoilerTransportV4::publish_diagnostics(uint32_t now){
   char out[768];
   std::snprintf(out,sizeof(out),
     "{\"fw\":\"2026.10.12.4\",\"mode\":\"PASSIVE\",\"write_capable\":false,"
-    "\"ready\":%s,\"fault\":%u,\"bridge_age_ms\":%u,\"main_age_ms\":%u,"
-    "\"bridge_wdt\":%s,\"loop_detached\":%s,\"rx\":[%u,%u],\"tx_fifo_accepted\":[%u,%u],"
-    "\"pending\":[%u,%u],\"high_water\":[%u,%u],\"fifo_loss\":%u,\"rx_full\":%u,"
-    "\"frame_errors\":%u,\"parity_errors\":%u,\"api_errors\":%u,\"mirror_drops\":%u,"
-    "\"observer_age_ms\":%u,\"ota_state\":%u,\"ota_result\":%u,\"reset_reason\":%u}",
-    ready_.load()?"true":"false",fault_.load(),elapsed(now,bridge_beat_.load()),elapsed(now,main_beat_.load()),
+    "\"ready\":%s,\"fault\":%" PRIu32 ",\"bridge_age_ms\":%" PRIu32 ",\"main_age_ms\":%" PRIu32 ","
+    "\"bridge_wdt\":%s,\"loop_detached\":%s,\"rx\":[%" PRIu32 ",%" PRIu32 "],\"tx_fifo_accepted\":[%" PRIu32 ",%" PRIu32 "],"
+    "\"pending\":[%" PRIu32 ",%" PRIu32 "],\"high_water\":[%" PRIu32 ",%" PRIu32 "],\"fifo_loss\":%" PRIu32 ",\"rx_full\":%" PRIu32 ","
+    "\"frame_errors\":%" PRIu32 ",\"parity_errors\":%" PRIu32 ",\"api_errors\":%" PRIu32 ",\"mirror_drops\":%" PRIu32 ","
+    "\"observer_age_ms\":%" PRIu32 ",\"ota_state\":%" PRIu32 ",\"ota_result\":%" PRIu32 ",\"reset_reason\":%" PRIu32 "}",
+    ready_.load()?"true":"false",fault_.load(),age_ms(now,bridge_beat_.load()),age_ms(now,main_beat_.load()),
     bridge_wdt_.load()?"true":"false",loop_detached_.load()?"true":"false",
     dirs_[0].rx.load(),dirs_[1].rx.load(),dirs_[0].accepted.load(),dirs_[1].accepted.load(),
     dirs_[0].pending.load(),dirs_[1].pending.load(),dirs_[0].high_water.load(),dirs_[1].high_water.load(),

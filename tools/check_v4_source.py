@@ -26,6 +26,7 @@ check('copy_loss_checked_before_decoding', source.index('if(drops!=seen_drops_)'
 check('uart_epoch_invalidates_without_new_copy', 'if(epoch!=seen_epoch_){invalidate_observer();seen_epoch_=epoch;}' in source)
 check('stock_get_reply_attribution_disabled', 'stock_request_' not in source and 'request_pending_' not in source)
 check('standard_safe_mode_disabled', 'safe_mode:\n  disabled: true' in config)
+check('custom_idf_rollback_explicit', "add_idf_sdkconfig_option('CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE', True)" in schema and "cg.add_define('USE_OTA_ROLLBACK')" in schema)
 check('wifi_api_loss_no_restart', config.count('reboot_timeout: 0s') == 2)
 check('public_bench_profile_no_ssid', '\n  ssid:' not in config and '\n  password:' not in config)
 check('no_actuators_mqtt_http_ota', all(x not in config for x in ['\nbutton:', '\nswitch:', '\nnumber:', '\nmqtt:', 'platform: web_server']))
