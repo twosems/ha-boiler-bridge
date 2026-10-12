@@ -459,7 +459,7 @@
     "declared_version": "2026.10.12.5",
     "origin_host": "current-isolated-workspace",
     "origin_path": "firmware/candidates/2026.10.12.5",
-    "status": "Local build PASS; passive controls/active GET disabled; private office binaries excluded from public GitHub; hardware NOT_TESTED; NOT_DEPLOYED; OFFICE_READY=false",
+    "status": "Local build PASS; passive controls/active GET disabled; private office binaries excluded from public GitHub; hardware NOT_TESTED; OTA_ATTEMPTED_UNCONFIRMED (HTTP 408, device became unreachable); OFFICE_READY=false",
     "files": [
       {
         "path": "boiler-proxy.yaml",
