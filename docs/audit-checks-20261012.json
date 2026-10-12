@@ -1,0 +1,22 @@
+{
+  "pure_functions": [
+    "ring_wrap_and_order",
+    "ring_full_short_push",
+    "ring_consume_clamp",
+    "numeric_frame_minus200",
+    "numeric_frame_minus1",
+    "numeric_frame_zero",
+    "numeric_frame_positive",
+    "numeric_payload_internal_FF"
+  ],
+  "structural_findings": [
+    "fallback_click_not_unconditionally_disabled",
+    "fallback_refresh_not_unconditionally_disabled",
+    "copy_loss_checked_after_decode"
+  ],
+  "illustrative_models": [
+    "loop_heartbeat_without_TX_progress",
+    "healthy_bridge_does_not_satisfy_other_TWDT_subscriber"
+  ],
+  "scope": "PASS for extracted pure functions/models only; no ESP32/FreeRTOS/hardware validation"
+}

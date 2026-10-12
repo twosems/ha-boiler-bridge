@@ -11,3 +11,12 @@ Original backups зашифрованы AES-GCM/RSA-OAEP; private key не пе�
 Next step: проверить соответствие исходник↔бинарник двух .3, выбрать кандидат, выполнить пассивный стенд. OTA/изменение параметров не разрешены этим архивированием.
 
 Дополнительная сверка: найден BUILD-2026.10.12.3.txt isolated-transport; его binary hashes совпадают. Generated C++/H .2 и обоих .3 побайтно совпадают с source snapshots. Manifest isolated-transport подтверждает NOT FLASHED и домашний Wi-Fi как deployment blocker. Это не стендовый PASS.
+
+## 2026-10-12 — повторный аудит правильности архитектуры
+Запрос пользователя: заново проверить выводы и организацию firmware под проект, исправить рекомендации, обосновать необходимые доработки.
+Baseline Git: 878f007d78ff2c01e6b62793e10e556b8644c7f1. Проверены оба .3 и фактические generated ESPHome HAL/safe_mode/UART, sdkconfig/partitions/main.cpp на DE; сопоставлены первичные источники ESP-IDF 5.5 и ESPHome.
+Подтверждено: глобальный main-loop TWDT остаётся подписан с panic5s; safe_mode отключает bridge component; пассивный rtbridge fallback снова включает команды/старый parser-first путь; isolated-transport требует observer allocation для запуска; counters не измеряют IDF FIFO errors; heartbeat не равен TX progress. Standard OTA подтверждается по времени/shutdown, не bridge-health; compiled bootloader rollback есть, installed support неизвестен.
+Исправлены рекомендации по software/IDF TX buffers, реальной core isolation, soft-control vs fatal-transport watchdog, recovery/rollback, flash pauses и command/response ownership.
+Offline checks: 8 групп проверок извлечённых C++ pure functions (ring/Nextion numeric), 3 structural assertions, 2 illustrative failure models; PASS. Это не FreeRTOS/hardware PASS и не диагноз причины прошлой остановки котла.
+Результат: docs/ARCHITECTURE-AUDIT-20261012.md; обновлены AGENTS/CONTEXT/DEVELOPMENT. Firmware snapshots, бинарники, HA, ESP, котельные настройки не изменены.
+Next step: реализация нового пассивного .4 по скорректированному контракту и стенд, затем отдельный этап transaction-safe управления. Старые .3 остаются архивом, deployment blocked.
