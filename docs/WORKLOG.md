@@ -27,6 +27,12 @@ standard rollback без safe_mode. Компонент включает IDF opti
 16 structural checks PASS. Финальный build d: job_e7d85d58cc0f на том же DE;
 лог /var/lib/sentinelx/uploads/boiler-fw-20261012-4-build-d.log. Ждём actual результат.
 
+Последняя правка: atomic health revision защищает supervisor snapshot от сочетания
+старого pending и нового cleared timestamp. Core concurrency test добавлен;
+17 structural checks PASS. Финальный incremental job_8a7cc4fe3ffb запускается после d;
+лог /var/lib/sentinelx/uploads/boiler-fw-20261012-4-build-e.log. Source frozen далее;
+аппаратные оговорки не снимаются успешной компиляцией.
+
 ## 2026-10-12 — перенос ветки в GitHub
 Запрос: перечитать историю 2–3 раза, сохранить текущие firmware/версии и рекомендации для восстановления диалога.
 История изучена по хронологии, затем отдельно по артефактам/сетям и по финальным решениям/открытым задачам. Переданная копия: 3645 строк; изображения не вложены.

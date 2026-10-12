@@ -30,6 +30,7 @@ class BoilerTransportV4:public Component {
     uart_port_t port;int rx_pin,tx_pin;
     QueueHandle_t events{nullptr};ByteRing<2048> tx;
     std::atomic<uint32_t> rx{0},accepted{0},pending{0},last_progress{0},oldest_ms{0},high_water{0};
+    std::atomic<uint32_t> health_revision{0};
   } dirs_[2]{{UART_NUM_1,16,17},{UART_NUM_2,18,19}};
   MirrorRing<128> mirror_;
   StaticTask_t bridge_tcb_{},supervisor_tcb_{};

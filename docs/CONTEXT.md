@@ -8,7 +8,7 @@ RAW UART, диагностика, unsolicited PAGE; без уставок/реж
 Ни один старый снимок не изменён. Не трактовать как полноценную замену старой firmware.
 Wi-Fi не зашит: USB Improv, прежняя сеть из NVS не гарантирована. API/OTA — публичные
 стендовые placeholders. Boot confirmation выключен; unattended OTA запрещена.
-Core tests (ASan/UBSan, leak detection disabled because runtime ptrace) и 16 structural
+Core tests (ASan/UBSan, leak detection disabled because runtime ptrace) и 17 structural
 checks PASS; аппаратных проверок нет. На DE `host_b5648365d9b64ade` запущена сборка
 `job_9df373508348`; каталог `/var/lib/sentinelx/uploads/boiler-fw-20261012-4`.
 Промежуточная сборка b предшествует последней правке watchdog feed wrapper;
@@ -18,6 +18,9 @@ checks PASS; аппаратных проверок нет. На DE `host_b564836
 Финальный job `job_e7d85d58cc0f`, лог `boiler-fw-20261012-4-build-d.log`:
 включает age_ms против межъядерной гонки timestamp, PRIu32 и явное включение
 IDF rollback (ESPHome отключает standard rollback при disabled safe_mode).
+Последняя source-правка: revision-protected health snapshot исключает смешивание
+old pending с cleared/new oldest timestamp. Окончательный incremental job
+`job_8a7cc4fe3ffb`, лог `boiler-fw-20261012-4-build-e.log`, после окончания d.
 Пользователь хочет ускорить подготовку и прошить; конкретные USB/OTA, стенд/живой ESP
 не подтверждены. ESP/HA/котёл не прошивались и не перезагружались.
 Датчик бункера — отдельное независимое устройство, вне этой firmware.

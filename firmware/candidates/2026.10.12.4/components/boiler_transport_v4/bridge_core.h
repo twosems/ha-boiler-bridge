@@ -56,6 +56,7 @@ inline uint32_t elapsed(uint32_t now,uint32_t before){return now-before;}
 inline uint32_t age_ms(uint32_t now,uint32_t before){
   const uint32_t delta=elapsed(now,before);return delta<0x80000000U?delta:0;
 }
+inline bool snapshot_consistent(uint32_t before,uint32_t after){return before==after && (before&1U)==0;}
 inline bool tx_stalled(uint32_t pending,uint32_t now,uint32_t last_progress,uint32_t timeout){
   return pending!=0 && age_ms(now,last_progress)>timeout;
 }

@@ -98,10 +98,12 @@ void BoilerTransportV4::flush(Direction &d,uint32_t now){
   const int accepted=uart_tx_chars(d.port,reinterpret_cast<const char*>(d.tx.data()),n);
   if(accepted<0){api_errors_.fetch_add(1);fail(Fault::DRIVER);return;}
   if(accepted>0){
+    d.health_revision.fetch_add(1);
     d.tx.consume(static_cast<size_t>(accepted));d.accepted.fetch_add(accepted);d.last_progress.store(now);
     // oldest_ms is an upper bound for the age of a continuously nonempty backlog.
     if(d.tx.size()==0)d.oldest_ms.store(0);
     d.pending.store(d.tx.size());
+    d.health_revision.fetch_add(1);
   }
 }
 void BoilerTransportV4::pump(Direction &d,uint8_t direction,uint32_t now){
@@ -111,10 +113,14 @@ void BoilerTransportV4::pump(Direction &d,uint8_t direction,uint32_t now){
   if(n<0){api_errors_.fetch_add(1);fail(Fault::DRIVER);return;}
   if(n==0)return;
   const bool empty=d.tx.size()==0;
-  if(d.tx.push(b.bytes.data(),n)!=static_cast<size_t>(n)){fail(Fault::DRIVER);return;}
+  d.health_revision.fetch_add(1);
+  if(d.tx.push(b.bytes.data(),n)!=static_cast<size_t>(n)){
+    d.health_revision.fetch_add(1);fail(Fault::DRIVER);return;
+  }
   if(empty){d.oldest_ms.store(now);d.last_progress.store(now);}
   d.rx.fetch_add(n);d.pending.store(d.tx.size());
   d.high_water.store(std::max(d.high_water.load(),static_cast<uint32_t>(d.tx.size())));
+  d.health_revision.fetch_add(1);
   // Byte forwarding is already queued; the observer copy is best effort only.
   if(observer_enabled_){
     b.sequence=++sequence_;b.epoch=epoch_.load();b.captured_ms=now;b.direction=direction;b.length=n;
@@ -136,8 +142,12 @@ void BoilerTransportV4::supervisor_run(){
     }else if(!maintenance_.load()){
       if(age_ms(now,bridge_beat_.load())>250)fail(Fault::TASK_STALL);
       for(auto &d:dirs_){
-        if(tx_stalled(d.pending.load(),now,d.last_progress.load(),500))fail(Fault::TX_STALL);
-        if(d.pending.load()>256 && age_ms(now,d.oldest_ms.load())>2000)fail(Fault::BACKLOG_AGE);
+        const uint32_t revision=d.health_revision.load();
+        const uint32_t pending=d.pending.load(),progress=d.last_progress.load(),oldest=d.oldest_ms.load();
+        // Never combine old pending with a concurrently emptied/new backlog.
+        if(!snapshot_consistent(revision,d.health_revision.load()))continue;
+        if(tx_stalled(pending,now,progress,500))fail(Fault::TX_STALL);
+        if(pending>256 && age_ms(now,oldest)>2000)fail(Fault::BACKLOG_AGE);
       }
     }
     if(maintenance_.load() && age_ms(now,maintenance_ms_.load())>120000)fail(Fault::MAINTENANCE_TIMEOUT);

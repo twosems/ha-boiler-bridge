@@ -39,6 +39,16 @@ int main(){
   }
   producer.join();assert(!concurrent.pop(block));
 
+  std::atomic<uint32_t> revision{0},pending{0},progress{0};std::atomic<bool> done{false};
+  std::thread health_writer([&]{for(uint32_t i=1;i<=100000;i++){
+    revision.fetch_add(1);pending.store(i);progress.store(i*10);revision.fetch_add(1);
+  }done.store(true);});
+  do{
+    const auto first=revision.load(),p=pending.load(),t=progress.load(),last=revision.load();
+    if(snapshot_consistent(first,last))assert(t==p*10);
+  }while(!done.load());
+  health_writer.join();
+
   for(uint32_t value:{0U,1U,0xffffffffU,0xffffff38U,0x00ffffffU,0xff00ffffU}){
     NextionFrame frame;uint8_t packet[8]={0x71,uint8_t(value),uint8_t(value>>8),uint8_t(value>>16),uint8_t(value>>24),0xff,0xff,0xff};
     for(unsigned i=0;i<8;i++)assert(frame.append(packet[i],true)==(i==7));
@@ -54,6 +64,8 @@ int main(){
   assert(elapsed(2,0xfffffffeU)==4);
   assert(age_ms(10,11)==0);assert(age_ms(2,0xfffffffeU)==4);
   assert(!tx_stalled(1,10,11,500));
+  assert(snapshot_consistent(2,2));assert(!snapshot_consistent(1,1));
+  assert(!snapshot_consistent(2,4));assert(snapshot_consistent(0,0));
   assert(!tx_stalled(0,10000,0,500));
   assert(!tx_stalled(1,500,0,500));assert(tx_stalled(1,501,0,500));
   assert(!tx_stalled(1,2,0xfffffffeU,500));
