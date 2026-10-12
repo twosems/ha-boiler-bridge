@@ -1,5 +1,17 @@
 # Журнал контрольных точек
 
+## 2026-10-12 около 17:20 Tomsk — MQTT восстановлен
+
+Пользователь дал актуальные office credentials и уточнил регистр login.
+Проверка самого брокера: CONNACK0. Все native text fields выставлены и сверены;
+пароль не записан в документы/Git. Broker192.168.1.203:1883, final MQTT ON.
+Значение пароля промежуточно оказалось в broker field (причина не установлена),
+поэтому проверка остановила graceful restart ДО POST. Затем все поля исправлены;
+MQTT подключился без выполненного нами restart. Наблюдалось снижение uptime
+>1600s→152s, origin unknown; последний uptime182s. BTEMP reported40.2, без физической сверки.
+Firmware .1, .4 NOT DEPLOYED. Новый стабильный офисный replacement не готов;
+UI/architecture work остаётся открытым, подключение MQTT не заменяет reflash.
+
 ## 2026-10-12 около 17:14 Tomsk — живой офисный ESP, MQTT recovery
 
 Подтверждены FW2026.10.12.1 / WiFi2Soffice / 192.168.1.172 по live GET через
