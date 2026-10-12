@@ -1,5 +1,15 @@
 # Версии и артефакты
 
+## Новый кандидат .4
+
+`2026.10.12.4` / `firmware/candidates/2026.10.12.4` / ветка
+`feature/boiler-fw-2026-10-12-4`: PASSIVE BENCH_ONLY, source/core checks PASS,
+ESP32 build pending, hardware NOT TESTED, NOT DEPLOYED. Бинарный hash пока отсутствует.
+Состав: собственные UART1/2, static RT tasks, bounded rings, events/progress counters,
+optional observer PAGE-only, main-TWDT handoff, guarded OTA validation (disabled by default).
+Это не полнофункциональная legacy/Web/MQTT firmware и не офисный OTA-ready образ.
+Публичный bench-профиль без SSID, с USB provisioning; secrets.example не защищает deployment.
+
 Снимки неизменяемы. Все бинарники находятся внутри `recovery/boiler-originals-20261012.tar.xz.encrypted`; ключ отдельно. Хэши/размеры — фактически прочитанные файлы, не объявление эксплуатационной готовности. Полный машинный реестр: `firmware/versions.json`.
 
 | Snapshot ID | FW label | OTA bytes | OTA SHA-256 | Статус |

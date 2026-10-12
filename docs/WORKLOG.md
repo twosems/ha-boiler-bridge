@@ -1,5 +1,24 @@
 # Журнал контрольных точек
 
+## 2026-10-12 — реализация .4, промежуточная точка
+
+Пользователь разрешил разработку, попросил ускорить и подготовить прошивку.
+Base cc642c0; feature/boiler-fw-2026-10-12-4. Созданы отдельный transport component,
+contract, public bench config, C++ core harness и structural regression checker.
+100000 randomized ByteRing operations и 100000 SPSC records PASS с ASan/UBSan;
+LeakSanitizer отдельно недоступен из-за ptrace. 15 source-only assertions PASS.
+Отключено неоднозначное stock GET/reply matching: только PAGE и diagnostics.
+Supervisor создаётся прежде bridge; main TWDT удаляется только после готовности.
+Проверен установленный ESPHome 2026.9.0 HAL: arch_feed_wdt безусловный;
+добавлен wrapper только для снятого loopTask, real reset сохранён остальным tasks.
+Первый build job_5c52ebb18a0a FAILED_CONFIG: all-zero API key rejected;
+заменён публичным nonzero bench key. DE job_9df373508348 компилирует промежуточный b.
+После последней watchdog-правки нужен финальный rebuild; успешность НЕ заявлена.
+Host host_b5648365d9b64ade; build dir /var/lib/sentinelx/uploads/boiler-fw-20261012-4;
+лог b: /var/lib/sentinelx/uploads/boiler-fw-20261012-4-build-b.log.
+ESP, HA, GPIO исполнительных механизмов, сеть офиса не изменены.
+Next: финальная сборка → actual hashes/generated checks → USB/стенд/recovery gate.
+
 ## 2026-10-12 — перенос ветки в GitHub
 Запрос: перечитать историю 2–3 раза, сохранить текущие firmware/версии и рекомендации для восстановления диалога.
 История изучена по хронологии, затем отдельно по артефактам/сетям и по финальным решениям/открытым задачам. Переданная копия: 3645 строк; изображения не вложены.
