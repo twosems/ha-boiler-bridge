@@ -1,5 +1,23 @@
 # Журнал контрольных точек
 
+## 2026-10-12 — .4 окончательная сборка и Git-артефакты
+
+Source SHA f801357f21ef7aa6aaa813096da99b903ed606a4, отдельная feature-ветка.
+DE job_8a7cc4fe3ffb succeeded exit0, завершение 08:04:05 UTC / 15:04:05 Tomsk.
+OTA 912384 bytes, SHA256 0f8902261d0098a6bc53aecd1a261225c09a5082b10b065644f76b5673cf6e70;
+factory 977920 bytes, SHA256 49b332333e49d2a27183974cf4987b7129abbc02d97e3550c15766d5ce5b1221.
+RAM73568/180736; flash912263/1835008. ESPHome2026.9.0 / IDF5.5.5.
+Source→generated C++/H equality, both wrapper symbols/link flags, explicit rollback,
+USE_OTA_ROLLBACK, watchdogs, static component storage and no standard safe-mode branch PASS.
+100000 ring operations, 100000 mirror records, 100000 health snapshot writes,
+numeric framing/future-timestamp/rollover/boot gates PASS under ASan/UBSan;
+17 structural checks PASS. LeakSanitizer disabled due ptrace, no claim of leak-test PASS.
+Archive b/c pre-final builds not published as firmware artifacts. Final factory/OTA,
+manifest, final log and commissioning checklist preserved in feature branch only.
+Public bench placeholders only; no private user credentials. Not office-ready,
+not hardware-tested, not deployed. No ESP/HA restart or actuator operation.
+Next step: USB/target clarification, verified backup/recovery and passive serial-peer bench.
+
 ## 2026-10-12 — реализация .4, промежуточная точка
 
 Пользователь разрешил разработку, попросил ускорить и подготовить прошивку.

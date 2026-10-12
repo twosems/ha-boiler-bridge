@@ -1,5 +1,19 @@
 # Контекст продолжения «ХА — котёл»
 
+## Последний результат: .4 BUILD_PASS (12.10)
+
+Окончательный job_8a7cc4fe3ffb succeeded / exit 0; source Git
+`f801357f21ef7aa6aaa813096da99b903ed606a4`. См. candidate BUILD-MANIFEST.json.
+Generated C++/H побайтно совпадают; rollback=y, USE_OTA_ROLLBACK, TWDT panic5s,
+IWDT и оба linker wrappers проверены. Standard safe_mode не зарегистрирован.
+17 structural checks, portable C++ ASan/UBSan + concurrency PASS, не аппаратный тест.
+OTA 912384 bytes / SHA256 0f8902261d0098a6bc53aecd1a261225c09a5082b10b065644f76b5673cf6e70.
+Factory 977920 bytes / SHA256 49b332333e49d2a27183974cf4987b7129abbc02d97e3550c15766d5ce5b1221.
+Это публичный bench profile, USB provisioning, boot confirmation disabled.
+OFFICE_READY=false; NOT_TESTED on hardware; NOT_DEPLOYED. ESP и HA не менялись.
+Next step: уточнить USB/OTA и запасной/живой ESP, backup/recovery/target-profile,
+затем первый serial-peer стенд; действующий котёл не прошивать автоматически.
+
 ## Текущая рабочая точка .4 (12.10, новая ветка)
 
 Ветка `feature/boiler-fw-2026-10-12-4`, base `cc642c0ed76f6697ed542a9bab470314718da7c2`.

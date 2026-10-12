@@ -4,7 +4,11 @@
 
 `2026.10.12.4` / `firmware/candidates/2026.10.12.4` / ветка
 `feature/boiler-fw-2026-10-12-4`: PASSIVE BENCH_ONLY, source/core checks PASS,
-ESP32 build pending, hardware NOT TESTED, NOT DEPLOYED. Бинарный hash пока отсутствует.
+ESP32 BUILD_PASS + generated checks PASS, hardware NOT TESTED, NOT DEPLOYED.
+Source SHA `f801357f21ef7aa6aaa813096da99b903ed606a4`; финальный job_8a7cc4fe3ffb.
+OTA 912384 bytes / `0f8902261d0098a6bc53aecd1a261225c09a5082b10b065644f76b5673cf6e70`.
+Factory 977920 bytes / `49b332333e49d2a27183974cf4987b7129abbc02d97e3550c15766d5ce5b1221`.
+Полные flags/toolchain/source/generated checks — candidate BUILD-MANIFEST.json.
 Состав: собственные UART1/2, static RT tasks, bounded rings, events/progress counters,
 optional observer PAGE-only, main-TWDT handoff, guarded OTA validation (disabled by default).
 Это не полнофункциональная legacy/Web/MQTT firmware и не офисный OTA-ready образ.
