@@ -141,3 +141,20 @@ Next step: реализация нового пассивного .4 по ско
 BUILD_PASS: OTA 1066816 bytes / SHA256 `b92c7feb47d71f0af486df62e5f20d70efd7ada65a1636fa25629970b422f1f7`; factory 1132352 bytes / SHA256 `ac373c4935e985a5a0d12e3e55e9ea105808945d280e1d8eb8088ddafcb17ba3`. RAM92360/180736, flash1066695/1835008. Generated C++/H match source, `should_enter_safe_mode` early-return отсутствует, rollback=`CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE=y`, оба linker wrappers есть в ELF. Portable ASan/UBSan core tests PASS (100000 ring ops и mirror records).
 
 Артефакты находятся в `/workspace/scratch/f608745efdda/boiler-firmware-output/`; OTA/factory binary содержат офисные секреты и не добавляются в публичный GitHub. Ветка GitHub получает исправленные исходники, manifest, хэши и статус. `.5` остаётся PASSIVE: controls и active GET выключены; hardware/bench, MQTT preference migration и sensor freshness не проверены; `OFFICE_READY=false`, NOT_DEPLOYED. Живой ESP не затрагивался.
+
+## 2026-10-12 — попытка OTA .5, результат не подтверждён
+
+По прямой команде пользователя подготовлен живой OTA. На `office-pc` размещены
+оба приватных образа и проверены точные SHA: `.5` OTA 1066816 bytes /
+`b92c7feb47d71f0af486df62e5f20d70efd7ada65a1636fa25629970b422f1f7`; исходный
+`.1` recovery OTA 1076832 bytes /
+`e99f27b74c0c9d05246dc97604359034bfabd70fb9eade909c5b1e39bdb1a0c3`.
+На office-pc нет COM-портов. Перед POST `/update` устройство отвечало HTTP 200;
+первая попытка TCP timed out до соединения. Вторая дошла до ESP и получила HTTP
+408. После неё `.172` перестал отвечать на 80, 3232 и 6053; сканер пользователя
+по-прежнему показывает `boiler-proxy`, `.172`, MAC `A0:A3:B3:2A:87:F8`.
+Видимая сеть `Boiler-Setup` не обнаружена. Версия установленной прошивки
+UNKNOWN — нельзя сказать, записался ли `.5`; повторный OTA не отправлять.
+Recovery `.1` исторически содержит домашний Wi-Fi профиль, а rollback support
+в bootloader живого устройства не подтверждён. Требуется сначала восстановить
+доступ и определить фактическую версию; затем выбрать проверенный recovery.
