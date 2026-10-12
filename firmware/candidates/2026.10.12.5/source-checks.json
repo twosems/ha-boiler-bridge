@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "transport_is_single_uart_owner": "PASS: boiler_proxy contains no UART driver reads or writes",
+    "parser_uses_observer_mirror_only": "PASS: observer blocks consumed from transport",
+    "legacy_fallback": "ABSENT",
+    "active_get_and_controls": "DISABLED",
+    "boot_confirmation": "ENABLED_WITH_TRAFFIC_GATE",
+    "rollback_safe_mode": "ENABLED",
+    "wifi": "OFFICE_SECRET_REFERENCE_AND_AP_FALLBACK",
+    "python_syntax": "PASS",
+    "javascript_syntax": "PASS"
+  },
+  "scope": "source/config checks only; no hardware or UART bench execution"
+}

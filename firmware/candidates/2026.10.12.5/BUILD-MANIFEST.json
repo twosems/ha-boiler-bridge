@@ -1,0 +1,44 @@
+{
+  "version": "2026.10.12.5",
+  "variant": "office-passive-observer-candidate",
+  "repository": "twosems/ha-boiler-bridge",
+  "branch": "feature/boiler-fw-2026-10-12-5",
+  "build_status": "IN_PROGRESS",
+  "generated_checks": "PENDING",
+  "hardware_status": "NOT_TESTED",
+  "deployment_status": "NOT_DEPLOYED",
+  "office_ready": false,
+  "profile": "OFFICE_WIFI_LOCAL_SECRETS",
+  "write_capable": false,
+  "boot_confirmation_enabled": true,
+  "board": "esp32dev / classic dual-core ESP32",
+  "uart": [
+    {
+      "port": 1,
+      "rx": 16,
+      "tx": 17
+    },
+    {
+      "port": 2,
+      "rx": 18,
+      "tx": 19
+    }
+  ],
+  "serial": "9600 8N1",
+  "checks": {
+    "esphome_config": "PASS",
+    "python_syntax": "PASS",
+    "javascript_syntax": "PASS",
+    "single_transport_owner": "SOURCE_REVIEWED",
+    "controls_and_active_get": "DISABLED",
+    "compile": "RUNNING"
+  },
+  "limits": [
+    "no two-peer UART bench test",
+    "no hardware fault-injection pass",
+    "sensor freshness and restored MQTT preferences unverified",
+    "OTA interrupts UART and reset/power loss are not lossless",
+    "installed bootloader rollback support unknown",
+    "not a full-function replacement for the current firmware"
+  ]
+}
