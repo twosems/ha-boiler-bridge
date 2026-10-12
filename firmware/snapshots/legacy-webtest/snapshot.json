@@ -1,0 +1,56 @@
+{
+  "snapshot_id": "legacy-webtest",
+  "declared_version": null,
+  "origin_host": "de",
+  "origin_path": "/opt/esphome_boiler_webtest",
+  "status": "Historical web/MQTT source; aggressive polling incident reported",
+  "source_manifest_sha256": "49172602cf8a69675dba7e161cddd942ef36be14ed768d887b29422f8bb2f0fd",
+  "files": [
+    {
+      "path": "boiler-proxy-live.yaml",
+      "sha256": "b8398664c8e028a065dabe5670eb52990f6dd6227de9831ef1eb44d1ab2a307a",
+      "size": 18222
+    },
+    {
+      "path": "components/boiler_proxy/boiler_proxy.cpp",
+      "sha256": "42faba894d900464373bffcfb411aa954708fd01c72c4bc436f5c58796e5324a",
+      "size": 37811
+    },
+    {
+      "path": "components/boiler_proxy/boiler_proxy.h",
+      "sha256": "ca93d538d6714ba3c947440be2135b3c9c8ce3efded176beba3e0006e0854ac7",
+      "size": 11388
+    },
+    {
+      "path": "components/boiler_proxy/__init__.py",
+      "sha256": "f959e9db592eb161c435ab0299d22ccb15eb27d0aea0ab2abc947b04a7c13ff9",
+      "size": 10698
+    },
+    {
+      "path": "www/boiler.js",
+      "sha256": "73727885ded4f9bb76bd17cf99aed82c89ee8da3d8616f90dccd0e21be79ff07",
+      "size": 23006
+    },
+    {
+      "path": "www/boiler.css",
+      "sha256": "a9e11f4d8278ecb5e4531775fbe53b11e4e719a410b91c3b00291f24268f2bae",
+      "size": 5233
+    }
+  ],
+  "binaries": [
+    {
+      "path": "esphome_boiler_webtest/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+      "size": 1141296,
+      "sha256": "6466dda211ca84a3fdeda15a0448fa863e4bdb9acf5cc6444d1ab207e3bcc148",
+      "path_in_encrypted_archive": "esphome_boiler_webtest/.esphome/build/boiler-proxy/build/firmware.factory.bin"
+    },
+    {
+      "path": "esphome_boiler_webtest/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+      "size": 1075760,
+      "sha256": "78473ac7d5026b1b3d5d2a865fa6fbe6c5c1b7b90431027439a3116feb080892",
+      "path_in_encrypted_archive": "esphome_boiler_webtest/.esphome/build/boiler-proxy/build/firmware.ota.bin"
+    }
+  ],
+  "device_verified": false,
+  "captured_date": "2026-10-12"
+}

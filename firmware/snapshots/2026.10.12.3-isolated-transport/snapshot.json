@@ -1,0 +1,68 @@
+{
+  "snapshot_id": "2026.10.12.3-isolated-transport",
+  "declared_version": "2026.10.12.3",
+  "origin_host": "de",
+  "origin_path": "/opt/esphome_boiler_webtest_bridge_v3",
+  "status": "Binary + BUILD manifest + generated source match; earlier link failure; final successful log not recovered; hardware validation pending",
+  "source_manifest_sha256": "666a7c0ce2548a9dd69e5bf1516ad2d6474dd8450d8a64621f82a7cb5235447f",
+  "files": [
+    {
+      "path": "boiler-proxy-live.yaml",
+      "sha256": "e9ddb06306dad6c82f96bf21754901045f62cbf038bfb67332690a558d3bd9d4",
+      "size": 20021
+    },
+    {
+      "path": "components/boiler_proxy/boiler_transport.cpp",
+      "sha256": "b4991c2299af1f0b5957993bbcda37668adeaa8e246811e0289ee777c71f7caf",
+      "size": 6698
+    },
+    {
+      "path": "components/boiler_proxy/boiler_proxy.cpp",
+      "sha256": "b2d94102464076096eea905ee7b1afef62aa037a7e2f593d101eac41d036f31e",
+      "size": 34355
+    },
+    {
+      "path": "components/boiler_proxy/boiler_transport.h",
+      "sha256": "0cd674d282e44f9fbec688775d1a69379f24f5ba5827507d4b34a80914ee6e1b",
+      "size": 2596
+    },
+    {
+      "path": "components/boiler_proxy/boiler_proxy.h",
+      "sha256": "520177104f263e6e604486afaaceeb8186d7e9abfc2f56fc49fd001dc0395c27",
+      "size": 12359
+    },
+    {
+      "path": "components/boiler_proxy/__init__.py",
+      "sha256": "f959e9db592eb161c435ab0299d22ccb15eb27d0aea0ab2abc947b04a7c13ff9",
+      "size": 10698
+    },
+    {
+      "path": "www/boiler.js",
+      "sha256": "7d1c7ec55c054e0e00441faf3f4eea46964e2579511a65db675ee8cfd58a72e9",
+      "size": 23844
+    },
+    {
+      "path": "www/boiler.css",
+      "sha256": "a9e11f4d8278ecb5e4531775fbe53b11e4e719a410b91c3b00291f24268f2bae",
+      "size": 5233
+    }
+  ],
+  "binaries": [
+    {
+      "path": "esphome_boiler_webtest_bridge_v3/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+      "size": 1139984,
+      "sha256": "923526db5521a34b9d6ca5fd8642805fefbf839307b2b4a2d9a9ce997293a856",
+      "path_in_encrypted_archive": "esphome_boiler_webtest_bridge_v3/.esphome/build/boiler-proxy/build/firmware.factory.bin"
+    },
+    {
+      "path": "esphome_boiler_webtest_bridge_v3/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+      "size": 1074448,
+      "sha256": "2f4d681ff86e979e33100c65d03d28e7835fb02e6c147b87345c0258c61d2c24",
+      "path_in_encrypted_archive": "esphome_boiler_webtest_bridge_v3/.esphome/build/boiler-proxy/build/firmware.ota.bin"
+    }
+  ],
+  "device_verified": false,
+  "captured_date": "2026-10-12",
+  "network_profile": "home_wifi_in_original_secrets; office deployment blocked pending target configuration",
+  "generated_cpp_h_match": true
+}

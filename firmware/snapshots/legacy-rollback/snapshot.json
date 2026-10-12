@@ -1,0 +1,56 @@
+{
+  "snapshot_id": "legacy-rollback",
+  "declared_version": null,
+  "origin_host": "de",
+  "origin_path": "/opt/esphome_boiler_webtest_rollback",
+  "status": "Prepared historical rollback; device validation not verified",
+  "source_manifest_sha256": "d8668205decbb76ea349a2ce34cb8960ed804d96d0890d87ab63256887234e24",
+  "files": [
+    {
+      "path": "boiler-proxy-live.yaml",
+      "sha256": "98e44d711db4505351184c19508ceef667e167ec1941a4ec7ddae7fe7ec702f5",
+      "size": 18334
+    },
+    {
+      "path": "components/boiler_proxy/boiler_proxy.cpp",
+      "sha256": "2a56155e6f029e238a41e139b2aef2333159735a5053ddbbd31bfbe748bf021c",
+      "size": 28653
+    },
+    {
+      "path": "components/boiler_proxy/boiler_proxy.h",
+      "sha256": "ca93d538d6714ba3c947440be2135b3c9c8ce3efded176beba3e0006e0854ac7",
+      "size": 11388
+    },
+    {
+      "path": "components/boiler_proxy/__init__.py",
+      "sha256": "f959e9db592eb161c435ab0299d22ccb15eb27d0aea0ab2abc947b04a7c13ff9",
+      "size": 10698
+    },
+    {
+      "path": "www/boiler.js",
+      "sha256": "73727885ded4f9bb76bd17cf99aed82c89ee8da3d8616f90dccd0e21be79ff07",
+      "size": 23006
+    },
+    {
+      "path": "www/boiler.css",
+      "sha256": "a9e11f4d8278ecb5e4531775fbe53b11e4e719a410b91c3b00291f24268f2bae",
+      "size": 5233
+    }
+  ],
+  "binaries": [
+    {
+      "path": "esphome_boiler_webtest_rollback/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+      "size": 1138480,
+      "sha256": "296302419d9a6665514cc90cdf2c9cb6f5634ec14d9b79dedd4d8637c3f807f0",
+      "path_in_encrypted_archive": "esphome_boiler_webtest_rollback/.esphome/build/boiler-proxy/build/firmware.factory.bin"
+    },
+    {
+      "path": "esphome_boiler_webtest_rollback/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+      "size": 1072944,
+      "sha256": "7cf6365fc62f3798416594a8939969d65c809a3cdd02491d1b4e8c233119c726",
+      "path_in_encrypted_archive": "esphome_boiler_webtest_rollback/.esphome/build/boiler-proxy/build/firmware.ota.bin"
+    }
+  ],
+  "device_verified": false,
+  "captured_date": "2026-10-12"
+}

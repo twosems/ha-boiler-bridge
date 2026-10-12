@@ -1,0 +1,96 @@
+esphome:
+  name: boiler-proxy
+  friendly_name: Котёл UART Proxy
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# UART0 goes only to the USB CP210x adapter. It is intentionally kept
+# separate from the two boiler/display UART links on GPIO16/17/18/19.
+logger:
+  baud_rate: 115200
+  level: INFO
+
+# Initial Wi-Fi provisioning is done over USB with Improv Serial.
+# No home Wi-Fi password is embedded in this file.
+wifi:
+  ap:
+    ssid: "Boiler Proxy Setup"
+
+captive_portal:
+
+improv_serial:
+
+api:
+
+ota:
+  - platform: esphome
+
+external_components:
+  - source:
+      type: local
+      path: components
+
+uart:
+  - id: display_to_boiler_uart
+    rx_pin: GPIO16
+    tx_pin: GPIO17
+    baud_rate: 9600
+    data_bits: 8
+    parity: NONE
+    stop_bits: 1
+    rx_buffer_size: 512
+
+  - id: boiler_to_display_uart
+    rx_pin: GPIO18
+    tx_pin: GPIO19
+    baud_rate: 9600
+    data_bits: 8
+    parity: NONE
+    stop_bits: 1
+    rx_buffer_size: 512
+
+boiler_proxy:
+  id: boiler
+  display_uart_id: display_to_boiler_uart
+  boiler_uart_id: boiler_to_display_uart
+
+  current_page:
+    name: "Текущая страница PAGE"
+    icon: mdi:page-layout-body
+
+  current_screen:
+    name: "Текущий экран SCREEN"
+    icon: mdi:monitor-dashboard
+
+  boiler_setpoint:
+    name: "Уставка котла BSP"
+
+  dhw_setpoint:
+    name: "Уставка ГВС DSP"
+
+  boiler_temperature:
+    name: "Температура котла BTEMP"
+
+  dhw_temperature:
+    name: "Температура ГВС DTEMP"
+
+  reverse_trip_current:
+    name: "Ток срабатывания реверса REVAMP"
+
+  motor_current:
+    name: "Ток двигателя MOTAMP"
+
+  pid_kp:
+    name: "PID Kp"
+
+  pid_ki:
+    name: "PID Ki"
+
+  pid_kd:
+    name: "PID Kd"
+
+  refresh:
+    name: "Обновить экран котла REFRESH"

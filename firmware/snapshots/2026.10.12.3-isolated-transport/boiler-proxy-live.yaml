@@ -1,0 +1,723 @@
+substitutions:
+  firmware_version: "2026.10.12.3"
+
+esphome:
+  name: boiler-proxy
+  friendly_name: Котёл UART Proxy
+  on_boot:
+    - priority: -100
+      then:
+        - delay: 2s
+        - script.execute: mqtt_apply_config
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+# UART0 goes only to the USB CP210x adapter. It is intentionally kept
+# separate from the two boiler/display UART links on GPIO16/17/18/19.
+logger:
+  baud_rate: 115200
+  level: WARN
+
+# Initial Wi-Fi provisioning is done over USB with Improv Serial.
+# No home Wi-Fi password is embedded in this file.
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  reboot_timeout: 0s
+  power_save_mode: none
+  ap:
+    ssid: "Boiler-Setup"
+    password: !secret fallback_ap_password
+
+captive_portal:
+
+web_server:
+  port: 80
+  version: 2
+  css_include: "www/boiler.css"
+  js_include: "www/boiler.js"
+  js_url: ""
+  include_internal: true
+
+improv_serial:
+
+api:
+  reboot_timeout: 0s
+  encryption:
+    key: !secret api_encryption_key
+
+ota:
+  - platform: esphome
+    encryption:
+  - platform: web_server
+external_components:
+  - source:
+      type: local
+      path: components
+
+uart:
+  - id: display_to_boiler_uart
+    rx_pin: GPIO16
+    tx_pin: GPIO17
+    baud_rate: 9600
+    data_bits: 8
+    parity: NONE
+    stop_bits: 1
+    rx_buffer_size: 2048
+
+  - id: boiler_to_display_uart
+    rx_pin: GPIO18
+    tx_pin: GPIO19
+    baud_rate: 9600
+    data_bits: 8
+    parity: NONE
+    stop_bits: 1
+    rx_buffer_size: 2048
+
+boiler_proxy:
+  id: boiler
+  display_uart_id: display_to_boiler_uart
+  boiler_uart_id: boiler_to_display_uart
+
+  current_page:
+    name: "Текущая страница PAGE"
+    icon: mdi:page-layout-body
+
+  current_screen:
+    name: "Текущий экран SCREEN"
+    icon: mdi:monitor-dashboard
+
+  mode_raw:
+    name: "Режим raw MODE_RAW"
+    icon: mdi:code-array
+
+  mode_label:
+    name: "Текущий режим MODE_LABEL"
+  dhw_top_button_text:
+    name: "ГВС верхняя кнопка P6TOP_TEXT"
+  room_thermostat_button_text:
+    name: "ГВС комнатный термостат P6BOTTOM_TEXT"
+  ignition_fan_button_text:
+    name: "Розжиг вентилятор P11FAN_TEXT"
+  feed_button_text:
+    name: "Розжиг подача P12FEED_TEXT"
+  reverse_button_text:
+    name: "Розжиг реверс P12REVERSE_TEXT"
+  screensaver_button_text:
+    name: "Сервис заставка P20TOGGLE_TEXT"
+
+  password_keymap:
+
+    name: "Пароль клавиши P36_KEYMAP"
+
+  boiler_setpoint:
+    name: "Уставка котла BSP"
+
+  dhw_setpoint:
+    name: "Уставка ГВС DSP"
+
+  boiler_temperature:
+    name: "Температура котла BTEMP"
+
+  dhw_temperature:
+    name: "Температура ГВС DTEMP"
+
+  reverse_trip_current:
+    name: "Ток срабатывания реверса REVAMP"
+
+  motor_current:
+    name: "Ток двигателя MOTAMP"
+
+  pid_kp:
+    name: "PID Kp"
+
+  pid_ki:
+    name: "PID Ki"
+
+  pid_kd:
+    name: "PID Kd"
+
+  auto_fan_correction:
+    name: "Автомат обороты вентилятора AUTOFAN"
+
+  auto_fan_range_min:
+    name: "Автомат диапазон вентилятора от AUTOFAN_MIN"
+
+  auto_fan_range_max:
+    name: "Автомат диапазон вентилятора до AUTOFAN_MAX"
+
+  auto_feed_correction:
+    name: "Автомат коррекция подачи AUTOFEED"
+
+  auto_feed_range_min:
+    name: "Автомат диапазон подачи от AUTOFEED_MIN"
+
+  auto_feed_range_max:
+    name: "Автомат диапазон подачи до AUTOFEED_MAX"
+
+  auto_pause:
+    name: "Автомат пауза AUTOPAUSE"
+
+  support_blow:
+    name: "Поддержка время наддува SUPBLOW"
+
+  support_feed:
+    name: "Поддержка время подачи SUPFEED"
+
+  support_pause:
+    name: "Поддержка пауза SUPPAUSE"
+
+  ignition_fan:
+    name: "Розжиг скорость вентилятора IGNITIONFAN"
+
+  ignition_fan_button_state:
+    name: "Розжиг состояние вентилятора P11FAN_STATE"
+  feed_button_state:
+    name: "Розжиг состояние подачи P12FEED_STATE"
+
+  reverse_button_state:
+    name: "Розжиг состояние реверса P12REVERSE_STATE"
+
+  mode_auto_button_state:
+    name: "Режим состояние Автомат P2AUTO_STATE"
+  mode_ignition_button_state:
+    name: "Режим состояние Розжиг P2IGNITION_STATE"
+  mode_support_button_state:
+    name: "Режим состояние Поддержка P2SUPPORT_STATE"
+  dhw_top_button_state:
+    name: "ГВС состояние верхнего пуска P6TOP_STATE"
+  room_thermostat_button_state:
+    name: "ГВС состояние комнатного термостата P6BOTTOM_STATE"
+  screensaver_button_state:
+    name: "Сервис состояние заставки P20TOGGLE_STATE"
+
+
+  refresh:
+    name: "Обновить экран котла REFRESH"
+
+  controls:
+    - name: "Главная режим MODEBTN"
+      page: 1
+      component_id: 1
+    - name: "Главная уставка котла BSPBTN"
+      page: 1
+      component_id: 4
+    - name: "Главная поддержка SUPPORTBTN"
+      page: 1
+      component_id: 11
+    - name: "Главная уставка ГВС DSPBTN"
+      page: 1
+      component_id: 12
+    - name: "Режим настройки MODESET"
+      page: 2
+      component_id: 2
+    - name: "Режим на главную MODEHOME"
+      page: 2
+      component_id: 4
+    - name: "Автомат вентилятор на главную P3HOME"
+      page: 3
+      component_id: 6
+    - name: "Автомат вентилятор далее P3NEXT"
+      page: 3
+      component_id: 8
+    - name: "Автомат вентилятор назад P3BACK"
+      page: 3
+      component_id: 9
+    - name: "Автомат подача на главную P4HOME"
+      page: 4
+      component_id: 6
+    - name: "Автомат подача назад P4BACK"
+      page: 4
+      component_id: 8
+    - name: "Автомат подача далее P4NEXT"
+      page: 4
+      component_id: 9
+    - name: "Автомат пауза назад P5BACK"
+      page: 5
+      component_id: 6
+    - name: "Автомат пауза на главную P5HOME"
+      page: 5
+      component_id: 8
+    - name: "Автомат пауза далее P5NEXT"
+      page: 5
+      component_id: 9
+    - name: "ГВС назад P6BACK"
+      page: 6
+      component_id: 2
+    - name: "ГВС на главную P6HOME"
+      page: 6
+      component_id: 3
+    - name: "ГВС далее P6NEXT"
+      page: 6
+      component_id: 4
+    - name: "Поддержка наддув на главную P7HOME"
+      page: 7
+      component_id: 6
+    - name: "Поддержка наддув назад P7BACK"
+      page: 7
+      component_id: 8
+    - name: "Поддержка наддув далее P7NEXT"
+      page: 7
+      component_id: 9
+    - name: "Поддержка подача на главную P8HOME"
+      page: 8
+      component_id: 7
+    - name: "Поддержка подача назад P8BACK"
+      page: 8
+      component_id: 9
+    - name: "Поддержка подача далее P8NEXT"
+      page: 8
+      component_id: 10
+    - name: "Поддержка пауза назад P9BACK"
+      page: 9
+      component_id: 5
+    - name: "Поддержка пауза на главную P9HOME"
+      page: 9
+      component_id: 7
+    - name: "Поддержка пауза далее P9NEXT"
+      page: 9
+      component_id: 8
+    - name: "Уставка котла минус P10BMINUS"
+      page: 10
+      component_id: 1
+    - name: "Уставка котла плюс P10BPLUS"
+      page: 10
+      component_id: 4
+    - name: "Уставки на главную P10HOME"
+      page: 10
+      component_id: 5
+    - name: "Уставка ГВС минус P10DMINUS"
+      page: 10
+      component_id: 6
+    - name: "Уставка ГВС плюс P10DPLUS"
+      page: 10
+      component_id: 9
+    - name: "Уставки назад P10BACK"
+      page: 10
+      component_id: 24
+    - name: "Розжиг вентилятор на главную P11HOME"
+      page: 11
+      component_id: 1
+    - name: "Розжиг вентилятор далее P11NEXT"
+      page: 11
+      component_id: 7
+    - name: "Розжиг углеподача назад P12BACK"
+      page: 12
+      component_id: 1
+    - name: "Розжиг углеподача на главную P12HOME"
+      page: 12
+      component_id: 4
+    - name: "Розжиг углеподача далее P12NEXT"
+      page: 12
+      component_id: 12
+    - name: "Реверс назад P16BACK"
+      page: 16
+      component_id: 5
+    - name: "Реверс на главную P16HOME"
+      page: 16
+      component_id: 6
+    - name: "Реверс далее P16NEXT"
+      page: 16
+      component_id: 7
+    - name: "PID Kp назад P17BACK"
+      page: 17
+      component_id: 1
+    - name: "PID Kp на главную P17HOME"
+      page: 17
+      component_id: 2
+    - name: "PID Kp далее P17NEXT"
+      page: 17
+      component_id: 3
+    - name: "PID Ki назад P18BACK"
+      page: 18
+      component_id: 1
+    - name: "PID Ki на главную P18HOME"
+      page: 18
+      component_id: 2
+    - name: "PID Ki далее P18NEXT"
+      page: 18
+      component_id: 3
+    - name: "PID Kd назад P19BACK"
+      page: 19
+      component_id: 1
+    - name: "PID Kd на главную P19HOME"
+      page: 19
+      component_id: 2
+    - name: "Авария на главную P33HOME"
+      page: 33
+      component_id: 2
+
+    - name: "Главная пуск P1START"
+      page: 1
+      component_id: 2
+    - name: "Режим автомат P2AUTO"
+      page: 2
+      component_id: 1
+    - name: "Режим розжиг P2IGNITION"
+      page: 2
+      component_id: 3
+    - name: "Режим поддержка P2SUPPORT"
+      page: 2
+      component_id: 6
+    - name: "Автомат вентилятор минус P3MINUS"
+      page: 3
+      component_id: 1
+    - name: "Автомат вентилятор плюс P3PLUS"
+      page: 3
+      component_id: 4
+    - name: "Автомат вентилятор подтвердить P3CONFIRM"
+      page: 3
+      component_id: 5
+    - name: "Автомат подача минус P4MINUS"
+      page: 4
+      component_id: 3
+    - name: "Автомат подача плюс P4PLUS"
+      page: 4
+      component_id: 5
+    - name: "Автомат подача подтвердить P4CONFIRM"
+      page: 4
+      component_id: 7
+    - name: "Автомат пауза минус P5MINUS"
+      page: 5
+      component_id: 2
+    - name: "Автомат пауза плюс P5PLUS"
+      page: 5
+      component_id: 4
+    - name: "Автомат пауза подтвердить P5CONFIRM"
+      page: 5
+      component_id: 7
+    - name: "ГВС верхний пуск P6TOP"
+      page: 6
+      component_id: 5
+    - name: "ГВС нижний пуск P6BOTTOM"
+      page: 6
+      component_id: 8
+    - name: "Поддержка наддув минус P7MINUS"
+      page: 7
+      component_id: 3
+    - name: "Поддержка наддув плюс P7PLUS"
+      page: 7
+      component_id: 5
+    - name: "Поддержка наддув подтвердить P7CONFIRM"
+      page: 7
+      component_id: 7
+    - name: "Поддержка подача минус P8MINUS"
+      page: 8
+      component_id: 4
+    - name: "Поддержка подача плюс P8PLUS"
+      page: 8
+      component_id: 6
+    - name: "Поддержка подача подтвердить P8CONFIRM"
+      page: 8
+      component_id: 8
+    - name: "Поддержка пауза минус P9MINUS"
+      page: 9
+      component_id: 2
+    - name: "Поддержка пауза плюс P9PLUS"
+      page: 9
+      component_id: 4
+    - name: "Поддержка пауза подтвердить P9CONFIRM"
+      page: 9
+      component_id: 6
+    - name: "Розжиг вентилятор минус P11MINUS"
+      page: 11
+      component_id: 4
+    - name: "Розжиг вентилятор плюс P11PLUS"
+      page: 11
+      component_id: 6
+    - name: "Розжиг вентилятор вкл выкл P11FAN"
+      page: 11
+      component_id: 8
+    - name: "Розжиг реверс P12REVERSE"
+      page: 12
+      component_id: 2
+    - name: "Розжиг подача P12FEED"
+      page: 12
+      component_id: 8
+    - name: "Реверс минус P16MINUS"
+      page: 16
+      component_id: 3
+    - name: "Реверс плюс P16PLUS"
+      page: 16
+      component_id: 4
+    - name: "PID Kp минус P17MINUS"
+      page: 17
+      component_id: 8
+    - name: "PID Kp плюс P17PLUS"
+      page: 17
+      component_id: 10
+    - name: "PID Ki минус P18MINUS"
+      page: 18
+      component_id: 5
+    - name: "PID Ki плюс P18PLUS"
+      page: 18
+      component_id: 7
+    - name: "PID Kd далее P19NEXT"
+      page: 19
+      component_id: 3
+    - name: "PID Kd минус P19MINUS"
+      page: 19
+      component_id: 5
+    - name: "PID Kd плюс P19PLUS"
+      page: 19
+      component_id: 7
+    - name: "Сервис назад P20BACK"
+      page: 20
+      component_id: 4
+    - name: "Сервис на главную P20HOME"
+      page: 20
+      component_id: 5
+    - name: "Сервис заставка P20TOGGLE"
+      page: 20
+      component_id: 7
+    - name: "Сервис далее P20NEXT"
+      page: 20
+      component_id: 10
+    - name: "Заводские назад P23BACK"
+      page: 23
+      component_id: 1
+    - name: "Заводские на главную P23HOME"
+      page: 23
+      component_id: 2
+    - name: "Заводские сброс P23RESET"
+      page: 23
+      component_id: 4
+    - name: "Сервис поле пароля P20PASSWORD"
+      page: 20
+      component_id: 2
+    - name: "Пароль ID2 P36ID2"
+      page: 36
+      component_id: 2
+    - name: "Пароль ID4 P36ID4"
+      page: 36
+      component_id: 4
+    - name: "Пароль ID5 P36ID5"
+      page: 36
+      component_id: 5
+    - name: "Пароль ID6 P36ID6"
+      page: 36
+      component_id: 6
+    - name: "Пароль ID7 P36ID7"
+      page: 36
+      component_id: 7
+    - name: "Пароль ID8 P36ID8"
+      page: 36
+      component_id: 8
+    - name: "Пароль ID9 P36ID9"
+      page: 36
+      component_id: 9
+    - name: "Пароль ID10 P36ID10"
+      page: 36
+      component_id: 10
+    - name: "Пароль ID11 P36ID11"
+      page: 36
+      component_id: 11
+    - name: "Пароль ID12 P36ID12"
+      page: 36
+      component_id: 12
+    - name: "Пароль ID13 P36ID13"
+      page: 36
+      component_id: 13
+    - name: "Пароль ID14 P36ID14"
+      page: 36
+      component_id: 14
+    - name: "Пароль ID15 P36ID15"
+      page: 36
+      component_id: 15
+    - name: "Пароль ID22 P36ID22"
+      page: 36
+      component_id: 22
+    - name: "Пароль ID24 P36ID24"
+      page: 36
+      component_id: 24
+    - name: "Пароль ID25 P36ID25"
+      page: 36
+      component_id: 25
+
+
+# Self-contained network layer: MQTT can be configured from the ESP web UI.
+mqtt:
+  id: mqtt_client
+  broker: "127.0.0.1"
+  port: 1883
+  enable_on_boot: false
+  reboot_timeout: 0s
+  wait_for_connection: false
+  discovery: true
+  discover_ip: false
+  discovery_retain: true
+  topic_prefix: "office/boiler"
+
+text:
+  - platform: template
+    id: mqtt_host_cfg
+    name: "MQTT сервер CFG"
+    mode: text
+    optimistic: true
+    restore_value: true
+    initial_value: ""
+    min_length: 0
+    max_length: 64
+    internal: true
+
+  - platform: template
+    id: mqtt_port_cfg
+    name: "MQTT порт CFG"
+    mode: text
+    optimistic: true
+    restore_value: true
+    initial_value: "1883"
+    min_length: 1
+    max_length: 5
+    internal: true
+
+  - platform: template
+    id: mqtt_user_cfg
+    name: "MQTT логин CFG"
+    mode: text
+    optimistic: true
+    restore_value: true
+    initial_value: ""
+    min_length: 0
+    max_length: 64
+    internal: true
+
+  - platform: template
+    id: mqtt_password_cfg
+    name: "MQTT пароль CFG"
+    mode: password
+    optimistic: true
+    restore_value: true
+    initial_value: ""
+    min_length: 0
+    max_length: 64
+    internal: true
+
+script:
+  - id: mqtt_apply_config
+    mode: restart
+    then:
+      - lambda: |-
+          const std::string host = id(mqtt_host_cfg).state;
+          if (host.empty()) {
+            ESP_LOGI("mqtt_cfg", "MQTT broker is not configured; MQTT stays disabled");
+            id(mqtt_client).disable();
+            return;
+          }
+          int parsed_port = atoi(id(mqtt_port_cfg).state.c_str());
+          if (parsed_port < 1 || parsed_port > 65535) parsed_port = 1883;
+          id(mqtt_client).disable();
+          id(mqtt_client).set_broker_address(host);
+          id(mqtt_client).set_broker_port((uint16_t) parsed_port);
+          id(mqtt_client).set_username(id(mqtt_user_cfg).state);
+          id(mqtt_client).set_password(id(mqtt_password_cfg).state);
+          id(mqtt_client).enable();
+          ESP_LOGI("mqtt_cfg", "MQTT configuration applied: %s:%d", host.c_str(), parsed_port);
+
+button:
+  - platform: restart
+    id: esp_restart_button
+    name: "Перезагрузить ESP"
+    internal: true
+
+  - platform: template
+    id: mqtt_apply_button
+    name: "MQTT применить CFG"
+    internal: true
+    on_press:
+      - script.execute: mqtt_apply_config
+
+binary_sensor:
+  - platform: template
+    id: mqtt_connected_status
+    name: "MQTT подключен STATUS"
+    device_class: connectivity
+    entity_category: diagnostic
+    lambda: |-
+      return id(mqtt_client).is_connected();
+
+  - platform: template
+    id: bridge_transport_alive
+    name: "UART мост работает STATUS"
+    device_class: connectivity
+    entity_category: diagnostic
+    lambda: |-
+      return id(boiler).bridge_healthy();
+
+text_sensor:
+  - platform: template
+    id: firmware_version_status
+    name: "Версия прошивки FW"
+    entity_category: diagnostic
+    lambda: |-
+      return {"${firmware_version}"};
+    update_interval: 60s
+
+  - platform: template
+    id: bridge_mode_status
+    name: "Режим UART моста STATUS"
+    entity_category: diagnostic
+    lambda: |-
+      return {"RT PASSIVE / isolated data-plane"};
+    update_interval: 60s
+
+  - platform: wifi_info
+    ip_address:
+      id: wifi_ip_status
+      name: "WiFi IP STATUS"
+      entity_category: diagnostic
+    ssid:
+      id: wifi_ssid_status
+      name: "WiFi SSID STATUS"
+      entity_category: diagnostic
+
+sensor:
+  - platform: template
+    id: bridge_boiler_rx_bytes
+    name: "UART Bridge A RX котёл bytes"
+    entity_category: diagnostic
+    accuracy_decimals: 0
+    update_interval: 15s
+    lambda: |-
+      return id(boiler).bridge_boiler_rx_bytes();
+
+  - platform: template
+    id: bridge_display_rx_bytes
+    name: "UART Bridge B RX экран bytes"
+    entity_category: diagnostic
+    accuracy_decimals: 0
+    update_interval: 15s
+    lambda: |-
+      return id(boiler).bridge_display_rx_bytes();
+
+  - platform: template
+    id: bridge_mirror_drops
+    name: "UART Bridge C observer dropped bytes"
+    entity_category: diagnostic
+    accuracy_decimals: 0
+    update_interval: 15s
+    lambda: |-
+      return id(boiler).bridge_mirror_drops();
+
+  - platform: template
+    id: bridge_tx_overflows
+    name: "UART Bridge D TX overflows"
+    entity_category: diagnostic
+    accuracy_decimals: 0
+    update_interval: 15s
+    lambda: |-
+      return id(boiler).bridge_tx_overflows();
+
+  - platform: wifi_signal
+    id: wifi_rssi_status
+    name: "WiFi RSSI STATUS"
+    entity_category: diagnostic
+    update_interval: 15s
+
+  - platform: uptime
+    id: esp_uptime_status
+    name: "ESP Uptime STATUS"
+    entity_category: diagnostic
+    update_interval: 30s

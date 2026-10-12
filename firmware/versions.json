@@ -1,0 +1,457 @@
+[
+  {
+    "snapshot_id": "legacy-base-20260921",
+    "declared_version": null,
+    "origin_host": "de",
+    "origin_path": "/opt/esphome_boiler",
+    "status": "Legacy baseline, not a verified production rollback",
+    "source_manifest_sha256": "9a6aea2d87c0f4201e3f6963d2850c376da3a10f8f8ac81a3cac1f3d1c3a231b",
+    "files": [
+      {
+        "path": "boiler-proxy-live.yaml",
+        "sha256": "0077b3d4f878d00dd6b6fa7c63b646ee6e8662a3a88fa36421415f9789da0277",
+        "size": 1827
+      },
+      {
+        "path": "components/boiler_proxy/boiler_proxy.cpp",
+        "sha256": "f118d500b0ca6ad77226a343bd5cef7db88a7a97e12adcffe4037a565b2bd818",
+        "size": 17105
+      },
+      {
+        "path": "components/boiler_proxy/boiler_proxy.h",
+        "sha256": "b1aa39a6feea63f199be4b71fa958786c974d7282735866ffc53c71a83418890",
+        "size": 5189
+      },
+      {
+        "path": "components/boiler_proxy/__init__.py",
+        "sha256": "2f63aebe98190f3959bad50974e6de61ab597249b12d82790f9c3b1c57033eb9",
+        "size": 3702
+      }
+    ],
+    "binaries": [
+      {
+        "path": "esphome_boiler/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+        "size": 925824,
+        "sha256": "e5f477630433d0947eb688242b5871694ee9d4151c89f76fcc7401dc7b3bcd34",
+        "path_in_encrypted_archive": "esphome_boiler/.esphome/build/boiler-proxy/build/firmware.factory.bin"
+      },
+      {
+        "path": "esphome_boiler/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+        "size": 860288,
+        "sha256": "45ca85a0f941db17bbc32bfd4e2a49c3e534fa1f6d374f4854a063ee04ab460e",
+        "path_in_encrypted_archive": "esphome_boiler/.esphome/build/boiler-proxy/build/firmware.ota.bin"
+      }
+    ],
+    "device_verified": false,
+    "captured_date": "2026-10-12"
+  },
+  {
+    "snapshot_id": "legacy-webtest",
+    "declared_version": null,
+    "origin_host": "de",
+    "origin_path": "/opt/esphome_boiler_webtest",
+    "status": "Historical web/MQTT source; aggressive polling incident reported",
+    "source_manifest_sha256": "49172602cf8a69675dba7e161cddd942ef36be14ed768d887b29422f8bb2f0fd",
+    "files": [
+      {
+        "path": "boiler-proxy-live.yaml",
+        "sha256": "b8398664c8e028a065dabe5670eb52990f6dd6227de9831ef1eb44d1ab2a307a",
+        "size": 18222
+      },
+      {
+        "path": "components/boiler_proxy/boiler_proxy.cpp",
+        "sha256": "42faba894d900464373bffcfb411aa954708fd01c72c4bc436f5c58796e5324a",
+        "size": 37811
+      },
+      {
+        "path": "components/boiler_proxy/boiler_proxy.h",
+        "sha256": "ca93d538d6714ba3c947440be2135b3c9c8ce3efded176beba3e0006e0854ac7",
+        "size": 11388
+      },
+      {
+        "path": "components/boiler_proxy/__init__.py",
+        "sha256": "f959e9db592eb161c435ab0299d22ccb15eb27d0aea0ab2abc947b04a7c13ff9",
+        "size": 10698
+      },
+      {
+        "path": "www/boiler.js",
+        "sha256": "73727885ded4f9bb76bd17cf99aed82c89ee8da3d8616f90dccd0e21be79ff07",
+        "size": 23006
+      },
+      {
+        "path": "www/boiler.css",
+        "sha256": "a9e11f4d8278ecb5e4531775fbe53b11e4e719a410b91c3b00291f24268f2bae",
+        "size": 5233
+      }
+    ],
+    "binaries": [
+      {
+        "path": "esphome_boiler_webtest/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+        "size": 1141296,
+        "sha256": "6466dda211ca84a3fdeda15a0448fa863e4bdb9acf5cc6444d1ab207e3bcc148",
+        "path_in_encrypted_archive": "esphome_boiler_webtest/.esphome/build/boiler-proxy/build/firmware.factory.bin"
+      },
+      {
+        "path": "esphome_boiler_webtest/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+        "size": 1075760,
+        "sha256": "78473ac7d5026b1b3d5d2a865fa6fbe6c5c1b7b90431027439a3116feb080892",
+        "path_in_encrypted_archive": "esphome_boiler_webtest/.esphome/build/boiler-proxy/build/firmware.ota.bin"
+      }
+    ],
+    "device_verified": false,
+    "captured_date": "2026-10-12"
+  },
+  {
+    "snapshot_id": "legacy-webtest-v3",
+    "declared_version": null,
+    "origin_host": "de",
+    "origin_path": "/opt/esphome_boiler_webtest_v3",
+    "status": "Historical variant; name v3 is not firmware 2026.10.12.3",
+    "source_manifest_sha256": "02aca728e3eb5828a1437790d04414368c3ee3f9b46e2dc976a2bd6c5970ad37",
+    "files": [
+      {
+        "path": "boiler-proxy-live.yaml",
+        "sha256": "b8398664c8e028a065dabe5670eb52990f6dd6227de9831ef1eb44d1ab2a307a",
+        "size": 18222
+      },
+      {
+        "path": "components/boiler_proxy/boiler_proxy.cpp",
+        "sha256": "3b6bd6c58e1c643b531e64ecef3cc72858e07a2bff14c30a11ba650690b0d612",
+        "size": 38600
+      },
+      {
+        "path": "components/boiler_proxy/boiler_proxy.h",
+        "sha256": "508e8c471e3123f39706801bd41eb1469aedbf013f4890b83f9a6cf9e2daa99b",
+        "size": 11435
+      },
+      {
+        "path": "components/boiler_proxy/__init__.py",
+        "sha256": "f959e9db592eb161c435ab0299d22ccb15eb27d0aea0ab2abc947b04a7c13ff9",
+        "size": 10698
+      },
+      {
+        "path": "www/boiler.js",
+        "sha256": "73727885ded4f9bb76bd17cf99aed82c89ee8da3d8616f90dccd0e21be79ff07",
+        "size": 23006
+      },
+      {
+        "path": "www/boiler.css",
+        "sha256": "a9e11f4d8278ecb5e4531775fbe53b11e4e719a410b91c3b00291f24268f2bae",
+        "size": 5233
+      }
+    ],
+    "binaries": [
+      {
+        "path": "esphome_boiler_webtest_v3/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+        "size": 1141440,
+        "sha256": "f370ea5c3963e62836e0ad8e7b71ce89280bea89fca1e36e2a30907bd2a7f67c",
+        "path_in_encrypted_archive": "esphome_boiler_webtest_v3/.esphome/build/boiler-proxy/build/firmware.factory.bin"
+      },
+      {
+        "path": "esphome_boiler_webtest_v3/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+        "size": 1075904,
+        "sha256": "36b8dfc54d1fcc7d29a85a71a71319d9666c388464562a23df2a40279625f351",
+        "path_in_encrypted_archive": "esphome_boiler_webtest_v3/.esphome/build/boiler-proxy/build/firmware.ota.bin"
+      }
+    ],
+    "device_verified": false,
+    "captured_date": "2026-10-12"
+  },
+  {
+    "snapshot_id": "2026.10.12.3-rtbridge",
+    "declared_version": "2026.10.12.3",
+    "origin_host": "de",
+    "origin_path": "/opt/esphome_boiler_webtest_rtbridge",
+    "status": "Build log PASS; passive RT bridge; hardware validation pending",
+    "source_manifest_sha256": "b954d83e4aaf1a3d1c750be8b530a20be024b580ed5a9c94d8cc2bc16d1755af",
+    "files": [
+      {
+        "path": "boiler-proxy-live.yaml",
+        "sha256": "7d1dc142fd68b9768d9da1e2e778f3f9daa1b7e981e3fc066e4dd8c07c0f19a8",
+        "size": 18598
+      },
+      {
+        "path": "components/boiler_proxy/boiler_proxy.cpp",
+        "sha256": "4a0daba2d002264fd2d68ed789eb70a392e30856e05926a92f162e88e474d489",
+        "size": 47752
+      },
+      {
+        "path": "components/boiler_proxy/boiler_proxy.h",
+        "sha256": "2a3247a07eaee080198e248ea07e1ecae2b8878f4afe31a5553d239c3a3b375a",
+        "size": 14803
+      },
+      {
+        "path": "components/boiler_proxy/__init__.py",
+        "sha256": "f959e9db592eb161c435ab0299d22ccb15eb27d0aea0ab2abc947b04a7c13ff9",
+        "size": 10698
+      },
+      {
+        "path": "www/boiler.js",
+        "sha256": "7d1c7ec55c054e0e00441faf3f4eea46964e2579511a65db675ee8cfd58a72e9",
+        "size": 23844
+      },
+      {
+        "path": "www/boiler.css",
+        "sha256": "a9e11f4d8278ecb5e4531775fbe53b11e4e719a410b91c3b00291f24268f2bae",
+        "size": 5233
+      }
+    ],
+    "binaries": [
+      {
+        "path": "esphome_boiler_webtest_rtbridge/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+        "size": 1144608,
+        "sha256": "b518fadaae194481e8a807a7fbdc2787cc4ab36794870259894aa40e59735e77",
+        "path_in_encrypted_archive": "esphome_boiler_webtest_rtbridge/.esphome/build/boiler-proxy/build/firmware.factory.bin"
+      },
+      {
+        "path": "esphome_boiler_webtest_rtbridge/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+        "size": 1079072,
+        "sha256": "f4b3860c52babb8911cd14858db84324a5a1a394a756212256b7a65b255e9bf8",
+        "path_in_encrypted_archive": "esphome_boiler_webtest_rtbridge/.esphome/build/boiler-proxy/build/firmware.ota.bin"
+      }
+    ],
+    "device_verified": false,
+    "captured_date": "2026-10-12",
+    "network_profile": "home_wifi_in_original_secrets; office deployment blocked pending target configuration",
+    "generated_cpp_h_match": true
+  },
+  {
+    "snapshot_id": "2026.10.12.3-isolated-transport",
+    "declared_version": "2026.10.12.3",
+    "origin_host": "de",
+    "origin_path": "/opt/esphome_boiler_webtest_bridge_v3",
+    "status": "Binary + BUILD manifest + generated source match; earlier link failure; final successful log not recovered; hardware validation pending",
+    "source_manifest_sha256": "666a7c0ce2548a9dd69e5bf1516ad2d6474dd8450d8a64621f82a7cb5235447f",
+    "files": [
+      {
+        "path": "boiler-proxy-live.yaml",
+        "sha256": "e9ddb06306dad6c82f96bf21754901045f62cbf038bfb67332690a558d3bd9d4",
+        "size": 20021
+      },
+      {
+        "path": "components/boiler_proxy/boiler_transport.cpp",
+        "sha256": "b4991c2299af1f0b5957993bbcda37668adeaa8e246811e0289ee777c71f7caf",
+        "size": 6698
+      },
+      {
+        "path": "components/boiler_proxy/boiler_proxy.cpp",
+        "sha256": "b2d94102464076096eea905ee7b1afef62aa037a7e2f593d101eac41d036f31e",
+        "size": 34355
+      },
+      {
+        "path": "components/boiler_proxy/boiler_transport.h",
+        "sha256": "0cd674d282e44f9fbec688775d1a69379f24f5ba5827507d4b34a80914ee6e1b",
+        "size": 2596
+      },
+      {
+        "path": "components/boiler_proxy/boiler_proxy.h",
+        "sha256": "520177104f263e6e604486afaaceeb8186d7e9abfc2f56fc49fd001dc0395c27",
+        "size": 12359
+      },
+      {
+        "path": "components/boiler_proxy/__init__.py",
+        "sha256": "f959e9db592eb161c435ab0299d22ccb15eb27d0aea0ab2abc947b04a7c13ff9",
+        "size": 10698
+      },
+      {
+        "path": "www/boiler.js",
+        "sha256": "7d1c7ec55c054e0e00441faf3f4eea46964e2579511a65db675ee8cfd58a72e9",
+        "size": 23844
+      },
+      {
+        "path": "www/boiler.css",
+        "sha256": "a9e11f4d8278ecb5e4531775fbe53b11e4e719a410b91c3b00291f24268f2bae",
+        "size": 5233
+      }
+    ],
+    "binaries": [
+      {
+        "path": "esphome_boiler_webtest_bridge_v3/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+        "size": 1139984,
+        "sha256": "923526db5521a34b9d6ca5fd8642805fefbf839307b2b4a2d9a9ce997293a856",
+        "path_in_encrypted_archive": "esphome_boiler_webtest_bridge_v3/.esphome/build/boiler-proxy/build/firmware.factory.bin"
+      },
+      {
+        "path": "esphome_boiler_webtest_bridge_v3/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+        "size": 1074448,
+        "sha256": "2f4d681ff86e979e33100c65d03d28e7835fb02e6c147b87345c0258c61d2c24",
+        "path_in_encrypted_archive": "esphome_boiler_webtest_bridge_v3/.esphome/build/boiler-proxy/build/firmware.ota.bin"
+      }
+    ],
+    "device_verified": false,
+    "captured_date": "2026-10-12",
+    "network_profile": "home_wifi_in_original_secrets; office deployment blocked pending target configuration",
+    "generated_cpp_h_match": true
+  },
+  {
+    "snapshot_id": "2026.10.12.1-restart",
+    "declared_version": "2026.10.12.1",
+    "origin_host": "de",
+    "origin_path": "/opt/esphome_boiler_webtest_restart",
+    "status": "OTA accepted historically; wrong home Wi-Fi embedded; not recommended",
+    "source_manifest_sha256": "11ec9a92cce96e7901d6e2b696b8cae6e5c59b823549c27aeaba454ca3f7923a",
+    "files": [
+      {
+        "path": "boiler-proxy-live.yaml",
+        "sha256": "702deb2b7633f8687592472d67c05546b4431ba3c758238916c7cd6eea2862e4",
+        "size": 18596
+      },
+      {
+        "path": "components/boiler_proxy/boiler_proxy.cpp",
+        "sha256": "42faba894d900464373bffcfb411aa954708fd01c72c4bc436f5c58796e5324a",
+        "size": 37811
+      },
+      {
+        "path": "components/boiler_proxy/boiler_proxy.h",
+        "sha256": "ca93d538d6714ba3c947440be2135b3c9c8ce3efded176beba3e0006e0854ac7",
+        "size": 11388
+      },
+      {
+        "path": "components/boiler_proxy/__init__.py",
+        "sha256": "f959e9db592eb161c435ab0299d22ccb15eb27d0aea0ab2abc947b04a7c13ff9",
+        "size": 10698
+      },
+      {
+        "path": "www/boiler.js",
+        "sha256": "d5f70a6a545ac910628bb303313d9e204c5f3a65c7b0574e5754a1fed3283b99",
+        "size": 23627
+      },
+      {
+        "path": "www/boiler.css",
+        "sha256": "a9e11f4d8278ecb5e4531775fbe53b11e4e719a410b91c3b00291f24268f2bae",
+        "size": 5233
+      }
+    ],
+    "binaries": [
+      {
+        "path": "esphome_boiler_webtest_restart/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+        "size": 1142368,
+        "sha256": "dc061c4aefb629f13ccf10c83c6e7b98af43b50b8185b4a67c47f6b96708dea9",
+        "path_in_encrypted_archive": "esphome_boiler_webtest_restart/.esphome/build/boiler-proxy/build/firmware.factory.bin"
+      },
+      {
+        "path": "esphome_boiler_webtest_restart/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+        "size": 1076832,
+        "sha256": "e99f27b74c0c9d05246dc97604359034bfabd70fb9eade909c5b1e39bdb1a0c3",
+        "path_in_encrypted_archive": "esphome_boiler_webtest_restart/.esphome/build/boiler-proxy/build/firmware.ota.bin"
+      }
+    ],
+    "device_verified": false,
+    "captured_date": "2026-10-12",
+    "network_profile": "home_wifi_in_original_secrets; office deployment blocked pending target configuration"
+  },
+  {
+    "snapshot_id": "legacy-rollback",
+    "declared_version": null,
+    "origin_host": "de",
+    "origin_path": "/opt/esphome_boiler_webtest_rollback",
+    "status": "Prepared historical rollback; device validation not verified",
+    "source_manifest_sha256": "d8668205decbb76ea349a2ce34cb8960ed804d96d0890d87ab63256887234e24",
+    "files": [
+      {
+        "path": "boiler-proxy-live.yaml",
+        "sha256": "98e44d711db4505351184c19508ceef667e167ec1941a4ec7ddae7fe7ec702f5",
+        "size": 18334
+      },
+      {
+        "path": "components/boiler_proxy/boiler_proxy.cpp",
+        "sha256": "2a56155e6f029e238a41e139b2aef2333159735a5053ddbbd31bfbe748bf021c",
+        "size": 28653
+      },
+      {
+        "path": "components/boiler_proxy/boiler_proxy.h",
+        "sha256": "ca93d538d6714ba3c947440be2135b3c9c8ce3efded176beba3e0006e0854ac7",
+        "size": 11388
+      },
+      {
+        "path": "components/boiler_proxy/__init__.py",
+        "sha256": "f959e9db592eb161c435ab0299d22ccb15eb27d0aea0ab2abc947b04a7c13ff9",
+        "size": 10698
+      },
+      {
+        "path": "www/boiler.js",
+        "sha256": "73727885ded4f9bb76bd17cf99aed82c89ee8da3d8616f90dccd0e21be79ff07",
+        "size": 23006
+      },
+      {
+        "path": "www/boiler.css",
+        "sha256": "a9e11f4d8278ecb5e4531775fbe53b11e4e719a410b91c3b00291f24268f2bae",
+        "size": 5233
+      }
+    ],
+    "binaries": [
+      {
+        "path": "esphome_boiler_webtest_rollback/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+        "size": 1138480,
+        "sha256": "296302419d9a6665514cc90cdf2c9cb6f5634ec14d9b79dedd4d8637c3f807f0",
+        "path_in_encrypted_archive": "esphome_boiler_webtest_rollback/.esphome/build/boiler-proxy/build/firmware.factory.bin"
+      },
+      {
+        "path": "esphome_boiler_webtest_rollback/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+        "size": 1072944,
+        "sha256": "7cf6365fc62f3798416594a8939969d65c809a3cdd02491d1b4e8c233119c726",
+        "path_in_encrypted_archive": "esphome_boiler_webtest_rollback/.esphome/build/boiler-proxy/build/firmware.ota.bin"
+      }
+    ],
+    "device_verified": false,
+    "captured_date": "2026-10-12"
+  },
+  {
+    "snapshot_id": "2026.10.12.2-cooperative",
+    "declared_version": "2026.10.12.2",
+    "origin_host": "de",
+    "origin_path": "/opt/esphome_boiler_webtest_stable",
+    "status": "Build log PASS; cooperative UART robustness candidate; not deployed here",
+    "source_manifest_sha256": "c862e763b033ef77ae07dced5ae0c8638e16d062cc899fde065ac6179c838041",
+    "files": [
+      {
+        "path": "boiler-proxy-live.yaml",
+        "sha256": "5f394ee6a3abc5b2334a0f3660449a96fa3bed1a633def9d304db527e503aa30",
+        "size": 18598
+      },
+      {
+        "path": "components/boiler_proxy/boiler_proxy.cpp",
+        "sha256": "fcd0f4d442a87d5c2f12d720fa473dbd031ab0d3dc905233e4212337a087a845",
+        "size": 39989
+      },
+      {
+        "path": "components/boiler_proxy/boiler_proxy.h",
+        "sha256": "e36a2b824081b61c63a218f224b0b808ca2c5927582533a55833be52d3d9f84d",
+        "size": 11843
+      },
+      {
+        "path": "components/boiler_proxy/__init__.py",
+        "sha256": "f959e9db592eb161c435ab0299d22ccb15eb27d0aea0ab2abc947b04a7c13ff9",
+        "size": 10698
+      },
+      {
+        "path": "www/boiler.js",
+        "sha256": "06dea79e18e3b31b1e05ce5d5e349b8f47199e1915006a4cfed49868cb8bc1b7",
+        "size": 23844
+      },
+      {
+        "path": "www/boiler.css",
+        "sha256": "a9e11f4d8278ecb5e4531775fbe53b11e4e719a410b91c3b00291f24268f2bae",
+        "size": 5233
+      }
+    ],
+    "binaries": [
+      {
+        "path": "esphome_boiler_webtest_stable/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+        "size": 1140336,
+        "sha256": "b870ad19bb840e20f14712ad9ac228cade8e0e889e56f4c3129e0cc5af9d8ee2",
+        "path_in_encrypted_archive": "esphome_boiler_webtest_stable/.esphome/build/boiler-proxy/build/firmware.factory.bin"
+      },
+      {
+        "path": "esphome_boiler_webtest_stable/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+        "size": 1074800,
+        "sha256": "76f8e7c12dfdc88057f09f43765dd4577bfa6128c3a45bdc6d0add566dfe390d",
+        "path_in_encrypted_archive": "esphome_boiler_webtest_stable/.esphome/build/boiler-proxy/build/firmware.ota.bin"
+      }
+    ],
+    "device_verified": false,
+    "captured_date": "2026-10-12",
+    "network_profile": "home_wifi_in_original_secrets; office deployment blocked pending target configuration",
+    "generated_cpp_h_match": true
+  }
+]

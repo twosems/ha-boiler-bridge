@@ -1,0 +1,58 @@
+{
+  "snapshot_id": "2026.10.12.2-cooperative",
+  "declared_version": "2026.10.12.2",
+  "origin_host": "de",
+  "origin_path": "/opt/esphome_boiler_webtest_stable",
+  "status": "Build log PASS; cooperative UART robustness candidate; not deployed here",
+  "source_manifest_sha256": "c862e763b033ef77ae07dced5ae0c8638e16d062cc899fde065ac6179c838041",
+  "files": [
+    {
+      "path": "boiler-proxy-live.yaml",
+      "sha256": "5f394ee6a3abc5b2334a0f3660449a96fa3bed1a633def9d304db527e503aa30",
+      "size": 18598
+    },
+    {
+      "path": "components/boiler_proxy/boiler_proxy.cpp",
+      "sha256": "fcd0f4d442a87d5c2f12d720fa473dbd031ab0d3dc905233e4212337a087a845",
+      "size": 39989
+    },
+    {
+      "path": "components/boiler_proxy/boiler_proxy.h",
+      "sha256": "e36a2b824081b61c63a218f224b0b808ca2c5927582533a55833be52d3d9f84d",
+      "size": 11843
+    },
+    {
+      "path": "components/boiler_proxy/__init__.py",
+      "sha256": "f959e9db592eb161c435ab0299d22ccb15eb27d0aea0ab2abc947b04a7c13ff9",
+      "size": 10698
+    },
+    {
+      "path": "www/boiler.js",
+      "sha256": "06dea79e18e3b31b1e05ce5d5e349b8f47199e1915006a4cfed49868cb8bc1b7",
+      "size": 23844
+    },
+    {
+      "path": "www/boiler.css",
+      "sha256": "a9e11f4d8278ecb5e4531775fbe53b11e4e719a410b91c3b00291f24268f2bae",
+      "size": 5233
+    }
+  ],
+  "binaries": [
+    {
+      "path": "esphome_boiler_webtest_stable/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+      "size": 1140336,
+      "sha256": "b870ad19bb840e20f14712ad9ac228cade8e0e889e56f4c3129e0cc5af9d8ee2",
+      "path_in_encrypted_archive": "esphome_boiler_webtest_stable/.esphome/build/boiler-proxy/build/firmware.factory.bin"
+    },
+    {
+      "path": "esphome_boiler_webtest_stable/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+      "size": 1074800,
+      "sha256": "76f8e7c12dfdc88057f09f43765dd4577bfa6128c3a45bdc6d0add566dfe390d",
+      "path_in_encrypted_archive": "esphome_boiler_webtest_stable/.esphome/build/boiler-proxy/build/firmware.ota.bin"
+    }
+  ],
+  "device_verified": false,
+  "captured_date": "2026-10-12",
+  "network_profile": "home_wifi_in_original_secrets; office deployment blocked pending target configuration",
+  "generated_cpp_h_match": true
+}

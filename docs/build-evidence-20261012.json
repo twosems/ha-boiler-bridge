@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-12",
+  "esphome": "2026.9.0",
+  "idf": "5.5.5",
+  "job_status": {
+    "job_f1a98d32f1f4": "succeeded exit0 cooperative .2",
+    "job_0ac12742c21d": "succeeded exit0 rtbridge .3",
+    "job_3ce74dc31018": "failed exit2 isolated .3 earlier linker failure"
+  },
+  "isolated_build_manifest": {
+    "ota_size": 1074448,
+    "ota_sha256": "2f4d681ff86e979e33100c65d03d28e7835fb02e6c147b87345c0258c61d2c24",
+    "factory_sha256": "923526db5521a34b9d6ca5fd8642805fefbf839307b2b4a2d9a9ce997293a856",
+    "ram": 74576,
+    "flash": 1074339,
+    "deployment": "NOT FLASHED",
+    "blocker": "home Wi-Fi profile; office profile required"
+  },
+  "generated_cpp_h_match": true,
+  "hardware_validation": "not performed"
+}

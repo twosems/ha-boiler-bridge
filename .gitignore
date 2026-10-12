@@ -1,0 +1,9 @@
+secrets.yaml
+**/secrets.yaml
+.env
+*.private.pem
+**/*private*.pem
+**/*recovery-key*.zip
+**/.esphome/
+**/__pycache__/
+*.pyc

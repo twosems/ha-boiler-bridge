@@ -17,3 +17,9 @@ Custom Home Assistant integration for an ESP32 UART bridge connected to a boiler
 5. Open Settings → Devices & services → Add integration → **Boiler Bridge**.
 
 Current package version: **0.2.5**.
+
+## Firmware archive and conversation recovery
+
+Start with [the recovery guide](docs/RECOVERY.md), [current context](docs/CONTEXT.md), [versions and SHA-256](docs/VERSIONS.md), and [development rules](AGENTS.md).
+
+The 2026-10-12 archive preserves eight firmware source snapshots, 16 original OTA/factory binaries in an encrypted backup, and the supplied conversation. Existing HACS integration code is unchanged. Historical installed integration 0.3.x differs from this repository package 0.2.5; see the context before upgrading. Firmware build success does not imply device validation. Both different 2026.10.12.3 variants are passive candidates; original network profiles require target-network verification.

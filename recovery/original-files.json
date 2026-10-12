@@ -1,0 +1,412 @@
+[
+  {
+    "path": "esphome_boiler/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+    "size": 925824,
+    "sha256": "e5f477630433d0947eb688242b5871694ee9d4151c89f76fcc7401dc7b3bcd34"
+  },
+  {
+    "path": "esphome_boiler/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+    "size": 860288,
+    "sha256": "45ca85a0f941db17bbc32bfd4e2a49c3e534fa1f6d374f4854a063ee04ab460e"
+  },
+  {
+    "path": "esphome_boiler/.gitignore",
+    "size": 170,
+    "sha256": "1d39f8763e3549ca282df291ba64913071cbea2479cefcb872b4fc1402b2c18e"
+  },
+  {
+    "path": "esphome_boiler/README.md",
+    "size": 1443,
+    "sha256": "002287207a0310d876db8d130b7892784a2d903a0ae6dd9f705e090a5ba72f24"
+  },
+  {
+    "path": "esphome_boiler/boiler-proxy-live.yaml",
+    "size": 1923,
+    "sha256": "934ce361766c20e521fab949023de9434826da59a7a21f92d74a9a9ec7eabda6"
+  },
+  {
+    "path": "esphome_boiler/boiler-proxy.yaml",
+    "size": 1533,
+    "sha256": "543760ef01a415b218386a5de1b09627ba8c1c5b5694b1b2c24800f4efcc4873"
+  },
+  {
+    "path": "esphome_boiler/components/boiler_proxy/__init__.py",
+    "size": 3782,
+    "sha256": "dc9d31c42477b690641e1677f40cf1fe7c69de1c59c4f4ded085967999335e1e"
+  },
+  {
+    "path": "esphome_boiler/components/boiler_proxy/boiler_proxy.cpp",
+    "size": 17588,
+    "sha256": "29a8b86b9fde8d103482f9c13bb00ef8b880d3ed3ea7f71c0ef0728e4d0b0dda"
+  },
+  {
+    "path": "esphome_boiler/components/boiler_proxy/boiler_proxy.h",
+    "size": 5330,
+    "sha256": "f90119e371cf30a5a3311eea4cafb9c3ba40a4d563c3cae60e3e8eed7580e7cb"
+  },
+  {
+    "path": "esphome_boiler_webtest/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+    "size": 1141296,
+    "sha256": "6466dda211ca84a3fdeda15a0448fa863e4bdb9acf5cc6444d1ab207e3bcc148"
+  },
+  {
+    "path": "esphome_boiler_webtest/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+    "size": 1075760,
+    "sha256": "78473ac7d5026b1b3d5d2a865fa6fbe6c5c1b7b90431027439a3116feb080892"
+  },
+  {
+    "path": "esphome_boiler_webtest/.gitignore",
+    "size": 170,
+    "sha256": "1d39f8763e3549ca282df291ba64913071cbea2479cefcb872b4fc1402b2c18e"
+  },
+  {
+    "path": "esphome_boiler_webtest/boiler-proxy-live.yaml",
+    "size": 18877,
+    "sha256": "ce7d28d9549507780f34cb34eddaa2586b913d166eee853a5b522017d1fcaae1"
+  },
+  {
+    "path": "esphome_boiler_webtest/components/boiler_proxy/__init__.py",
+    "size": 10893,
+    "sha256": "9f4e72f975c1177e9192c18d2c70dedf1751721fc9360499d3d475e18c10bac5"
+  },
+  {
+    "path": "esphome_boiler_webtest/components/boiler_proxy/boiler_proxy.cpp",
+    "size": 38760,
+    "sha256": "acb7499a93af0c5e9473f508f243e96eabc43c5640206f9e6906b0915565ad0a"
+  },
+  {
+    "path": "esphome_boiler_webtest/components/boiler_proxy/boiler_proxy.h",
+    "size": 11645,
+    "sha256": "871145fb5ff085db6b3dd30dc1d605af999eb4117481d70cafe52036ec0c0d1f"
+  },
+  {
+    "path": "esphome_boiler_webtest/secrets.yaml",
+    "size": 164,
+    "sha256": "becac7feae41037958fc96b32a4eff5c9bbae9802d58062233a0f9828ec6b306"
+  },
+  {
+    "path": "esphome_boiler_webtest/www/boiler.css",
+    "size": 5233,
+    "sha256": "a9e11f4d8278ecb5e4531775fbe53b11e4e719a410b91c3b00291f24268f2bae"
+  },
+  {
+    "path": "esphome_boiler_webtest/www/boiler.js",
+    "size": 23006,
+    "sha256": "73727885ded4f9bb76bd17cf99aed82c89ee8da3d8616f90dccd0e21be79ff07"
+  },
+  {
+    "path": "esphome_boiler_webtest_bridge_v3/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+    "size": 1139984,
+    "sha256": "923526db5521a34b9d6ca5fd8642805fefbf839307b2b4a2d9a9ce997293a856"
+  },
+  {
+    "path": "esphome_boiler_webtest_bridge_v3/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+    "size": 1074448,
+    "sha256": "2f4d681ff86e979e33100c65d03d28e7835fb02e6c147b87345c0258c61d2c24"
+  },
+  {
+    "path": "esphome_boiler_webtest_bridge_v3/.gitignore",
+    "size": 170,
+    "sha256": "1d39f8763e3549ca282df291ba64913071cbea2479cefcb872b4fc1402b2c18e"
+  },
+  {
+    "path": "esphome_boiler_webtest_bridge_v3/BUILD-2026.10.12.3.txt",
+    "size": 580,
+    "sha256": "c9a9f21c2da79d6edb4cb5ef16a9b971a8d61e13caf0eccec78673f336ac5182"
+  },
+  {
+    "path": "esphome_boiler_webtest_bridge_v3/boiler-proxy-live.yaml",
+    "size": 20021,
+    "sha256": "e9ddb06306dad6c82f96bf21754901045f62cbf038bfb67332690a558d3bd9d4"
+  },
+  {
+    "path": "esphome_boiler_webtest_bridge_v3/components/boiler_proxy/__init__.py",
+    "size": 10893,
+    "sha256": "9f4e72f975c1177e9192c18d2c70dedf1751721fc9360499d3d475e18c10bac5"
+  },
+  {
+    "path": "esphome_boiler_webtest_bridge_v3/components/boiler_proxy/boiler_proxy.cpp",
+    "size": 34355,
+    "sha256": "b2d94102464076096eea905ee7b1afef62aa037a7e2f593d101eac41d036f31e"
+  },
+  {
+    "path": "esphome_boiler_webtest_bridge_v3/components/boiler_proxy/boiler_proxy.h",
+    "size": 12359,
+    "sha256": "520177104f263e6e604486afaaceeb8186d7e9abfc2f56fc49fd001dc0395c27"
+  },
+  {
+    "path": "esphome_boiler_webtest_bridge_v3/components/boiler_proxy/boiler_transport.cpp",
+    "size": 6698,
+    "sha256": "b4991c2299af1f0b5957993bbcda37668adeaa8e246811e0289ee777c71f7caf"
+  },
+  {
+    "path": "esphome_boiler_webtest_bridge_v3/components/boiler_proxy/boiler_transport.h",
+    "size": 2596,
+    "sha256": "0cd674d282e44f9fbec688775d1a69379f24f5ba5827507d4b34a80914ee6e1b"
+  },
+  {
+    "path": "esphome_boiler_webtest_bridge_v3/secrets.yaml",
+    "size": 164,
+    "sha256": "becac7feae41037958fc96b32a4eff5c9bbae9802d58062233a0f9828ec6b306"
+  },
+  {
+    "path": "esphome_boiler_webtest_bridge_v3/www/boiler.css",
+    "size": 5233,
+    "sha256": "a9e11f4d8278ecb5e4531775fbe53b11e4e719a410b91c3b00291f24268f2bae"
+  },
+  {
+    "path": "esphome_boiler_webtest_bridge_v3/www/boiler.js",
+    "size": 23844,
+    "sha256": "7d1c7ec55c054e0e00441faf3f4eea46964e2579511a65db675ee8cfd58a72e9"
+  },
+  {
+    "path": "esphome_boiler_webtest_restart/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+    "size": 1142368,
+    "sha256": "dc061c4aefb629f13ccf10c83c6e7b98af43b50b8185b4a67c47f6b96708dea9"
+  },
+  {
+    "path": "esphome_boiler_webtest_restart/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+    "size": 1076832,
+    "sha256": "e99f27b74c0c9d05246dc97604359034bfabd70fb9eade909c5b1e39bdb1a0c3"
+  },
+  {
+    "path": "esphome_boiler_webtest_restart/.gitignore",
+    "size": 170,
+    "sha256": "1d39f8763e3549ca282df291ba64913071cbea2479cefcb872b4fc1402b2c18e"
+  },
+  {
+    "path": "esphome_boiler_webtest_restart/boiler-proxy-live.yaml",
+    "size": 18596,
+    "sha256": "702deb2b7633f8687592472d67c05546b4431ba3c758238916c7cd6eea2862e4"
+  },
+  {
+    "path": "esphome_boiler_webtest_restart/components/boiler_proxy/__init__.py",
+    "size": 10893,
+    "sha256": "9f4e72f975c1177e9192c18d2c70dedf1751721fc9360499d3d475e18c10bac5"
+  },
+  {
+    "path": "esphome_boiler_webtest_restart/components/boiler_proxy/boiler_proxy.cpp",
+    "size": 38760,
+    "sha256": "acb7499a93af0c5e9473f508f243e96eabc43c5640206f9e6906b0915565ad0a"
+  },
+  {
+    "path": "esphome_boiler_webtest_restart/components/boiler_proxy/boiler_proxy.h",
+    "size": 11645,
+    "sha256": "871145fb5ff085db6b3dd30dc1d605af999eb4117481d70cafe52036ec0c0d1f"
+  },
+  {
+    "path": "esphome_boiler_webtest_restart/secrets.yaml",
+    "size": 164,
+    "sha256": "becac7feae41037958fc96b32a4eff5c9bbae9802d58062233a0f9828ec6b306"
+  },
+  {
+    "path": "esphome_boiler_webtest_restart/www/boiler.css",
+    "size": 5233,
+    "sha256": "a9e11f4d8278ecb5e4531775fbe53b11e4e719a410b91c3b00291f24268f2bae"
+  },
+  {
+    "path": "esphome_boiler_webtest_restart/www/boiler.js",
+    "size": 23627,
+    "sha256": "d5f70a6a545ac910628bb303313d9e204c5f3a65c7b0574e5754a1fed3283b99"
+  },
+  {
+    "path": "esphome_boiler_webtest_rollback/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+    "size": 1138480,
+    "sha256": "296302419d9a6665514cc90cdf2c9cb6f5634ec14d9b79dedd4d8637c3f807f0"
+  },
+  {
+    "path": "esphome_boiler_webtest_rollback/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+    "size": 1072944,
+    "sha256": "7cf6365fc62f3798416594a8939969d65c809a3cdd02491d1b4e8c233119c726"
+  },
+  {
+    "path": "esphome_boiler_webtest_rollback/.gitignore",
+    "size": 170,
+    "sha256": "1d39f8763e3549ca282df291ba64913071cbea2479cefcb872b4fc1402b2c18e"
+  },
+  {
+    "path": "esphome_boiler_webtest_rollback/boiler-proxy-live.yaml",
+    "size": 18334,
+    "sha256": "98e44d711db4505351184c19508ceef667e167ec1941a4ec7ddae7fe7ec702f5"
+  },
+  {
+    "path": "esphome_boiler_webtest_rollback/components/boiler_proxy/__init__.py",
+    "size": 10893,
+    "sha256": "9f4e72f975c1177e9192c18d2c70dedf1751721fc9360499d3d475e18c10bac5"
+  },
+  {
+    "path": "esphome_boiler_webtest_rollback/components/boiler_proxy/boiler_proxy.cpp",
+    "size": 29389,
+    "sha256": "c54376d5934c1ca1f1fb72b0c356155ffb5074073249e6c366c1dd5735661378"
+  },
+  {
+    "path": "esphome_boiler_webtest_rollback/components/boiler_proxy/boiler_proxy.h",
+    "size": 11645,
+    "sha256": "871145fb5ff085db6b3dd30dc1d605af999eb4117481d70cafe52036ec0c0d1f"
+  },
+  {
+    "path": "esphome_boiler_webtest_rollback/secrets.yaml",
+    "size": 164,
+    "sha256": "becac7feae41037958fc96b32a4eff5c9bbae9802d58062233a0f9828ec6b306"
+  },
+  {
+    "path": "esphome_boiler_webtest_rollback/www/boiler.css",
+    "size": 5233,
+    "sha256": "a9e11f4d8278ecb5e4531775fbe53b11e4e719a410b91c3b00291f24268f2bae"
+  },
+  {
+    "path": "esphome_boiler_webtest_rollback/www/boiler.js",
+    "size": 23006,
+    "sha256": "73727885ded4f9bb76bd17cf99aed82c89ee8da3d8616f90dccd0e21be79ff07"
+  },
+  {
+    "path": "esphome_boiler_webtest_rtbridge/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+    "size": 1144608,
+    "sha256": "b518fadaae194481e8a807a7fbdc2787cc4ab36794870259894aa40e59735e77"
+  },
+  {
+    "path": "esphome_boiler_webtest_rtbridge/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+    "size": 1079072,
+    "sha256": "f4b3860c52babb8911cd14858db84324a5a1a394a756212256b7a65b255e9bf8"
+  },
+  {
+    "path": "esphome_boiler_webtest_rtbridge/.gitignore",
+    "size": 170,
+    "sha256": "1d39f8763e3549ca282df291ba64913071cbea2479cefcb872b4fc1402b2c18e"
+  },
+  {
+    "path": "esphome_boiler_webtest_rtbridge/boiler-proxy-live.yaml",
+    "size": 18598,
+    "sha256": "7d1dc142fd68b9768d9da1e2e778f3f9daa1b7e981e3fc066e4dd8c07c0f19a8"
+  },
+  {
+    "path": "esphome_boiler_webtest_rtbridge/components/boiler_proxy/__init__.py",
+    "size": 10893,
+    "sha256": "9f4e72f975c1177e9192c18d2c70dedf1751721fc9360499d3d475e18c10bac5"
+  },
+  {
+    "path": "esphome_boiler_webtest_rtbridge/components/boiler_proxy/boiler_proxy.cpp",
+    "size": 47752,
+    "sha256": "4a0daba2d002264fd2d68ed789eb70a392e30856e05926a92f162e88e474d489"
+  },
+  {
+    "path": "esphome_boiler_webtest_rtbridge/components/boiler_proxy/boiler_proxy.h",
+    "size": 14803,
+    "sha256": "2a3247a07eaee080198e248ea07e1ecae2b8878f4afe31a5553d239c3a3b375a"
+  },
+  {
+    "path": "esphome_boiler_webtest_rtbridge/secrets.yaml",
+    "size": 164,
+    "sha256": "becac7feae41037958fc96b32a4eff5c9bbae9802d58062233a0f9828ec6b306"
+  },
+  {
+    "path": "esphome_boiler_webtest_rtbridge/www/boiler.css",
+    "size": 5233,
+    "sha256": "a9e11f4d8278ecb5e4531775fbe53b11e4e719a410b91c3b00291f24268f2bae"
+  },
+  {
+    "path": "esphome_boiler_webtest_rtbridge/www/boiler.js",
+    "size": 23844,
+    "sha256": "7d1c7ec55c054e0e00441faf3f4eea46964e2579511a65db675ee8cfd58a72e9"
+  },
+  {
+    "path": "esphome_boiler_webtest_stable/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+    "size": 1140336,
+    "sha256": "b870ad19bb840e20f14712ad9ac228cade8e0e889e56f4c3129e0cc5af9d8ee2"
+  },
+  {
+    "path": "esphome_boiler_webtest_stable/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+    "size": 1074800,
+    "sha256": "76f8e7c12dfdc88057f09f43765dd4577bfa6128c3a45bdc6d0add566dfe390d"
+  },
+  {
+    "path": "esphome_boiler_webtest_stable/.gitignore",
+    "size": 170,
+    "sha256": "1d39f8763e3549ca282df291ba64913071cbea2479cefcb872b4fc1402b2c18e"
+  },
+  {
+    "path": "esphome_boiler_webtest_stable/boiler-proxy-live.yaml",
+    "size": 18598,
+    "sha256": "5f394ee6a3abc5b2334a0f3660449a96fa3bed1a633def9d304db527e503aa30"
+  },
+  {
+    "path": "esphome_boiler_webtest_stable/components/boiler_proxy/__init__.py",
+    "size": 10893,
+    "sha256": "9f4e72f975c1177e9192c18d2c70dedf1751721fc9360499d3d475e18c10bac5"
+  },
+  {
+    "path": "esphome_boiler_webtest_stable/components/boiler_proxy/boiler_proxy.cpp",
+    "size": 39989,
+    "sha256": "fcd0f4d442a87d5c2f12d720fa473dbd031ab0d3dc905233e4212337a087a845"
+  },
+  {
+    "path": "esphome_boiler_webtest_stable/components/boiler_proxy/boiler_proxy.h",
+    "size": 11843,
+    "sha256": "e36a2b824081b61c63a218f224b0b808ca2c5927582533a55833be52d3d9f84d"
+  },
+  {
+    "path": "esphome_boiler_webtest_stable/secrets.yaml",
+    "size": 164,
+    "sha256": "becac7feae41037958fc96b32a4eff5c9bbae9802d58062233a0f9828ec6b306"
+  },
+  {
+    "path": "esphome_boiler_webtest_stable/www/boiler.css",
+    "size": 5233,
+    "sha256": "a9e11f4d8278ecb5e4531775fbe53b11e4e719a410b91c3b00291f24268f2bae"
+  },
+  {
+    "path": "esphome_boiler_webtest_stable/www/boiler.js",
+    "size": 23844,
+    "sha256": "06dea79e18e3b31b1e05ce5d5e349b8f47199e1915006a4cfed49868cb8bc1b7"
+  },
+  {
+    "path": "esphome_boiler_webtest_v3/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+    "size": 1141440,
+    "sha256": "f370ea5c3963e62836e0ad8e7b71ce89280bea89fca1e36e2a30907bd2a7f67c"
+  },
+  {
+    "path": "esphome_boiler_webtest_v3/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+    "size": 1075904,
+    "sha256": "36b8dfc54d1fcc7d29a85a71a71319d9666c388464562a23df2a40279625f351"
+  },
+  {
+    "path": "esphome_boiler_webtest_v3/.gitignore",
+    "size": 170,
+    "sha256": "1d39f8763e3549ca282df291ba64913071cbea2479cefcb872b4fc1402b2c18e"
+  },
+  {
+    "path": "esphome_boiler_webtest_v3/boiler-proxy-live.yaml",
+    "size": 18877,
+    "sha256": "ce7d28d9549507780f34cb34eddaa2586b913d166eee853a5b522017d1fcaae1"
+  },
+  {
+    "path": "esphome_boiler_webtest_v3/components/boiler_proxy/__init__.py",
+    "size": 10893,
+    "sha256": "9f4e72f975c1177e9192c18d2c70dedf1751721fc9360499d3d475e18c10bac5"
+  },
+  {
+    "path": "esphome_boiler_webtest_v3/components/boiler_proxy/boiler_proxy.cpp",
+    "size": 39568,
+    "sha256": "34dc7c2de199499f52ac32d536c0826814cc1f1d95d6af795b98f17e292c9588"
+  },
+  {
+    "path": "esphome_boiler_webtest_v3/components/boiler_proxy/boiler_proxy.h",
+    "size": 11694,
+    "sha256": "0fae8df757a48996dcc15693dc6ba41fefcf8e6165dd2b1dad82adb691c8d88a"
+  },
+  {
+    "path": "esphome_boiler_webtest_v3/secrets.yaml",
+    "size": 164,
+    "sha256": "becac7feae41037958fc96b32a4eff5c9bbae9802d58062233a0f9828ec6b306"
+  },
+  {
+    "path": "esphome_boiler_webtest_v3/www/boiler.css",
+    "size": 5237,
+    "sha256": "0c0d86cd84546df6105703bb5e005c4ceeb72f6a7976b6bc9c320be477fcd09b"
+  },
+  {
+    "path": "esphome_boiler_webtest_v3/www/boiler.js",
+    "size": 23090,
+    "sha256": "529d6606f4108480a80f4a1a1d90cf5d67749cd3686b6e3b445644a8b05624e5"
+  }
+]

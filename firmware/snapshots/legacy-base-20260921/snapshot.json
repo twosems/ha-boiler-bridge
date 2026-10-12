@@ -1,0 +1,46 @@
+{
+  "snapshot_id": "legacy-base-20260921",
+  "declared_version": null,
+  "origin_host": "de",
+  "origin_path": "/opt/esphome_boiler",
+  "status": "Legacy baseline, not a verified production rollback",
+  "source_manifest_sha256": "9a6aea2d87c0f4201e3f6963d2850c376da3a10f8f8ac81a3cac1f3d1c3a231b",
+  "files": [
+    {
+      "path": "boiler-proxy-live.yaml",
+      "sha256": "0077b3d4f878d00dd6b6fa7c63b646ee6e8662a3a88fa36421415f9789da0277",
+      "size": 1827
+    },
+    {
+      "path": "components/boiler_proxy/boiler_proxy.cpp",
+      "sha256": "f118d500b0ca6ad77226a343bd5cef7db88a7a97e12adcffe4037a565b2bd818",
+      "size": 17105
+    },
+    {
+      "path": "components/boiler_proxy/boiler_proxy.h",
+      "sha256": "b1aa39a6feea63f199be4b71fa958786c974d7282735866ffc53c71a83418890",
+      "size": 5189
+    },
+    {
+      "path": "components/boiler_proxy/__init__.py",
+      "sha256": "2f63aebe98190f3959bad50974e6de61ab597249b12d82790f9c3b1c57033eb9",
+      "size": 3702
+    }
+  ],
+  "binaries": [
+    {
+      "path": "esphome_boiler/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+      "size": 925824,
+      "sha256": "e5f477630433d0947eb688242b5871694ee9d4151c89f76fcc7401dc7b3bcd34",
+      "path_in_encrypted_archive": "esphome_boiler/.esphome/build/boiler-proxy/build/firmware.factory.bin"
+    },
+    {
+      "path": "esphome_boiler/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+      "size": 860288,
+      "sha256": "45ca85a0f941db17bbc32bfd4e2a49c3e534fa1f6d374f4854a063ee04ab460e",
+      "path_in_encrypted_archive": "esphome_boiler/.esphome/build/boiler-proxy/build/firmware.ota.bin"
+    }
+  ],
+  "device_verified": false,
+  "captured_date": "2026-10-12"
+}

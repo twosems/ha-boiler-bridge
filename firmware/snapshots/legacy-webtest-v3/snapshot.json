@@ -1,0 +1,56 @@
+{
+  "snapshot_id": "legacy-webtest-v3",
+  "declared_version": null,
+  "origin_host": "de",
+  "origin_path": "/opt/esphome_boiler_webtest_v3",
+  "status": "Historical variant; name v3 is not firmware 2026.10.12.3",
+  "source_manifest_sha256": "02aca728e3eb5828a1437790d04414368c3ee3f9b46e2dc976a2bd6c5970ad37",
+  "files": [
+    {
+      "path": "boiler-proxy-live.yaml",
+      "sha256": "b8398664c8e028a065dabe5670eb52990f6dd6227de9831ef1eb44d1ab2a307a",
+      "size": 18222
+    },
+    {
+      "path": "components/boiler_proxy/boiler_proxy.cpp",
+      "sha256": "3b6bd6c58e1c643b531e64ecef3cc72858e07a2bff14c30a11ba650690b0d612",
+      "size": 38600
+    },
+    {
+      "path": "components/boiler_proxy/boiler_proxy.h",
+      "sha256": "508e8c471e3123f39706801bd41eb1469aedbf013f4890b83f9a6cf9e2daa99b",
+      "size": 11435
+    },
+    {
+      "path": "components/boiler_proxy/__init__.py",
+      "sha256": "f959e9db592eb161c435ab0299d22ccb15eb27d0aea0ab2abc947b04a7c13ff9",
+      "size": 10698
+    },
+    {
+      "path": "www/boiler.js",
+      "sha256": "73727885ded4f9bb76bd17cf99aed82c89ee8da3d8616f90dccd0e21be79ff07",
+      "size": 23006
+    },
+    {
+      "path": "www/boiler.css",
+      "sha256": "a9e11f4d8278ecb5e4531775fbe53b11e4e719a410b91c3b00291f24268f2bae",
+      "size": 5233
+    }
+  ],
+  "binaries": [
+    {
+      "path": "esphome_boiler_webtest_v3/.esphome/build/boiler-proxy/build/firmware.factory.bin",
+      "size": 1141440,
+      "sha256": "f370ea5c3963e62836e0ad8e7b71ce89280bea89fca1e36e2a30907bd2a7f67c",
+      "path_in_encrypted_archive": "esphome_boiler_webtest_v3/.esphome/build/boiler-proxy/build/firmware.factory.bin"
+    },
+    {
+      "path": "esphome_boiler_webtest_v3/.esphome/build/boiler-proxy/build/firmware.ota.bin",
+      "size": 1075904,
+      "sha256": "36b8dfc54d1fcc7d29a85a71a71319d9666c388464562a23df2a40279625f351",
+      "path_in_encrypted_archive": "esphome_boiler_webtest_v3/.esphome/build/boiler-proxy/build/firmware.ota.bin"
+    }
+  ],
+  "device_verified": false,
+  "captured_date": "2026-10-12"
+}
