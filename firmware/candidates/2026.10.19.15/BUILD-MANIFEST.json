@@ -1,0 +1,87 @@
+{
+  "version": "2026.10.19.15",
+  "base": "2026.10.19.14",
+  "build_status": "PASS",
+  "deployment": "INSTALLED / RUNTIME_TELEMETRY_BLOCKED / CONTROL_OFF / HARDWARE_UNVERIFIED",
+  "raw_functions_unchanged": [
+    "setup",
+    "bridge_run",
+    "init_uart",
+    "pump",
+    "flush",
+    "emit_stock",
+    "flush_mirror",
+    "supervisor_run"
+  ],
+  "web_js_unchanged": true,
+  "proxy_unchanged": true,
+  "mode_default": "READ_ONLY_TELEMETRY",
+  "boot_does_not_arm": true,
+  "tests": "actual transactions.cpp ASan/UBSan PASS; leak scanning disabled due runtime /proc restriction",
+  "actual_boot_trigger_on_v14": "not recorded; partial-frame and stock-error latch paths confirmed, exact first triggering packet unknown",
+  "generated_sources": 49,
+  "registration_lines": 384,
+  "registry_unchanged": true,
+  "firmware.ota.bin": {
+    "bytes": 1100976,
+    "sha256": "6cd7d1ddd0d2dceeb14c587671739aab4cb36b6d3ebccce7aea4c62b982a1067"
+  },
+  "firmware.factory.bin": {
+    "bytes": 1166512,
+    "sha256": "fe3df0f32eec4c053e92c4c046a137cbb75563be323c8d54df912c8e6f8b7674"
+  },
+  "ram_bytes": 103856,
+  "flash_bytes": 1100859,
+  "encrypted_backup": {
+    "path": "/var/lib/sentinelx/uploads/boiler-fw-20261019-15/boiler-v15-private.tar.xz.encrypted",
+    "bytes": 857254,
+    "sha256": "5e4e13138fb3387e33ff92b0e188a3d3cc484c0d8b9181aa205d16462037474a",
+    "authenticated_roundtrip": true
+  },
+  "source_commit": "f11ac2a6fa0c2ea0ccdeb5bb93c1e07a35198a33",
+  "source_archive_sha256": "a42f0f38a43c3e337fd620480d1706b92389475c489e1f0c956dc327e85a7e58",
+  "compile_job": "job_25b5d70ed42b",
+  "validation_job": "job_525c7baa7344",
+  "compile_returncode": 0,
+  "compile_seconds_approx": 550.53,
+  "postcompile_validation_note": "Initial orchestration failed by requiring inactive optional MQTT source files. Corrected active-source validation PASS: 49 files, 384 registration lines unchanged.",
+  "staging": {
+    "host": "host_6d74202de72b5430",
+    "relative_path": "boiler15/firmware.ota.bin",
+    "transfer_id": "1d9f5b9355fc4fff94c49aed8fdbbfba",
+    "sha256_verified": true
+  },
+  "installation": {
+    "date_utc": "2026-10-19",
+    "ota_job": "script_job_f669856ad70a4513918e6ae0992b7bdd",
+    "ota_seconds": 9.14,
+    "postflight_jobs": [
+      "script_job_dfd8eae87e38456cbb2e6d12b87f50ca",
+      "script_job_838c4a7c352c47bba999e8ce1101bff7"
+    ],
+    "boot_sync": 2,
+    "ownership_fault": false,
+    "uart_accounting_exact": true,
+    "uart_errors": 0,
+    "mirror_drops": 0,
+    "ota_state": 2,
+    "temperatures_c": {
+      "boiler": 43.3,
+      "dhw": 39.1
+    },
+    "write_capable": false,
+    "hardware_command_test_performed": false
+  },
+  "runtime_incident": {
+    "date": "2026-10-20",
+    "ownership_reason": 6,
+    "ownership_detail": 26,
+    "telemetry_enabled": false,
+    "write_capable": false,
+    "raw_uart_errors": 0,
+    "remote_restart_request_effect": "ignored: internal entity excluded from API lookup",
+    "actual_restart_performed": false,
+    "further_ota_performed": false,
+    "query_cause_unconfirmed": true
+  }
+}

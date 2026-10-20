@@ -1,0 +1,34 @@
+{
+  "ACCESS.txt": {
+    "size": 203,
+    "sha256": "01a55c925478a4c9ffb11f248194a15598a81cb146f7136ce73f24151953e940"
+  },
+  "boiler-2026.10.12.6.factory.bin": {
+    "size": 1143552,
+    "sha256": "582c36eb453d228d88f5a562e1537b0fb460864d3b5a2ceaf251ac8865c640cb"
+  },
+  "BUILD-MANIFEST.json": {
+    "size": 2475,
+    "sha256": "d6c56864aa80996b55b8042046666ebe0622167992ef8f42e62e2a3639827ac0"
+  },
+  "SHA256SUMS": {
+    "size": 591,
+    "sha256": "cd7083c217ab2c80f8dd0d54cf46fd29ed9c5804a60b234841633ef74fb00f05"
+  },
+  "office_flash.py": {
+    "size": 3614,
+    "sha256": "8c3722a23e13a8d3fe17d2ec43936f11d7e10ad14f68b6bde2af1bd08fc59033"
+  },
+  "README.md": {
+    "size": 3257,
+    "sha256": "eb359b3ed950e071194a65da1c75e9f0c1c7eb63197c317bbc57176416fe1422"
+  },
+  "CONTRACT.md": {
+    "size": 3450,
+    "sha256": "793d9e70f81701087412ac176aceebbc0a274cb12749ee80d529e197f7ef065d"
+  },
+  "boiler-2026.10.12.6.ota.bin": {
+    "size": 1078016,
+    "sha256": "dc433de50f7f0699f379c78502f5baee7ba2498fd1047f602f919a4ebba6cc04"
+  }
+}

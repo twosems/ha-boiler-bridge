@@ -1,0 +1,11 @@
+{
+  "version": "2026.10.13.9",
+  "host_readings": "PASS actual reset/expire method bodies",
+  "host_auth_component": "PASS actual component with fake HTTP/preferences including reboot restore and save failure",
+  "host_auth_middleware": "PASS actual credential setter and auth check including disable/re-enable",
+  "host_web": "PASS MQTT focused draft regression and auth POST/header/cancel tests",
+  "host_transactions": "ASan/UBSan PASS 10000 traces using .9 source",
+  "transport": "byte-identical except diagnostic version",
+  "build": "Initial job_57c90d6a0bb1 RUNNING; final auth loop try_lock and UI status changes need final incremental compile",
+  "device": "NOT_INSTALLED"
+}

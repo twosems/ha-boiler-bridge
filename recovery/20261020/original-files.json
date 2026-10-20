@@ -1,0 +1,2894 @@
+{
+  "2026.10.12.4/secrets.yaml": {
+    "size": 197,
+    "sha256": "72828c743bd8a626f616c3192c696355e19ae9278144bc0f7adda0b7561106d1"
+  },
+  "2026.10.12.4/source/secrets.example.yaml": {
+    "size": 197,
+    "sha256": "72828c743bd8a626f616c3192c696355e19ae9278144bc0f7adda0b7561106d1"
+  },
+  "2026.10.12.4/source/CONTRACT.md": {
+    "size": 4220,
+    "sha256": "a0643f3bf7cb2de723bc14e21ab30960efc7eb5240de81cf83cd9ff1f9b8d4ee"
+  },
+  "2026.10.12.4/source/source-checks.json": {
+    "size": 858,
+    "sha256": "9467e4218f333adaea5c2491ce22cc61ab650470f2c7b51e21308ebb004b6d9a"
+  },
+  "2026.10.12.4/source/COMMISSIONING.md": {
+    "size": 3643,
+    "sha256": "7d4a65c62a3eb2bc9ce16151892736087e115007ebef9ea19553329ae371a537"
+  },
+  "2026.10.12.4/source/.gitignore": {
+    "size": 170,
+    "sha256": "1d39f8763e3549ca282df291ba64913071cbea2479cefcb872b4fc1402b2c18e"
+  },
+  "2026.10.12.4/source/boiler-proxy.yaml": {
+    "size": 2019,
+    "sha256": "830f68c13c2944d6e2d5e647274be2fefc7af8d4e313083e093d5676377a1ecc"
+  },
+  "2026.10.12.4/source/components/boiler_transport_v4/boiler_transport_v4.h": {
+    "size": 2819,
+    "sha256": "735f24e20e06a3cf89c0f9d4a1a3e94be36e118b17856a06de2db90aa72574ef"
+  },
+  "2026.10.12.4/source/components/boiler_transport_v4/__init__.py": {
+    "size": 2152,
+    "sha256": "e469d667e5f54ca4a395aadb1946ba8f0981319aa6289e89dc0887b0a73b7986"
+  },
+  "2026.10.12.4/source/components/boiler_transport_v4/boiler_transport_v4.cpp": {
+    "size": 12642,
+    "sha256": "87879304eefca0911f43e90b7da3908e0873bd1aabf4823ea276a4fb3c916350"
+  },
+  "2026.10.12.4/source/components/boiler_transport_v4/bridge_core.h": {
+    "size": 3532,
+    "sha256": "95a5bed6b3e8fca0e04984f9277bc09ad58d7e4872770726c2f725763893a200"
+  },
+  "2026.10.12.4/images/firmware.ota.bin": {
+    "size": 912384,
+    "sha256": "0f8902261d0098a6bc53aecd1a261225c09a5082b10b065644f76b5673cf6e70"
+  },
+  "2026.10.12.4/images/firmware.factory.bin": {
+    "size": 977920,
+    "sha256": "49b332333e49d2a27183974cf4987b7129abbc02d97e3550c15766d5ce5b1221"
+  },
+  "2026.10.13.7/secrets.yaml": {
+    "size": 397,
+    "sha256": "5068876b63f311ca7702b94d8641eb947dabbb2b1ca6befefbd36fe2b17e74bc"
+  },
+  "2026.10.13.7/source/secrets.example.yaml": {
+    "size": 378,
+    "sha256": "2c44f41f72b78da86e17bafaacfe30fc27e9a0e2b9338ad55271fd508be8fe61"
+  },
+  "2026.10.13.7/source/CONTRACT.md": {
+    "size": 3450,
+    "sha256": "793d9e70f81701087412ac176aceebbc0a274cb12749ee80d529e197f7ef065d"
+  },
+  "2026.10.13.7/source/COMMISSIONING.md": {
+    "size": 3262,
+    "sha256": "1309b3341cb801c200cfdc6e71ad546bb7f3d2cf0be1a4752994db8753ce4227"
+  },
+  "2026.10.13.7/source/.gitignore": {
+    "size": 184,
+    "sha256": "6a6bda99854cb9a22ea2948828906c37b02cba0422b735ffb46f18b58baa027f"
+  },
+  "2026.10.13.7/source/ARTIFACTS.md": {
+    "size": 615,
+    "sha256": "4d4de7a628f8f16a001d29707b54f1bd350218b2c0efe160c26617907740beb3"
+  },
+  "2026.10.13.7/source/boiler-proxy.yaml": {
+    "size": 21099,
+    "sha256": "d6797cbc4822d181a02e3f0e821afb11ad57b813770ac712f0078d372eac3a30"
+  },
+  "2026.10.13.7/source/www/boiler.js": {
+    "size": 27781,
+    "sha256": "77e0cbae00d0b14d8a4e54d27384b2faddc30b7a7540400a6a7853e84fd286ee"
+  },
+  "2026.10.13.7/source/www/boiler.css": {
+    "size": 5537,
+    "sha256": "64976c6c593cac316210f97bf36ec340a4812c476d015233e9cd2a6b6b65849a"
+  },
+  "2026.10.13.7/source/components/boiler_proxy/__init__.py": {
+    "size": 10542,
+    "sha256": "165813a23fa38b13d2d2717a6c48f6a04a691bfbfd1d9f597048cb914148c73e"
+  },
+  "2026.10.13.7/source/components/boiler_proxy/boiler_proxy.cpp": {
+    "size": 39383,
+    "sha256": "00a438e8be42d97dfc06454e8d2bdb34086ea4defafe1241a0f25c7c1bb17229"
+  },
+  "2026.10.13.7/source/components/boiler_proxy/boiler_proxy.h": {
+    "size": 12247,
+    "sha256": "5431d9b3d83af2c4ea8280f6e7c99caeb8ce84b688f7dae1c39a6b6ed2633f2d"
+  },
+  "2026.10.13.7/source/components/boiler_network/__init__.py": {
+    "size": 799,
+    "sha256": "0f791a0fe472c301b2af93cadcb6c2faaba949380a4c89732e2bc3e702830025"
+  },
+  "2026.10.13.7/source/components/boiler_network/boiler_network.h": {
+    "size": 5864,
+    "sha256": "264a2ae21d38669aa7cc5aedbeef771c97bcc42a602a6590ab40145792781efd"
+  },
+  "2026.10.13.7/source/components/boiler_transport_v4/boiler_transport_v4.h": {
+    "size": 5268,
+    "sha256": "64e56e6155c80e606cf6a77a7592aec005ff84bd5c5ba5401e935dfe90b4fbf1"
+  },
+  "2026.10.13.7/source/components/boiler_transport_v4/__init__.py": {
+    "size": 2392,
+    "sha256": "0506bd9e727c2015e4eafd960ed6fe642bdeaba227159d37550282652030a7af"
+  },
+  "2026.10.13.7/source/components/boiler_transport_v4/boiler_transport_v4.cpp": {
+    "size": 14476,
+    "sha256": "3c4d33bc727e32c2291372e2469f03807516310ffc9d73404fb81c9ce2cf5e8f"
+  },
+  "2026.10.13.7/source/components/boiler_transport_v4/bridge_core.h": {
+    "size": 3532,
+    "sha256": "95a5bed6b3e8fca0e04984f9277bc09ad58d7e4872770726c2f725763893a200"
+  },
+  "2026.10.13.7/source/components/boiler_transport_v4/transactions.cpp": {
+    "size": 9622,
+    "sha256": "91d50dc0ee24b7c8331a3f58bdd3910efdda3afaedefd5cbee03ed9657caefe5"
+  },
+  "2026.10.13.7/source/components/boiler_transport_v4/transaction_core.h": {
+    "size": 2123,
+    "sha256": "07aa8b1d8f98c7e4b1e3ded3697e89c8b6a2284f0a8837e59ddd10f66aceacff"
+  },
+  "2026.10.13.7/images/firmware.ota.bin": {
+    "size": 1078736,
+    "sha256": "b871bcff837bdb44a3c34f6b111df5fc3c711c62980f3ba928f05a268da230d8"
+  },
+  "2026.10.13.7/images/firmware.factory.bin": {
+    "size": 1144272,
+    "sha256": "0a59ae5225be5910237d01acd545a2d61b2f3a848e8f31ea43863f99b1a94f1a"
+  },
+  "2026.10.13.8/secrets.yaml": {
+    "size": 397,
+    "sha256": "5068876b63f311ca7702b94d8641eb947dabbb2b1ca6befefbd36fe2b17e74bc"
+  },
+  "2026.10.13.8/source/secrets.example.yaml": {
+    "size": 378,
+    "sha256": "2c44f41f72b78da86e17bafaacfe30fc27e9a0e2b9338ad55271fd508be8fe61"
+  },
+  "2026.10.13.8/source/CONTRACT.md": {
+    "size": 1140,
+    "sha256": "a073f5998574c1625104cedf2fd793845a1262d934eba84d9107d7db139c7011"
+  },
+  "2026.10.13.8/source/COMMISSIONING.md": {
+    "size": 1037,
+    "sha256": "46a48e4023106970cce603b2624a2a8dc0a152ae36d4b180c0d892ebd1a4fdd0"
+  },
+  "2026.10.13.8/source/.gitignore": {
+    "size": 184,
+    "sha256": "6a6bda99854cb9a22ea2948828906c37b02cba0422b735ffb46f18b58baa027f"
+  },
+  "2026.10.13.8/source/boiler-proxy.yaml": {
+    "size": 21077,
+    "sha256": "88ae3b182e37d04d3bfe113f5b5d2a26b96f3e8688ff9c0158c58fa32c5063ef"
+  },
+  "2026.10.13.8/source/www/boiler.js": {
+    "size": 27741,
+    "sha256": "86e7f3962b8d20e40ad830125754e9d1450d766f419e430296010d9740b1043f"
+  },
+  "2026.10.13.8/source/www/boiler.css": {
+    "size": 5537,
+    "sha256": "64976c6c593cac316210f97bf36ec340a4812c476d015233e9cd2a6b6b65849a"
+  },
+  "2026.10.13.8/source/components/boiler_proxy/__init__.py": {
+    "size": 10542,
+    "sha256": "165813a23fa38b13d2d2717a6c48f6a04a691bfbfd1d9f597048cb914148c73e"
+  },
+  "2026.10.13.8/source/components/boiler_proxy/boiler_proxy.cpp": {
+    "size": 39383,
+    "sha256": "00a438e8be42d97dfc06454e8d2bdb34086ea4defafe1241a0f25c7c1bb17229"
+  },
+  "2026.10.13.8/source/components/boiler_proxy/boiler_proxy.h": {
+    "size": 12247,
+    "sha256": "5431d9b3d83af2c4ea8280f6e7c99caeb8ce84b688f7dae1c39a6b6ed2633f2d"
+  },
+  "2026.10.13.8/source/components/boiler_network/__init__.py": {
+    "size": 799,
+    "sha256": "0f791a0fe472c301b2af93cadcb6c2faaba949380a4c89732e2bc3e702830025"
+  },
+  "2026.10.13.8/source/components/boiler_network/boiler_network.h": {
+    "size": 5864,
+    "sha256": "264a2ae21d38669aa7cc5aedbeef771c97bcc42a602a6590ab40145792781efd"
+  },
+  "2026.10.13.8/source/components/boiler_transport_v4/boiler_transport_v4.h": {
+    "size": 5268,
+    "sha256": "64e56e6155c80e606cf6a77a7592aec005ff84bd5c5ba5401e935dfe90b4fbf1"
+  },
+  "2026.10.13.8/source/components/boiler_transport_v4/__init__.py": {
+    "size": 2392,
+    "sha256": "0506bd9e727c2015e4eafd960ed6fe642bdeaba227159d37550282652030a7af"
+  },
+  "2026.10.13.8/source/components/boiler_transport_v4/boiler_transport_v4.cpp": {
+    "size": 14476,
+    "sha256": "028f10644b26a0d6dafeba847b54b7d9234b876b2429ce9d8f194d673ae82309"
+  },
+  "2026.10.13.8/source/components/boiler_transport_v4/bridge_core.h": {
+    "size": 3532,
+    "sha256": "95a5bed6b3e8fca0e04984f9277bc09ad58d7e4872770726c2f725763893a200"
+  },
+  "2026.10.13.8/source/components/boiler_transport_v4/transactions.cpp": {
+    "size": 9622,
+    "sha256": "91d50dc0ee24b7c8331a3f58bdd3910efdda3afaedefd5cbee03ed9657caefe5"
+  },
+  "2026.10.13.8/source/components/boiler_transport_v4/transaction_core.h": {
+    "size": 2123,
+    "sha256": "07aa8b1d8f98c7e4b1e3ded3697e89c8b6a2284f0a8837e59ddd10f66aceacff"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_event.h": {
+    "size": 808,
+    "sha256": "0bd2fa83a3577a52eb5d1dcc3147faef0f3038e73b813e6ea2611462f0e99c55"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_alarm_control_panel.h": {
+    "size": 855,
+    "sha256": "dcb1c2068b6b0d5d28225904136e606e63edf609c11976d240e4d01a347ef5b3"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_text_sensor.h": {
+    "size": 767,
+    "sha256": "aee646cfd4579fe48e71b1437b42dedeaa1a31cbadbbf1696f77e0a2036a7155"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_text_sensor.cpp": {
+    "size": 1291,
+    "sha256": "87865c2a05e50937b0df8f0d86aef012459f7429a99dee507e501561c50b1d19"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_cover.cpp": {
+    "size": 7055,
+    "sha256": "59282d2f036b30458ab6b595376c541cc0daca0eeeef9de74de729f8e3601713"
+  },
+  "2026.10.13.8/source/components/mqtt/custom_mqtt_device.cpp": {
+    "size": 1317,
+    "sha256": "4fb10381b20651cdad93ed0bb0f5a94788c90179a068bbebb620b25830ef99bd"
+  },
+  "2026.10.13.8/source/components/mqtt/__init__.py": {
+    "size": 25486,
+    "sha256": "1e0d295510546d1b6f68d6c2c6847ca6ee54c356dacab93ac6fabf0b6ee5426e"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_button.cpp": {
+    "size": 1192,
+    "sha256": "9f4213b9592dfebe1c24728a18486021c57f8cfc7e6287162f00e867e0f48590"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_valve.cpp": {
+    "size": 3704,
+    "sha256": "a91b375b537ecddce21e343a781cf6ae6a7704cb304ec7a83e0b2555047175c5"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_fan.cpp": {
+    "size": 8829,
+    "sha256": "a4c7d0c500e0d390da6abb059979d00ee6d1e40e57ce2b18cc4966d8b7ff9e25"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_backend_libretiny.h": {
+    "size": 3057,
+    "sha256": "12ae276ef7766e15195f485573a49da919ca9ad0339d382c3a036fb30b2ea573"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_text.h": {
+    "size": 1016,
+    "sha256": "a7835a65f8fb3d2742709387b56d0c5ea8e395a83b659bbec3cec830a190fc86"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_update.h": {
+    "size": 874,
+    "sha256": "ca356900c760bc146bc651972d239b71a15a5d6b910bc20e7fecde4f00e952d8"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_fan.h": {
+    "size": 1339,
+    "sha256": "a693ed07e3449a150e1edb4479d67a29fa2d1425c82a090275f47b67dd58eaf1"
+  },
+  "2026.10.13.8/source/components/mqtt/LOCAL-PATCH.md": {
+    "size": 107,
+    "sha256": "8244e26efc219d4afaa36adc1d754399c6289d03f21dc5bbbaaf8b9c97649bd4"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_select.cpp": {
+    "size": 1928,
+    "sha256": "cb9a2f2567d8cc33ae9ab04721a9d18e4c8ce99abc48bfc6a01522d0452cacb4"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_datetime.h": {
+    "size": 1132,
+    "sha256": "89988e08d06b5eaf33c11188bcf2cecbc8188fbf0fea9d329379f2695e0998f4"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_select.h": {
+    "size": 1042,
+    "sha256": "47d52deb62dbcb428c24c5afbe1ddaa5bce6df3784335200ea62166ebeac4fc4"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_backend_esp32.h": {
+    "size": 10451,
+    "sha256": "b4ec34fed544449c608e1f05dd65e78f275b184d2c9201aec6b5095b47a54a40"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_button.h": {
+    "size": 886,
+    "sha256": "7b76d00441d55b00042a8f1c047939facfbdd39b7ee3977a20fa4bbbaca38b00"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_light.cpp": {
+    "size": 3862,
+    "sha256": "d930f4fa9c93349e01228fe5beb3b4962f0ad4c4dad669ee08819410ab4da37f"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_cover.h": {
+    "size": 1088,
+    "sha256": "34b09405ff66db07c8e855804d38c6e4d23fa9c2aa9aeb940e768324acf87e1d"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_date.cpp": {
+    "size": 2109,
+    "sha256": "c0de98f3c2a1ae83056b739249215dff9928dfc2273dbff56cefb6cbffba90ee"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_date.h": {
+    "size": 1049,
+    "sha256": "e72568be39d2dfb87bc7101247580385497b261df7c69b076232ab3d7fa9e9a5"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_backend_esp8266.h": {
+    "size": 3040,
+    "sha256": "3934e9f5ccf8ef6f6fcb7750e365de389c28c0c46f618a2aa41ca65cf365a570"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_sensor.h": {
+    "size": 1724,
+    "sha256": "9c61fb9968a9108d6ecf5ad21ff21f887054c9beb5adb92b800bda4b0c44424e"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_component.cpp": {
+    "size": 18807,
+    "sha256": "96796553649958ef7ff2f53e3bc50bf27102af169cfecdea260f20fa4d78e8f9"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_update.cpp": {
+    "size": 2263,
+    "sha256": "e70e877c9ef4c852ab20f9a5b5032f2024b7734dbd0ad387f9806a30f4b17fc4"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_switch.h": {
+    "size": 854,
+    "sha256": "343ecf809ea6fb60711bf1b2ff96b65b6faf61f68f7edfd094e3e4f2598012a8"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_sensor.cpp": {
+    "size": 2938,
+    "sha256": "64a18b582d33723fbe8a86fe5978518a1a0651dc0d92a93982de930af9107716"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_switch.cpp": {
+    "size": 2049,
+    "sha256": "38cd566112b1581e736174affa3b8a5089ec07390d6e1927b6a66f736aaff232"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_climate.cpp": {
+    "size": 17885,
+    "sha256": "9ad5ed804753a365332749a413c7a8923f34938eb7b1cc51502e50f00a65ec0a"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_const.h": {
+    "size": 19567,
+    "sha256": "c76284b4318e1c1902af678311e7e9b723707e16af44d91410c03a708b5dab96"
+  },
+  "2026.10.13.8/source/components/mqtt/custom_mqtt_device.h": {
+    "size": 7841,
+    "sha256": "b8d86b57de51d0ba9e7e8774ab24f1a17638d4ab281fd9e5acbeada317f3f1a8"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_lock.cpp": {
+    "size": 2376,
+    "sha256": "9c7b4d711f47b6fc4fdc1749d2e2c55f14cfab53422b39c2899ce36e36ba3b13"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_backend.h": {
+    "size": 2829,
+    "sha256": "1113ecbd2af60c67806fdb745822dd21bd6ee0cb7e9ef82d16065f8f13181b36"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_client.h": {
+    "size": 16209,
+    "sha256": "4a262db13eb73840b07e4d0abce03f61313133932e521e4bae9da288b12912a3"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_component.h": {
+    "size": 15028,
+    "sha256": "14dbfe0e693a898b23bdeadc90343d1e92e5838058efa0d04c5e4795eb00d8c2"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_client.cpp": {
+    "size": 29051,
+    "sha256": "204f55b28abd539c0f52500952a474ce1c4ad440d5f7696f677f0bc2aab73400"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_binary_sensor.h": {
+    "size": 938,
+    "sha256": "58f2b89a30eedf1eacabe6c2bb476a45fa8c601b1979e01104f525cc4ec39049"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_text.cpp": {
+    "size": 1934,
+    "sha256": "70aeb0adcd5781f468821760e4907fc111cf779d217ced9b1b1b4b67ef763f60"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_light.h": {
+    "size": 907,
+    "sha256": "ee4b8aa8f20c58d12303362309b9b7d912067804be6eca56f6964cb509b95a77"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_binary_sensor.cpp": {
+    "size": 2117,
+    "sha256": "575d3f99ad051179ee7356a7c4386b0f7d8e95dba9dbf380df42758f1f69b801"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_climate.h": {
+    "size": 1785,
+    "sha256": "6c0b6acac1f22e2a10ae7400060d1ff13abfbc263b6dcc49c983e6c8b61473a1"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_valve.h": {
+    "size": 805,
+    "sha256": "6aed02d20431966a4831b2f6a0b1eca61abd4f935fac01df1252469a2cc404a1"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_datetime.cpp": {
+    "size": 3211,
+    "sha256": "27b03de4b6f0d04ce8d00c0f2868b62950bb7e58f20621037663218bd5ff34ab"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_time.cpp": {
+    "size": 2148,
+    "sha256": "b9f378889699d1368cdd9bd4ce109cb349e4e4404647ab13704b633420091439"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_time.h": {
+    "size": 1049,
+    "sha256": "cb3d07fdc8cbcc2c3e5f5efd60f2283e874178d8573a7e833dde97a14ce5dd99"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_backend_esp32.cpp": {
+    "size": 11309,
+    "sha256": "806bbd131c8e31d0779fe18b6f76bd5f0a95eb80702dfab838dca3ddf71bf7ca"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_lock.h": {
+    "size": 818,
+    "sha256": "6e8a7997d49dbd31375901212364a0d48bf7a8c2f5facb40866e8c0238961815"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_number.h": {
+    "size": 1029,
+    "sha256": "e53ec7a9792734ca809a68e1d252be3884ed06e3821c15645c83ed0d15a26229"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_event.cpp": {
+    "size": 1701,
+    "sha256": "611fcd5546590f59494cea217ecd3a28c1958a6f5b64d80a5a35b04a28bdf738"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_alarm_control_panel.cpp": {
+    "size": 5557,
+    "sha256": "00a655e2cd1d390afaa6a288fd88f33b7bd412de90c6b04a5b7fbeed88e58858"
+  },
+  "2026.10.13.8/source/components/mqtt/mqtt_number.cpp": {
+    "size": 2794,
+    "sha256": "563a1abcac8d7291eb5a0f73740c99fbc279bd6c4402dbe3f51815c2c8b418a4"
+  },
+  "2026.10.13.8/images/firmware.ota.bin": {
+    "size": 1078912,
+    "sha256": "56022b6f47b78c2c8b0c0bfddb30f08879a951787a191422eff2e241755292c5"
+  },
+  "2026.10.13.8/images/firmware.factory.bin": {
+    "size": 1144448,
+    "sha256": "e4b274f75eb3d744c0de15c7452b0789b3ead63b05a10ddb124f31c9f89bd2f1"
+  },
+  "2026.10.13.8/original-archives/source.tar.gz": {
+    "size": 97261,
+    "sha256": "33900ba5bdbcf677cfa8f10ba4939fb57cf78c9bda7c2967e234f4cdf3ad164a"
+  },
+  "2026.10.13.9/secrets.yaml": {
+    "size": 397,
+    "sha256": "5068876b63f311ca7702b94d8641eb947dabbb2b1ca6befefbd36fe2b17e74bc"
+  },
+  "2026.10.13.9/source/secrets.example.yaml": {
+    "size": 378,
+    "sha256": "2c44f41f72b78da86e17bafaacfe30fc27e9a0e2b9338ad55271fd508be8fe61"
+  },
+  "2026.10.13.9/source/CONTRACT.md": {
+    "size": 1277,
+    "sha256": "3b3d5265924e61187709b413f24c05eb76f6f84957fdeebf30dcd0e0676192a0"
+  },
+  "2026.10.13.9/source/source-checks.json": {
+    "size": 685,
+    "sha256": "fa4f912e277fe02d1285fb3f0e76827d47061ac955476c1171161a71c01e72b4"
+  },
+  "2026.10.13.9/source/COMMISSIONING.md": {
+    "size": 798,
+    "sha256": "9beec1d86d0588053fa808ec15c7c2cc540d98738fbe4b64715ad0017e897469"
+  },
+  "2026.10.13.9/source/.gitignore": {
+    "size": 184,
+    "sha256": "6a6bda99854cb9a22ea2948828906c37b02cba0422b735ffb46f18b58baa027f"
+  },
+  "2026.10.13.9/source/boiler-proxy.yaml": {
+    "size": 21161,
+    "sha256": "b9c1a6a93a278d5cef8c52da999839db8cbbe660341851552cd0d11f5e566752"
+  },
+  "2026.10.13.9/source/www/boiler.js": {
+    "size": 30148,
+    "sha256": "db2b6eced2f734520762af86b2d5990623742cd5120e6ec28e9f66965503c387"
+  },
+  "2026.10.13.9/source/www/boiler.css": {
+    "size": 5537,
+    "sha256": "64976c6c593cac316210f97bf36ec340a4812c476d015233e9cd2a6b6b65849a"
+  },
+  "2026.10.13.9/source/components/boiler_proxy/__init__.py": {
+    "size": 10542,
+    "sha256": "165813a23fa38b13d2d2717a6c48f6a04a691bfbfd1d9f597048cb914148c73e"
+  },
+  "2026.10.13.9/source/components/boiler_proxy/boiler_proxy.cpp": {
+    "size": 39646,
+    "sha256": "7297149d982e4581ef16fb003412da7811c29b1f05f546d0a41d492caefce750"
+  },
+  "2026.10.13.9/source/components/boiler_proxy/boiler_proxy.h": {
+    "size": 12280,
+    "sha256": "642cbd769dc169351abad28c0ac5a694d11b2c62be038e72ba66bb5337927d76"
+  },
+  "2026.10.13.9/source/components/boiler_web_auth/__init__.py": {
+    "size": 621,
+    "sha256": "30e5b609f039dec445a1f56ba64304f5c036c15b634c11813ae599e980cfec52"
+  },
+  "2026.10.13.9/source/components/boiler_web_auth/boiler_web_auth.h": {
+    "size": 3529,
+    "sha256": "afca9ee21bc2882c48a85ff30c0b1a2a0ca902f0662d335682eebd65623f195b"
+  },
+  "2026.10.13.9/source/components/boiler_network/__init__.py": {
+    "size": 799,
+    "sha256": "0f791a0fe472c301b2af93cadcb6c2faaba949380a4c89732e2bc3e702830025"
+  },
+  "2026.10.13.9/source/components/boiler_network/boiler_network.h": {
+    "size": 5864,
+    "sha256": "264a2ae21d38669aa7cc5aedbeef771c97bcc42a602a6590ab40145792781efd"
+  },
+  "2026.10.13.9/source/components/boiler_transport_v4/boiler_transport_v4.h": {
+    "size": 5268,
+    "sha256": "64e56e6155c80e606cf6a77a7592aec005ff84bd5c5ba5401e935dfe90b4fbf1"
+  },
+  "2026.10.13.9/source/components/boiler_transport_v4/__init__.py": {
+    "size": 2392,
+    "sha256": "0506bd9e727c2015e4eafd960ed6fe642bdeaba227159d37550282652030a7af"
+  },
+  "2026.10.13.9/source/components/boiler_transport_v4/boiler_transport_v4.cpp": {
+    "size": 14476,
+    "sha256": "34e0a3d4a1196f99769cc059adb45b5e4e863a5d2d28609e32dc1870d10b87bb"
+  },
+  "2026.10.13.9/source/components/boiler_transport_v4/bridge_core.h": {
+    "size": 3532,
+    "sha256": "95a5bed6b3e8fca0e04984f9277bc09ad58d7e4872770726c2f725763893a200"
+  },
+  "2026.10.13.9/source/components/boiler_transport_v4/transactions.cpp": {
+    "size": 9622,
+    "sha256": "91d50dc0ee24b7c8331a3f58bdd3910efdda3afaedefd5cbee03ed9657caefe5"
+  },
+  "2026.10.13.9/source/components/boiler_transport_v4/transaction_core.h": {
+    "size": 2123,
+    "sha256": "07aa8b1d8f98c7e4b1e3ded3697e89c8b6a2284f0a8837e59ddd10f66aceacff"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_event.h": {
+    "size": 808,
+    "sha256": "0bd2fa83a3577a52eb5d1dcc3147faef0f3038e73b813e6ea2611462f0e99c55"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_alarm_control_panel.h": {
+    "size": 855,
+    "sha256": "dcb1c2068b6b0d5d28225904136e606e63edf609c11976d240e4d01a347ef5b3"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_text_sensor.h": {
+    "size": 767,
+    "sha256": "aee646cfd4579fe48e71b1437b42dedeaa1a31cbadbbf1696f77e0a2036a7155"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_text_sensor.cpp": {
+    "size": 1291,
+    "sha256": "87865c2a05e50937b0df8f0d86aef012459f7429a99dee507e501561c50b1d19"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_cover.cpp": {
+    "size": 7055,
+    "sha256": "59282d2f036b30458ab6b595376c541cc0daca0eeeef9de74de729f8e3601713"
+  },
+  "2026.10.13.9/source/components/mqtt/custom_mqtt_device.cpp": {
+    "size": 1317,
+    "sha256": "4fb10381b20651cdad93ed0bb0f5a94788c90179a068bbebb620b25830ef99bd"
+  },
+  "2026.10.13.9/source/components/mqtt/__init__.py": {
+    "size": 25486,
+    "sha256": "1e0d295510546d1b6f68d6c2c6847ca6ee54c356dacab93ac6fabf0b6ee5426e"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_button.cpp": {
+    "size": 1192,
+    "sha256": "9f4213b9592dfebe1c24728a18486021c57f8cfc7e6287162f00e867e0f48590"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_valve.cpp": {
+    "size": 3704,
+    "sha256": "a91b375b537ecddce21e343a781cf6ae6a7704cb304ec7a83e0b2555047175c5"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_fan.cpp": {
+    "size": 8829,
+    "sha256": "a4c7d0c500e0d390da6abb059979d00ee6d1e40e57ce2b18cc4966d8b7ff9e25"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_backend_libretiny.h": {
+    "size": 3057,
+    "sha256": "12ae276ef7766e15195f485573a49da919ca9ad0339d382c3a036fb30b2ea573"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_text.h": {
+    "size": 1016,
+    "sha256": "a7835a65f8fb3d2742709387b56d0c5ea8e395a83b659bbec3cec830a190fc86"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_update.h": {
+    "size": 874,
+    "sha256": "ca356900c760bc146bc651972d239b71a15a5d6b910bc20e7fecde4f00e952d8"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_fan.h": {
+    "size": 1339,
+    "sha256": "a693ed07e3449a150e1edb4479d67a29fa2d1425c82a090275f47b67dd58eaf1"
+  },
+  "2026.10.13.9/source/components/mqtt/LOCAL-PATCH.md": {
+    "size": 107,
+    "sha256": "8244e26efc219d4afaa36adc1d754399c6289d03f21dc5bbbaaf8b9c97649bd4"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_select.cpp": {
+    "size": 1928,
+    "sha256": "cb9a2f2567d8cc33ae9ab04721a9d18e4c8ce99abc48bfc6a01522d0452cacb4"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_datetime.h": {
+    "size": 1132,
+    "sha256": "89988e08d06b5eaf33c11188bcf2cecbc8188fbf0fea9d329379f2695e0998f4"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_select.h": {
+    "size": 1042,
+    "sha256": "47d52deb62dbcb428c24c5afbe1ddaa5bce6df3784335200ea62166ebeac4fc4"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_backend_esp32.h": {
+    "size": 10451,
+    "sha256": "b4ec34fed544449c608e1f05dd65e78f275b184d2c9201aec6b5095b47a54a40"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_button.h": {
+    "size": 886,
+    "sha256": "7b76d00441d55b00042a8f1c047939facfbdd39b7ee3977a20fa4bbbaca38b00"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_light.cpp": {
+    "size": 3862,
+    "sha256": "d930f4fa9c93349e01228fe5beb3b4962f0ad4c4dad669ee08819410ab4da37f"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_cover.h": {
+    "size": 1088,
+    "sha256": "34b09405ff66db07c8e855804d38c6e4d23fa9c2aa9aeb940e768324acf87e1d"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_date.cpp": {
+    "size": 2109,
+    "sha256": "c0de98f3c2a1ae83056b739249215dff9928dfc2273dbff56cefb6cbffba90ee"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_date.h": {
+    "size": 1049,
+    "sha256": "e72568be39d2dfb87bc7101247580385497b261df7c69b076232ab3d7fa9e9a5"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_backend_esp8266.h": {
+    "size": 3040,
+    "sha256": "3934e9f5ccf8ef6f6fcb7750e365de389c28c0c46f618a2aa41ca65cf365a570"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_sensor.h": {
+    "size": 1724,
+    "sha256": "9c61fb9968a9108d6ecf5ad21ff21f887054c9beb5adb92b800bda4b0c44424e"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_component.cpp": {
+    "size": 18807,
+    "sha256": "96796553649958ef7ff2f53e3bc50bf27102af169cfecdea260f20fa4d78e8f9"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_update.cpp": {
+    "size": 2263,
+    "sha256": "e70e877c9ef4c852ab20f9a5b5032f2024b7734dbd0ad387f9806a30f4b17fc4"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_switch.h": {
+    "size": 854,
+    "sha256": "343ecf809ea6fb60711bf1b2ff96b65b6faf61f68f7edfd094e3e4f2598012a8"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_sensor.cpp": {
+    "size": 2938,
+    "sha256": "64a18b582d33723fbe8a86fe5978518a1a0651dc0d92a93982de930af9107716"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_switch.cpp": {
+    "size": 2049,
+    "sha256": "38cd566112b1581e736174affa3b8a5089ec07390d6e1927b6a66f736aaff232"
+  },
+  "2026.10.13.9/source/components/mqtt/LICENSE": {
+    "size": 36664,
+    "sha256": "1f312390122725ee382f85af00e3df84f2490cd8fa61b9ea172bc6591cc0ac63"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_climate.cpp": {
+    "size": 17885,
+    "sha256": "9ad5ed804753a365332749a413c7a8923f34938eb7b1cc51502e50f00a65ec0a"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_const.h": {
+    "size": 19567,
+    "sha256": "c76284b4318e1c1902af678311e7e9b723707e16af44d91410c03a708b5dab96"
+  },
+  "2026.10.13.9/source/components/mqtt/custom_mqtt_device.h": {
+    "size": 7841,
+    "sha256": "b8d86b57de51d0ba9e7e8774ab24f1a17638d4ab281fd9e5acbeada317f3f1a8"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_lock.cpp": {
+    "size": 2376,
+    "sha256": "9c7b4d711f47b6fc4fdc1749d2e2c55f14cfab53422b39c2899ce36e36ba3b13"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_backend.h": {
+    "size": 2829,
+    "sha256": "1113ecbd2af60c67806fdb745822dd21bd6ee0cb7e9ef82d16065f8f13181b36"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_client.h": {
+    "size": 16209,
+    "sha256": "4a262db13eb73840b07e4d0abce03f61313133932e521e4bae9da288b12912a3"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_component.h": {
+    "size": 15028,
+    "sha256": "14dbfe0e693a898b23bdeadc90343d1e92e5838058efa0d04c5e4795eb00d8c2"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_client.cpp": {
+    "size": 29051,
+    "sha256": "204f55b28abd539c0f52500952a474ce1c4ad440d5f7696f677f0bc2aab73400"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_binary_sensor.h": {
+    "size": 938,
+    "sha256": "58f2b89a30eedf1eacabe6c2bb476a45fa8c601b1979e01104f525cc4ec39049"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_text.cpp": {
+    "size": 1934,
+    "sha256": "70aeb0adcd5781f468821760e4907fc111cf779d217ced9b1b1b4b67ef763f60"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_light.h": {
+    "size": 907,
+    "sha256": "ee4b8aa8f20c58d12303362309b9b7d912067804be6eca56f6964cb509b95a77"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_binary_sensor.cpp": {
+    "size": 2117,
+    "sha256": "575d3f99ad051179ee7356a7c4386b0f7d8e95dba9dbf380df42758f1f69b801"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_climate.h": {
+    "size": 1785,
+    "sha256": "6c0b6acac1f22e2a10ae7400060d1ff13abfbc263b6dcc49c983e6c8b61473a1"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_valve.h": {
+    "size": 805,
+    "sha256": "6aed02d20431966a4831b2f6a0b1eca61abd4f935fac01df1252469a2cc404a1"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_datetime.cpp": {
+    "size": 3211,
+    "sha256": "27b03de4b6f0d04ce8d00c0f2868b62950bb7e58f20621037663218bd5ff34ab"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_time.cpp": {
+    "size": 2148,
+    "sha256": "b9f378889699d1368cdd9bd4ce109cb349e4e4404647ab13704b633420091439"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_time.h": {
+    "size": 1049,
+    "sha256": "cb3d07fdc8cbcc2c3e5f5efd60f2283e874178d8573a7e833dde97a14ce5dd99"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_backend_esp32.cpp": {
+    "size": 11309,
+    "sha256": "806bbd131c8e31d0779fe18b6f76bd5f0a95eb80702dfab838dca3ddf71bf7ca"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_lock.h": {
+    "size": 818,
+    "sha256": "6e8a7997d49dbd31375901212364a0d48bf7a8c2f5facb40866e8c0238961815"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_number.h": {
+    "size": 1029,
+    "sha256": "e53ec7a9792734ca809a68e1d252be3884ed06e3821c15645c83ed0d15a26229"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_event.cpp": {
+    "size": 1701,
+    "sha256": "611fcd5546590f59494cea217ecd3a28c1958a6f5b64d80a5a35b04a28bdf738"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_alarm_control_panel.cpp": {
+    "size": 5557,
+    "sha256": "00a655e2cd1d390afaa6a288fd88f33b7bd412de90c6b04a5b7fbeed88e58858"
+  },
+  "2026.10.13.9/source/components/mqtt/mqtt_number.cpp": {
+    "size": 2794,
+    "sha256": "563a1abcac8d7291eb5a0f73740c99fbc279bd6c4402dbe3f51815c2c8b418a4"
+  },
+  "2026.10.13.9/source/components/web_server_base/__init__.py": {
+    "size": 3040,
+    "sha256": "07a4d983dd5b0bcd0bdec5a4da820eeeea147caa8a149c5f9468b22d272a4a6a"
+  },
+  "2026.10.13.9/source/components/web_server_base/web_server_base.cpp": {
+    "size": 682,
+    "sha256": "f60d65c974df1e2303015568570e78669587944f25a91952074770d5a1451c19"
+  },
+  "2026.10.13.9/source/components/web_server_base/LOCAL-PATCH.md": {
+    "size": 190,
+    "sha256": "eac3b8c972421950ea8c84818422ca0e6c6da761c40f0ccf0fb3ebdbec79cc26"
+  },
+  "2026.10.13.9/source/components/web_server_base/web_server_base.h": {
+    "size": 7188,
+    "sha256": "269d20fa50f2a7ea539945038de34b836e89a8365c7aea17e17f3889dd599433"
+  },
+  "2026.10.13.9/source/components/web_server_base/LICENSE": {
+    "size": 36664,
+    "sha256": "1f312390122725ee382f85af00e3df84f2490cd8fa61b9ea172bc6591cc0ac63"
+  },
+  "2026.10.13.9/source/components/web_server_base/fix_rp2040_hash.py.script": {
+    "size": 590,
+    "sha256": "9d64dec0a926f3014df14fa32355f04bedead2cde194050ca89849ba78cdc30d"
+  },
+  "2026.10.13.9/images/firmware.ota.bin": {
+    "size": 1083536,
+    "sha256": "3c87d971dbf6e66dd7fe6f751f6e4bb4e9fce973af4a657185a28f241cc1c351"
+  },
+  "2026.10.13.9/images/firmware.factory.bin": {
+    "size": 1149072,
+    "sha256": "19f78af893a4c44061752786eb65e9cfa10d8be7f4ba10dea76869dc9f7aaee1"
+  },
+  "2026.10.13.9/original-archives/source-final.tar.gz": {
+    "size": 129854,
+    "sha256": "c25e3c5953246143bcc8d4127567f66a76e30892a90bf9712e17400dc27fb493"
+  },
+  "2026.10.13.9/original-archives/source.tar.gz": {
+    "size": 116285,
+    "sha256": "0abdf61b8e131fc77c364813249ceddcf3828ef0010d2fea929779d277eec5e4"
+  },
+  "2026.10.13.10/secrets.yaml": {
+    "size": 397,
+    "sha256": "5068876b63f311ca7702b94d8641eb947dabbb2b1ca6befefbd36fe2b17e74bc"
+  },
+  "2026.10.13.10/source/secrets.example.yaml": {
+    "size": 378,
+    "sha256": "2c44f41f72b78da86e17bafaacfe30fc27e9a0e2b9338ad55271fd508be8fe61"
+  },
+  "2026.10.13.10/source/CONTRACT.md": {
+    "size": 1277,
+    "sha256": "3b3d5265924e61187709b413f24c05eb76f6f84957fdeebf30dcd0e0676192a0"
+  },
+  "2026.10.13.10/source/COMMISSIONING.md": {
+    "size": 798,
+    "sha256": "9beec1d86d0588053fa808ec15c7c2cc540d98738fbe4b64715ad0017e897469"
+  },
+  "2026.10.13.10/source/.gitignore": {
+    "size": 184,
+    "sha256": "6a6bda99854cb9a22ea2948828906c37b02cba0422b735ffb46f18b58baa027f"
+  },
+  "2026.10.13.10/source/boiler-proxy.yaml": {
+    "size": 21245,
+    "sha256": "8cf4ca929a0348f096311b76a98ea52cd7e64d5336968f3a97fb7d2a6c6e1e3b"
+  },
+  "2026.10.13.10/source/www/boiler.js": {
+    "size": 30148,
+    "sha256": "db2b6eced2f734520762af86b2d5990623742cd5120e6ec28e9f66965503c387"
+  },
+  "2026.10.13.10/source/www/boiler.css": {
+    "size": 5537,
+    "sha256": "64976c6c593cac316210f97bf36ec340a4812c476d015233e9cd2a6b6b65849a"
+  },
+  "2026.10.13.10/source/components/boiler_proxy/__init__.py": {
+    "size": 10542,
+    "sha256": "165813a23fa38b13d2d2717a6c48f6a04a691bfbfd1d9f597048cb914148c73e"
+  },
+  "2026.10.13.10/source/components/boiler_proxy/boiler_proxy.cpp": {
+    "size": 39646,
+    "sha256": "7297149d982e4581ef16fb003412da7811c29b1f05f546d0a41d492caefce750"
+  },
+  "2026.10.13.10/source/components/boiler_proxy/boiler_proxy.h": {
+    "size": 12280,
+    "sha256": "642cbd769dc169351abad28c0ac5a694d11b2c62be038e72ba66bb5337927d76"
+  },
+  "2026.10.13.10/source/components/boiler_web_auth/__init__.py": {
+    "size": 621,
+    "sha256": "30e5b609f039dec445a1f56ba64304f5c036c15b634c11813ae599e980cfec52"
+  },
+  "2026.10.13.10/source/components/boiler_web_auth/boiler_web_auth.h": {
+    "size": 3529,
+    "sha256": "afca9ee21bc2882c48a85ff30c0b1a2a0ca902f0662d335682eebd65623f195b"
+  },
+  "2026.10.13.10/source/components/boiler_network/__init__.py": {
+    "size": 799,
+    "sha256": "0f791a0fe472c301b2af93cadcb6c2faaba949380a4c89732e2bc3e702830025"
+  },
+  "2026.10.13.10/source/components/boiler_network/boiler_network.h": {
+    "size": 5864,
+    "sha256": "264a2ae21d38669aa7cc5aedbeef771c97bcc42a602a6590ab40145792781efd"
+  },
+  "2026.10.13.10/source/components/boiler_transport_v4/boiler_transport_v4.h": {
+    "size": 5268,
+    "sha256": "64e56e6155c80e606cf6a77a7592aec005ff84bd5c5ba5401e935dfe90b4fbf1"
+  },
+  "2026.10.13.10/source/components/boiler_transport_v4/__init__.py": {
+    "size": 2392,
+    "sha256": "0506bd9e727c2015e4eafd960ed6fe642bdeaba227159d37550282652030a7af"
+  },
+  "2026.10.13.10/source/components/boiler_transport_v4/boiler_transport_v4.cpp": {
+    "size": 14477,
+    "sha256": "6ea39af217723ebef2ad3b55eb800b205643aa48fe689d713695d313c87633e7"
+  },
+  "2026.10.13.10/source/components/boiler_transport_v4/bridge_core.h": {
+    "size": 3532,
+    "sha256": "95a5bed6b3e8fca0e04984f9277bc09ad58d7e4872770726c2f725763893a200"
+  },
+  "2026.10.13.10/source/components/boiler_transport_v4/transactions.cpp": {
+    "size": 9622,
+    "sha256": "91d50dc0ee24b7c8331a3f58bdd3910efdda3afaedefd5cbee03ed9657caefe5"
+  },
+  "2026.10.13.10/source/components/boiler_transport_v4/transaction_core.h": {
+    "size": 2123,
+    "sha256": "07aa8b1d8f98c7e4b1e3ded3697e89c8b6a2284f0a8837e59ddd10f66aceacff"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_event.h": {
+    "size": 808,
+    "sha256": "0bd2fa83a3577a52eb5d1dcc3147faef0f3038e73b813e6ea2611462f0e99c55"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_alarm_control_panel.h": {
+    "size": 855,
+    "sha256": "dcb1c2068b6b0d5d28225904136e606e63edf609c11976d240e4d01a347ef5b3"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_text_sensor.h": {
+    "size": 1242,
+    "sha256": "e3f803c8a23491ece678d1e26c8a3ec7d60d4720097d589bd7c1feb1193b5265"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_text_sensor.cpp": {
+    "size": 4474,
+    "sha256": "06435cb3626d7dbd77b1b6a80528d4c82f62867e26a279a19bf9a8920c59b4bb"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_cover.cpp": {
+    "size": 7055,
+    "sha256": "59282d2f036b30458ab6b595376c541cc0daca0eeeef9de74de729f8e3601713"
+  },
+  "2026.10.13.10/source/components/mqtt/custom_mqtt_device.cpp": {
+    "size": 1317,
+    "sha256": "4fb10381b20651cdad93ed0bb0f5a94788c90179a068bbebb620b25830ef99bd"
+  },
+  "2026.10.13.10/source/components/mqtt/__init__.py": {
+    "size": 25486,
+    "sha256": "1e0d295510546d1b6f68d6c2c6847ca6ee54c356dacab93ac6fabf0b6ee5426e"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_button.cpp": {
+    "size": 1192,
+    "sha256": "9f4213b9592dfebe1c24728a18486021c57f8cfc7e6287162f00e867e0f48590"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_valve.cpp": {
+    "size": 3704,
+    "sha256": "a91b375b537ecddce21e343a781cf6ae6a7704cb304ec7a83e0b2555047175c5"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_fan.cpp": {
+    "size": 8829,
+    "sha256": "a4c7d0c500e0d390da6abb059979d00ee6d1e40e57ce2b18cc4966d8b7ff9e25"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_backend_libretiny.h": {
+    "size": 3057,
+    "sha256": "12ae276ef7766e15195f485573a49da919ca9ad0339d382c3a036fb30b2ea573"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_text.h": {
+    "size": 1016,
+    "sha256": "a7835a65f8fb3d2742709387b56d0c5ea8e395a83b659bbec3cec830a190fc86"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_update.h": {
+    "size": 874,
+    "sha256": "ca356900c760bc146bc651972d239b71a15a5d6b910bc20e7fecde4f00e952d8"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_fan.h": {
+    "size": 1339,
+    "sha256": "a693ed07e3449a150e1edb4479d67a29fa2d1425c82a090275f47b67dd58eaf1"
+  },
+  "2026.10.13.10/source/components/mqtt/LOCAL-PATCH.md": {
+    "size": 107,
+    "sha256": "8244e26efc219d4afaa36adc1d754399c6289d03f21dc5bbbaaf8b9c97649bd4"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_select.cpp": {
+    "size": 1928,
+    "sha256": "cb9a2f2567d8cc33ae9ab04721a9d18e4c8ce99abc48bfc6a01522d0452cacb4"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_datetime.h": {
+    "size": 1132,
+    "sha256": "89988e08d06b5eaf33c11188bcf2cecbc8188fbf0fea9d329379f2695e0998f4"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_select.h": {
+    "size": 1042,
+    "sha256": "47d52deb62dbcb428c24c5afbe1ddaa5bce6df3784335200ea62166ebeac4fc4"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_backend_esp32.h": {
+    "size": 10451,
+    "sha256": "b4ec34fed544449c608e1f05dd65e78f275b184d2c9201aec6b5095b47a54a40"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_button.h": {
+    "size": 886,
+    "sha256": "7b76d00441d55b00042a8f1c047939facfbdd39b7ee3977a20fa4bbbaca38b00"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_light.cpp": {
+    "size": 3862,
+    "sha256": "d930f4fa9c93349e01228fe5beb3b4962f0ad4c4dad669ee08819410ab4da37f"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_cover.h": {
+    "size": 1088,
+    "sha256": "34b09405ff66db07c8e855804d38c6e4d23fa9c2aa9aeb940e768324acf87e1d"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_date.cpp": {
+    "size": 2109,
+    "sha256": "c0de98f3c2a1ae83056b739249215dff9928dfc2273dbff56cefb6cbffba90ee"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_date.h": {
+    "size": 1049,
+    "sha256": "e72568be39d2dfb87bc7101247580385497b261df7c69b076232ab3d7fa9e9a5"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_backend_esp8266.h": {
+    "size": 3040,
+    "sha256": "3934e9f5ccf8ef6f6fcb7750e365de389c28c0c46f618a2aa41ca65cf365a570"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_sensor.h": {
+    "size": 1833,
+    "sha256": "f97367e5ddc99da454c823020904ea0762b9f663e909e9e126156cb89b88ba42"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_component.cpp": {
+    "size": 20236,
+    "sha256": "7e45382281785e405c72095d7e32ed0fa4a7cdbcfbfb59882937b25eeffa9ad5"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_update.cpp": {
+    "size": 2263,
+    "sha256": "e70e877c9ef4c852ab20f9a5b5032f2024b7734dbd0ad387f9806a30f4b17fc4"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_switch.h": {
+    "size": 854,
+    "sha256": "343ecf809ea6fb60711bf1b2ff96b65b6faf61f68f7edfd094e3e4f2598012a8"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_sensor.cpp": {
+    "size": 4041,
+    "sha256": "5559795c5f9b6a6688b9343e65c72cdfa839a4e5fe8e40615c3eb7da0510e054"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_switch.cpp": {
+    "size": 2049,
+    "sha256": "38cd566112b1581e736174affa3b8a5089ec07390d6e1927b6a66f736aaff232"
+  },
+  "2026.10.13.10/source/components/mqtt/LICENSE": {
+    "size": 36664,
+    "sha256": "1f312390122725ee382f85af00e3df84f2490cd8fa61b9ea172bc6591cc0ac63"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_climate.cpp": {
+    "size": 17885,
+    "sha256": "9ad5ed804753a365332749a413c7a8923f34938eb7b1cc51502e50f00a65ec0a"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_const.h": {
+    "size": 19567,
+    "sha256": "c76284b4318e1c1902af678311e7e9b723707e16af44d91410c03a708b5dab96"
+  },
+  "2026.10.13.10/source/components/mqtt/custom_mqtt_device.h": {
+    "size": 7841,
+    "sha256": "b8d86b57de51d0ba9e7e8774ab24f1a17638d4ab281fd9e5acbeada317f3f1a8"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_lock.cpp": {
+    "size": 2376,
+    "sha256": "9c7b4d711f47b6fc4fdc1749d2e2c55f14cfab53422b39c2899ce36e36ba3b13"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_backend.h": {
+    "size": 2829,
+    "sha256": "1113ecbd2af60c67806fdb745822dd21bd6ee0cb7e9ef82d16065f8f13181b36"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_client.h": {
+    "size": 16209,
+    "sha256": "4a262db13eb73840b07e4d0abce03f61313133932e521e4bae9da288b12912a3"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_component.h": {
+    "size": 15168,
+    "sha256": "d665a345911e0d999036c33e72e63bd46313e30bdd0fb2ff954476911766352d"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_client.cpp": {
+    "size": 29051,
+    "sha256": "204f55b28abd539c0f52500952a474ce1c4ad440d5f7696f677f0bc2aab73400"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_binary_sensor.h": {
+    "size": 938,
+    "sha256": "58f2b89a30eedf1eacabe6c2bb476a45fa8c601b1979e01104f525cc4ec39049"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_text.cpp": {
+    "size": 1934,
+    "sha256": "70aeb0adcd5781f468821760e4907fc111cf779d217ced9b1b1b4b67ef763f60"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_light.h": {
+    "size": 907,
+    "sha256": "ee4b8aa8f20c58d12303362309b9b7d912067804be6eca56f6964cb509b95a77"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_binary_sensor.cpp": {
+    "size": 2117,
+    "sha256": "575d3f99ad051179ee7356a7c4386b0f7d8e95dba9dbf380df42758f1f69b801"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_climate.h": {
+    "size": 1785,
+    "sha256": "6c0b6acac1f22e2a10ae7400060d1ff13abfbc263b6dcc49c983e6c8b61473a1"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_valve.h": {
+    "size": 805,
+    "sha256": "6aed02d20431966a4831b2f6a0b1eca61abd4f935fac01df1252469a2cc404a1"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_datetime.cpp": {
+    "size": 3211,
+    "sha256": "27b03de4b6f0d04ce8d00c0f2868b62950bb7e58f20621037663218bd5ff34ab"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_time.cpp": {
+    "size": 2148,
+    "sha256": "b9f378889699d1368cdd9bd4ce109cb349e4e4404647ab13704b633420091439"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_time.h": {
+    "size": 1049,
+    "sha256": "cb3d07fdc8cbcc2c3e5f5efd60f2283e874178d8573a7e833dde97a14ce5dd99"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_backend_esp32.cpp": {
+    "size": 11309,
+    "sha256": "806bbd131c8e31d0779fe18b6f76bd5f0a95eb80702dfab838dca3ddf71bf7ca"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_lock.h": {
+    "size": 818,
+    "sha256": "6e8a7997d49dbd31375901212364a0d48bf7a8c2f5facb40866e8c0238961815"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_number.h": {
+    "size": 1029,
+    "sha256": "e53ec7a9792734ca809a68e1d252be3884ed06e3821c15645c83ed0d15a26229"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_event.cpp": {
+    "size": 1701,
+    "sha256": "611fcd5546590f59494cea217ecd3a28c1958a6f5b64d80a5a35b04a28bdf738"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_alarm_control_panel.cpp": {
+    "size": 5557,
+    "sha256": "00a655e2cd1d390afaa6a288fd88f33b7bd412de90c6b04a5b7fbeed88e58858"
+  },
+  "2026.10.13.10/source/components/mqtt/mqtt_number.cpp": {
+    "size": 2794,
+    "sha256": "563a1abcac8d7291eb5a0f73740c99fbc279bd6c4402dbe3f51815c2c8b418a4"
+  },
+  "2026.10.13.10/source/components/boiler_mqtt_policy/__init__.py": {
+    "size": 338,
+    "sha256": "39bff246eca607f86876cb7137ab7a3636f2b5f0a06c9ccb7f5221aa965d6b13"
+  },
+  "2026.10.13.10/source/components/web_server_base/__init__.py": {
+    "size": 3040,
+    "sha256": "07a4d983dd5b0bcd0bdec5a4da820eeeea147caa8a149c5f9468b22d272a4a6a"
+  },
+  "2026.10.13.10/source/components/web_server_base/web_server_base.cpp": {
+    "size": 682,
+    "sha256": "f60d65c974df1e2303015568570e78669587944f25a91952074770d5a1451c19"
+  },
+  "2026.10.13.10/source/components/web_server_base/LOCAL-PATCH.md": {
+    "size": 190,
+    "sha256": "eac3b8c972421950ea8c84818422ca0e6c6da761c40f0ccf0fb3ebdbec79cc26"
+  },
+  "2026.10.13.10/source/components/web_server_base/web_server_base.h": {
+    "size": 7188,
+    "sha256": "269d20fa50f2a7ea539945038de34b836e89a8365c7aea17e17f3889dd599433"
+  },
+  "2026.10.13.10/source/components/web_server_base/LICENSE": {
+    "size": 36664,
+    "sha256": "1f312390122725ee382f85af00e3df84f2490cd8fa61b9ea172bc6591cc0ac63"
+  },
+  "2026.10.13.10/source/components/web_server_base/fix_rp2040_hash.py.script": {
+    "size": 590,
+    "sha256": "9d64dec0a926f3014df14fa32355f04bedead2cde194050ca89849ba78cdc30d"
+  },
+  "2026.10.13.10/images/firmware.ota.bin": {
+    "size": 1093904,
+    "sha256": "6591d8944fe685eade949778fff55acb827375c15fc5c046aa4789308f86e517"
+  },
+  "2026.10.13.10/images/firmware.factory.bin": {
+    "size": 1159440,
+    "sha256": "0bc414e55df84a2451d0f24f9929281c2a3941c1af0995a4be0a7ee588c2e96f"
+  },
+  "2026.10.13.10/original-archives/source.tar.gz": {
+    "size": 131397,
+    "sha256": "062aca0cf9ad690aa276b803112e2dac6a43c800211d2d152ed2987ded9f42bc"
+  },
+  "2026.10.14.12/secrets.yaml": {
+    "size": 397,
+    "sha256": "5068876b63f311ca7702b94d8641eb947dabbb2b1ca6befefbd36fe2b17e74bc"
+  },
+  "2026.10.14.12/source/secrets.example.yaml": {
+    "size": 378,
+    "sha256": "2c44f41f72b78da86e17bafaacfe30fc27e9a0e2b9338ad55271fd508be8fe61"
+  },
+  "2026.10.14.12/source/CONTRACT.md": {
+    "size": 627,
+    "sha256": "b6ccacf453c24ae748aed8929fc0408803ebaf12d1bd901d7805ae660864a336"
+  },
+  "2026.10.14.12/source/COMMISSIONING.md": {
+    "size": 363,
+    "sha256": "766f561aad60613ef5335111c1bf5c7b048c95d02940652bbee3a675ca3b787a"
+  },
+  "2026.10.14.12/source/.gitignore": {
+    "size": 184,
+    "sha256": "6a6bda99854cb9a22ea2948828906c37b02cba0422b735ffb46f18b58baa027f"
+  },
+  "2026.10.14.12/source/boiler-proxy.yaml": {
+    "size": 21413,
+    "sha256": "1cc42503a589ddbb2a6a8530963dc2bbc28071230b5a3eeccee35de3746a125b"
+  },
+  "2026.10.14.12/source/www/boiler.js": {
+    "size": 32052,
+    "sha256": "543c6fc388b7ff976ebe35438892dedd310e68a3dfbd771410f4612c1ca30b4a"
+  },
+  "2026.10.14.12/source/www/boiler.css": {
+    "size": 5537,
+    "sha256": "64976c6c593cac316210f97bf36ec340a4812c476d015233e9cd2a6b6b65849a"
+  },
+  "2026.10.14.12/source/components/boiler_proxy/__init__.py": {
+    "size": 10542,
+    "sha256": "165813a23fa38b13d2d2717a6c48f6a04a691bfbfd1d9f597048cb914148c73e"
+  },
+  "2026.10.14.12/source/components/boiler_proxy/boiler_proxy.cpp": {
+    "size": 40150,
+    "sha256": "8741f75c4ba82c2397ddc7b729b62b12c8514c4c9d6f7625b88fd47a046b1b52"
+  },
+  "2026.10.14.12/source/components/boiler_proxy/boiler_proxy.h": {
+    "size": 12280,
+    "sha256": "642cbd769dc169351abad28c0ac5a694d11b2c62be038e72ba66bb5337927d76"
+  },
+  "2026.10.14.12/source/components/boiler_web_auth/__init__.py": {
+    "size": 621,
+    "sha256": "30e5b609f039dec445a1f56ba64304f5c036c15b634c11813ae599e980cfec52"
+  },
+  "2026.10.14.12/source/components/boiler_web_auth/boiler_web_auth.h": {
+    "size": 3529,
+    "sha256": "afca9ee21bc2882c48a85ff30c0b1a2a0ca902f0662d335682eebd65623f195b"
+  },
+  "2026.10.14.12/source/components/boiler_network/__init__.py": {
+    "size": 799,
+    "sha256": "0f791a0fe472c301b2af93cadcb6c2faaba949380a4c89732e2bc3e702830025"
+  },
+  "2026.10.14.12/source/components/boiler_network/boiler_network.h": {
+    "size": 5864,
+    "sha256": "264a2ae21d38669aa7cc5aedbeef771c97bcc42a602a6590ab40145792781efd"
+  },
+  "2026.10.14.12/source/components/boiler_transport_v4/boiler_transport_v4.h": {
+    "size": 6072,
+    "sha256": "e998ad89da61a575ab0de9074419cd682c484ce9028a7fcf4f96498f26ed8942"
+  },
+  "2026.10.14.12/source/components/boiler_transport_v4/__init__.py": {
+    "size": 2392,
+    "sha256": "0506bd9e727c2015e4eafd960ed6fe642bdeaba227159d37550282652030a7af"
+  },
+  "2026.10.14.12/source/components/boiler_transport_v4/boiler_transport_v4.cpp": {
+    "size": 14838,
+    "sha256": "8d51ec6e01e8813e6b158f1803fbf9405d9bbb6c0ddfc58fb9e4cd46138e391e"
+  },
+  "2026.10.14.12/source/components/boiler_transport_v4/bridge_core.h": {
+    "size": 3532,
+    "sha256": "95a5bed6b3e8fca0e04984f9277bc09ad58d7e4872770726c2f725763893a200"
+  },
+  "2026.10.14.12/source/components/boiler_transport_v4/transactions.cpp": {
+    "size": 14340,
+    "sha256": "7d6822f4779e6298a8b06db58bdc4b7865719cd5fd417ee4574023cef059152c"
+  },
+  "2026.10.14.12/source/components/boiler_transport_v4/transaction_core.h": {
+    "size": 2130,
+    "sha256": "b8f4b9a63fabc7bf4550b040c5649cfafcba9b6d3a289d6e7973f3073b4b715b"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_event.h": {
+    "size": 808,
+    "sha256": "0bd2fa83a3577a52eb5d1dcc3147faef0f3038e73b813e6ea2611462f0e99c55"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_alarm_control_panel.h": {
+    "size": 855,
+    "sha256": "dcb1c2068b6b0d5d28225904136e606e63edf609c11976d240e4d01a347ef5b3"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_text_sensor.h": {
+    "size": 1242,
+    "sha256": "e3f803c8a23491ece678d1e26c8a3ec7d60d4720097d589bd7c1feb1193b5265"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_text_sensor.cpp": {
+    "size": 4474,
+    "sha256": "06435cb3626d7dbd77b1b6a80528d4c82f62867e26a279a19bf9a8920c59b4bb"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_cover.cpp": {
+    "size": 7055,
+    "sha256": "59282d2f036b30458ab6b595376c541cc0daca0eeeef9de74de729f8e3601713"
+  },
+  "2026.10.14.12/source/components/mqtt/custom_mqtt_device.cpp": {
+    "size": 1317,
+    "sha256": "4fb10381b20651cdad93ed0bb0f5a94788c90179a068bbebb620b25830ef99bd"
+  },
+  "2026.10.14.12/source/components/mqtt/__init__.py": {
+    "size": 25486,
+    "sha256": "1e0d295510546d1b6f68d6c2c6847ca6ee54c356dacab93ac6fabf0b6ee5426e"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_button.cpp": {
+    "size": 1192,
+    "sha256": "9f4213b9592dfebe1c24728a18486021c57f8cfc7e6287162f00e867e0f48590"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_valve.cpp": {
+    "size": 3704,
+    "sha256": "a91b375b537ecddce21e343a781cf6ae6a7704cb304ec7a83e0b2555047175c5"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_fan.cpp": {
+    "size": 8829,
+    "sha256": "a4c7d0c500e0d390da6abb059979d00ee6d1e40e57ce2b18cc4966d8b7ff9e25"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_backend_libretiny.h": {
+    "size": 3057,
+    "sha256": "12ae276ef7766e15195f485573a49da919ca9ad0339d382c3a036fb30b2ea573"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_text.h": {
+    "size": 1016,
+    "sha256": "a7835a65f8fb3d2742709387b56d0c5ea8e395a83b659bbec3cec830a190fc86"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_update.h": {
+    "size": 874,
+    "sha256": "ca356900c760bc146bc651972d239b71a15a5d6b910bc20e7fecde4f00e952d8"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_fan.h": {
+    "size": 1339,
+    "sha256": "a693ed07e3449a150e1edb4479d67a29fa2d1425c82a090275f47b67dd58eaf1"
+  },
+  "2026.10.14.12/source/components/mqtt/LOCAL-PATCH.md": {
+    "size": 437,
+    "sha256": "1df6a5a29c91605dc3689ae6dfc3f09f04448f6984cf13245a31fb7cea16ed28"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_select.cpp": {
+    "size": 1928,
+    "sha256": "cb9a2f2567d8cc33ae9ab04721a9d18e4c8ce99abc48bfc6a01522d0452cacb4"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_datetime.h": {
+    "size": 1132,
+    "sha256": "89988e08d06b5eaf33c11188bcf2cecbc8188fbf0fea9d329379f2695e0998f4"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_select.h": {
+    "size": 1042,
+    "sha256": "47d52deb62dbcb428c24c5afbe1ddaa5bce6df3784335200ea62166ebeac4fc4"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_backend_esp32.h": {
+    "size": 10699,
+    "sha256": "69bad50eb1a2c4d78577208857fba13245a534b911a355711a4e5e6bda478348"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_button.h": {
+    "size": 886,
+    "sha256": "7b76d00441d55b00042a8f1c047939facfbdd39b7ee3977a20fa4bbbaca38b00"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_light.cpp": {
+    "size": 3862,
+    "sha256": "d930f4fa9c93349e01228fe5beb3b4962f0ad4c4dad669ee08819410ab4da37f"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_cover.h": {
+    "size": 1088,
+    "sha256": "34b09405ff66db07c8e855804d38c6e4d23fa9c2aa9aeb940e768324acf87e1d"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_date.cpp": {
+    "size": 2109,
+    "sha256": "c0de98f3c2a1ae83056b739249215dff9928dfc2273dbff56cefb6cbffba90ee"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_date.h": {
+    "size": 1049,
+    "sha256": "e72568be39d2dfb87bc7101247580385497b261df7c69b076232ab3d7fa9e9a5"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_backend_esp8266.h": {
+    "size": 3040,
+    "sha256": "3934e9f5ccf8ef6f6fcb7750e365de389c28c0c46f618a2aa41ca65cf365a570"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_sensor.h": {
+    "size": 1833,
+    "sha256": "f97367e5ddc99da454c823020904ea0762b9f663e909e9e126156cb89b88ba42"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_component.cpp": {
+    "size": 20236,
+    "sha256": "7e45382281785e405c72095d7e32ed0fa4a7cdbcfbfb59882937b25eeffa9ad5"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_update.cpp": {
+    "size": 2263,
+    "sha256": "e70e877c9ef4c852ab20f9a5b5032f2024b7734dbd0ad387f9806a30f4b17fc4"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_switch.h": {
+    "size": 854,
+    "sha256": "343ecf809ea6fb60711bf1b2ff96b65b6faf61f68f7edfd094e3e4f2598012a8"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_sensor.cpp": {
+    "size": 4041,
+    "sha256": "5559795c5f9b6a6688b9343e65c72cdfa839a4e5fe8e40615c3eb7da0510e054"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_switch.cpp": {
+    "size": 2049,
+    "sha256": "38cd566112b1581e736174affa3b8a5089ec07390d6e1927b6a66f736aaff232"
+  },
+  "2026.10.14.12/source/components/mqtt/LICENSE": {
+    "size": 36664,
+    "sha256": "1f312390122725ee382f85af00e3df84f2490cd8fa61b9ea172bc6591cc0ac63"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_climate.cpp": {
+    "size": 17885,
+    "sha256": "9ad5ed804753a365332749a413c7a8923f34938eb7b1cc51502e50f00a65ec0a"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_const.h": {
+    "size": 19567,
+    "sha256": "c76284b4318e1c1902af678311e7e9b723707e16af44d91410c03a708b5dab96"
+  },
+  "2026.10.14.12/source/components/mqtt/custom_mqtt_device.h": {
+    "size": 7841,
+    "sha256": "b8d86b57de51d0ba9e7e8774ab24f1a17638d4ab281fd9e5acbeada317f3f1a8"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_lock.cpp": {
+    "size": 2376,
+    "sha256": "9c7b4d711f47b6fc4fdc1749d2e2c55f14cfab53422b39c2899ce36e36ba3b13"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_backend.h": {
+    "size": 2829,
+    "sha256": "1113ecbd2af60c67806fdb745822dd21bd6ee0cb7e9ef82d16065f8f13181b36"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_client.h": {
+    "size": 16209,
+    "sha256": "4a262db13eb73840b07e4d0abce03f61313133932e521e4bae9da288b12912a3"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_component.h": {
+    "size": 15168,
+    "sha256": "d665a345911e0d999036c33e72e63bd46313e30bdd0fb2ff954476911766352d"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_client.cpp": {
+    "size": 29051,
+    "sha256": "204f55b28abd539c0f52500952a474ce1c4ad440d5f7696f677f0bc2aab73400"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_binary_sensor.h": {
+    "size": 938,
+    "sha256": "58f2b89a30eedf1eacabe6c2bb476a45fa8c601b1979e01104f525cc4ec39049"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_text.cpp": {
+    "size": 1934,
+    "sha256": "70aeb0adcd5781f468821760e4907fc111cf779d217ced9b1b1b4b67ef763f60"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_light.h": {
+    "size": 907,
+    "sha256": "ee4b8aa8f20c58d12303362309b9b7d912067804be6eca56f6964cb509b95a77"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_binary_sensor.cpp": {
+    "size": 2117,
+    "sha256": "575d3f99ad051179ee7356a7c4386b0f7d8e95dba9dbf380df42758f1f69b801"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_climate.h": {
+    "size": 1785,
+    "sha256": "6c0b6acac1f22e2a10ae7400060d1ff13abfbc263b6dcc49c983e6c8b61473a1"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_valve.h": {
+    "size": 805,
+    "sha256": "6aed02d20431966a4831b2f6a0b1eca61abd4f935fac01df1252469a2cc404a1"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_datetime.cpp": {
+    "size": 3211,
+    "sha256": "27b03de4b6f0d04ce8d00c0f2868b62950bb7e58f20621037663218bd5ff34ab"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_time.cpp": {
+    "size": 2148,
+    "sha256": "b9f378889699d1368cdd9bd4ce109cb349e4e4404647ab13704b633420091439"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_time.h": {
+    "size": 1049,
+    "sha256": "cb3d07fdc8cbcc2c3e5f5efd60f2283e874178d8573a7e833dde97a14ce5dd99"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_backend_esp32.cpp": {
+    "size": 11496,
+    "sha256": "808f7946cc97cf17125047eb05e2096cc6dc3389cc97c23e8fc3d44683f1fc0b"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_lock.h": {
+    "size": 818,
+    "sha256": "6e8a7997d49dbd31375901212364a0d48bf7a8c2f5facb40866e8c0238961815"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_number.h": {
+    "size": 1029,
+    "sha256": "e53ec7a9792734ca809a68e1d252be3884ed06e3821c15645c83ed0d15a26229"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_event.cpp": {
+    "size": 1701,
+    "sha256": "611fcd5546590f59494cea217ecd3a28c1958a6f5b64d80a5a35b04a28bdf738"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_alarm_control_panel.cpp": {
+    "size": 5557,
+    "sha256": "00a655e2cd1d390afaa6a288fd88f33b7bd412de90c6b04a5b7fbeed88e58858"
+  },
+  "2026.10.14.12/source/components/mqtt/mqtt_number.cpp": {
+    "size": 2794,
+    "sha256": "563a1abcac8d7291eb5a0f73740c99fbc279bd6c4402dbe3f51815c2c8b418a4"
+  },
+  "2026.10.14.12/source/components/boiler_mqtt_policy/__init__.py": {
+    "size": 338,
+    "sha256": "39bff246eca607f86876cb7137ab7a3636f2b5f0a06c9ccb7f5221aa965d6b13"
+  },
+  "2026.10.14.12/source/components/web_server_base/__init__.py": {
+    "size": 3040,
+    "sha256": "07a4d983dd5b0bcd0bdec5a4da820eeeea147caa8a149c5f9468b22d272a4a6a"
+  },
+  "2026.10.14.12/source/components/web_server_base/web_server_base.cpp": {
+    "size": 682,
+    "sha256": "f60d65c974df1e2303015568570e78669587944f25a91952074770d5a1451c19"
+  },
+  "2026.10.14.12/source/components/web_server_base/LOCAL-PATCH.md": {
+    "size": 190,
+    "sha256": "eac3b8c972421950ea8c84818422ca0e6c6da761c40f0ccf0fb3ebdbec79cc26"
+  },
+  "2026.10.14.12/source/components/web_server_base/web_server_base.h": {
+    "size": 7188,
+    "sha256": "269d20fa50f2a7ea539945038de34b836e89a8365c7aea17e17f3889dd599433"
+  },
+  "2026.10.14.12/source/components/web_server_base/LICENSE": {
+    "size": 36664,
+    "sha256": "1f312390122725ee382f85af00e3df84f2490cd8fa61b9ea172bc6591cc0ac63"
+  },
+  "2026.10.14.12/source/components/web_server_base/fix_rp2040_hash.py.script": {
+    "size": 590,
+    "sha256": "9d64dec0a926f3014df14fa32355f04bedead2cde194050ca89849ba78cdc30d"
+  },
+  "2026.10.14.12/images/firmware.ota.bin": {
+    "size": 1098144,
+    "sha256": "c51f16e7dd16993b777553ef6c29915dcdebc9e869d9b6fd525dbf9fe1d093bf"
+  },
+  "2026.10.14.12/images/firmware.factory.bin": {
+    "size": 1163680,
+    "sha256": "a713eab4901f09778fce991c31ea6f2cbc6ddeb535d1f10e8868d848b0e3b7eb"
+  },
+  "2026.10.14.12/original-archives/source-final.tar.gz": {
+    "size": 135067,
+    "sha256": "9558721848dfb04d0c58b701330ff295bb89f3de6f5c8ce500632741f886ac61"
+  },
+  "2026.10.14.12/original-archives/source-release.tar.gz": {
+    "size": 135237,
+    "sha256": "116bd2c1d759d34802edd45ac85d8fb725e2325da90ebcb83a68834155b4e0be"
+  },
+  "2026.10.14.12/original-archives/source.tar.gz": {
+    "size": 134892,
+    "sha256": "f8b793daa195ed827d3f74b0b47efb10b46baaf5f01d690f963ac7bdddccd552"
+  },
+  "2026.10.14.13/secrets.yaml": {
+    "size": 397,
+    "sha256": "5068876b63f311ca7702b94d8641eb947dabbb2b1ca6befefbd36fe2b17e74bc"
+  },
+  "2026.10.14.13/source/secrets.example.yaml": {
+    "size": 378,
+    "sha256": "2c44f41f72b78da86e17bafaacfe30fc27e9a0e2b9338ad55271fd508be8fe61"
+  },
+  "2026.10.14.13/source/CONTRACT.md": {
+    "size": 1552,
+    "sha256": "1a1d236542fd0d5ab0e7d7942bebfbcf4d7325de07aefc86a61dabe8929349f8"
+  },
+  "2026.10.14.13/source/source-checks.json": {
+    "size": 7937,
+    "sha256": "3b86e46086c04ed87e6292218bb2a69b498f009816a53b4cf79a9fa48bcf84cb"
+  },
+  "2026.10.14.13/source/COMMISSIONING.md": {
+    "size": 1054,
+    "sha256": "38d90aff63a87a6e0c6120fa39eb922bc48beaad8b17aab938a7e395882f0fc5"
+  },
+  "2026.10.14.13/source/.gitignore": {
+    "size": 184,
+    "sha256": "6a6bda99854cb9a22ea2948828906c37b02cba0422b735ffb46f18b58baa027f"
+  },
+  "2026.10.14.13/source/boiler-proxy.yaml": {
+    "size": 21865,
+    "sha256": "a8d22d7330050287127733657fd716cb8a24c3fe3832394c8a3b63939711594f"
+  },
+  "2026.10.14.13/source/www/boiler.js": {
+    "size": 33263,
+    "sha256": "6654c1e2fc4514f679d6dda06b6041e794e335078dea913dba7692ab1793642d"
+  },
+  "2026.10.14.13/source/www/boiler.css": {
+    "size": 5537,
+    "sha256": "64976c6c593cac316210f97bf36ec340a4812c476d015233e9cd2a6b6b65849a"
+  },
+  "2026.10.14.13/source/components/boiler_proxy/__init__.py": {
+    "size": 10542,
+    "sha256": "165813a23fa38b13d2d2717a6c48f6a04a691bfbfd1d9f597048cb914148c73e"
+  },
+  "2026.10.14.13/source/components/boiler_proxy/boiler_proxy.cpp": {
+    "size": 40915,
+    "sha256": "3abe1615a7eb6b4bf58ebeb43d05d1e1b2370b4a91e727343ca2327b19797295"
+  },
+  "2026.10.14.13/source/components/boiler_proxy/boiler_proxy.h": {
+    "size": 12280,
+    "sha256": "642cbd769dc169351abad28c0ac5a694d11b2c62be038e72ba66bb5337927d76"
+  },
+  "2026.10.14.13/source/components/boiler_web_auth/__init__.py": {
+    "size": 621,
+    "sha256": "30e5b609f039dec445a1f56ba64304f5c036c15b634c11813ae599e980cfec52"
+  },
+  "2026.10.14.13/source/components/boiler_web_auth/boiler_web_auth.h": {
+    "size": 3529,
+    "sha256": "afca9ee21bc2882c48a85ff30c0b1a2a0ca902f0662d335682eebd65623f195b"
+  },
+  "2026.10.14.13/source/components/boiler_network/__init__.py": {
+    "size": 799,
+    "sha256": "0f791a0fe472c301b2af93cadcb6c2faaba949380a4c89732e2bc3e702830025"
+  },
+  "2026.10.14.13/source/components/boiler_network/boiler_network.h": {
+    "size": 5864,
+    "sha256": "264a2ae21d38669aa7cc5aedbeef771c97bcc42a602a6590ab40145792781efd"
+  },
+  "2026.10.14.13/source/components/boiler_transport_v4/boiler_transport_v4.h": {
+    "size": 6469,
+    "sha256": "2f4c3b0e62c5ed34604445acbdf4acbd175a0d073a466d012bd86b3a2846f6dd"
+  },
+  "2026.10.14.13/source/components/boiler_transport_v4/__init__.py": {
+    "size": 2392,
+    "sha256": "0506bd9e727c2015e4eafd960ed6fe642bdeaba227159d37550282652030a7af"
+  },
+  "2026.10.14.13/source/components/boiler_transport_v4/boiler_transport_v4.cpp": {
+    "size": 15258,
+    "sha256": "458c0d619f3d13247f181b91d5d439b24df7e4fcdf4344950a974555e603c944"
+  },
+  "2026.10.14.13/source/components/boiler_transport_v4/bridge_core.h": {
+    "size": 3532,
+    "sha256": "95a5bed6b3e8fca0e04984f9277bc09ad58d7e4872770726c2f725763893a200"
+  },
+  "2026.10.14.13/source/components/boiler_transport_v4/transactions.cpp": {
+    "size": 14924,
+    "sha256": "fc8debba762d69a81ddac64d9aa6705d5e23c066438a2e8a7398e530f167532c"
+  },
+  "2026.10.14.13/source/components/boiler_transport_v4/transaction_core.h": {
+    "size": 2130,
+    "sha256": "b8f4b9a63fabc7bf4550b040c5649cfafcba9b6d3a289d6e7973f3073b4b715b"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_event.h": {
+    "size": 808,
+    "sha256": "0bd2fa83a3577a52eb5d1dcc3147faef0f3038e73b813e6ea2611462f0e99c55"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_alarm_control_panel.h": {
+    "size": 855,
+    "sha256": "dcb1c2068b6b0d5d28225904136e606e63edf609c11976d240e4d01a347ef5b3"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_text_sensor.h": {
+    "size": 1242,
+    "sha256": "e3f803c8a23491ece678d1e26c8a3ec7d60d4720097d589bd7c1feb1193b5265"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_text_sensor.cpp": {
+    "size": 4474,
+    "sha256": "06435cb3626d7dbd77b1b6a80528d4c82f62867e26a279a19bf9a8920c59b4bb"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_cover.cpp": {
+    "size": 7055,
+    "sha256": "59282d2f036b30458ab6b595376c541cc0daca0eeeef9de74de729f8e3601713"
+  },
+  "2026.10.14.13/source/components/mqtt/custom_mqtt_device.cpp": {
+    "size": 1317,
+    "sha256": "4fb10381b20651cdad93ed0bb0f5a94788c90179a068bbebb620b25830ef99bd"
+  },
+  "2026.10.14.13/source/components/mqtt/__init__.py": {
+    "size": 25486,
+    "sha256": "1e0d295510546d1b6f68d6c2c6847ca6ee54c356dacab93ac6fabf0b6ee5426e"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_button.cpp": {
+    "size": 1192,
+    "sha256": "9f4213b9592dfebe1c24728a18486021c57f8cfc7e6287162f00e867e0f48590"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_valve.cpp": {
+    "size": 3704,
+    "sha256": "a91b375b537ecddce21e343a781cf6ae6a7704cb304ec7a83e0b2555047175c5"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_fan.cpp": {
+    "size": 8829,
+    "sha256": "a4c7d0c500e0d390da6abb059979d00ee6d1e40e57ce2b18cc4966d8b7ff9e25"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_backend_libretiny.h": {
+    "size": 3057,
+    "sha256": "12ae276ef7766e15195f485573a49da919ca9ad0339d382c3a036fb30b2ea573"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_text.h": {
+    "size": 1016,
+    "sha256": "a7835a65f8fb3d2742709387b56d0c5ea8e395a83b659bbec3cec830a190fc86"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_update.h": {
+    "size": 874,
+    "sha256": "ca356900c760bc146bc651972d239b71a15a5d6b910bc20e7fecde4f00e952d8"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_fan.h": {
+    "size": 1339,
+    "sha256": "a693ed07e3449a150e1edb4479d67a29fa2d1425c82a090275f47b67dd58eaf1"
+  },
+  "2026.10.14.13/source/components/mqtt/LOCAL-PATCH.md": {
+    "size": 569,
+    "sha256": "ebe345434794e8dc979d15fe23f2c75bec7131c49fc5be063506b9086ebb7dcf"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_select.cpp": {
+    "size": 1928,
+    "sha256": "cb9a2f2567d8cc33ae9ab04721a9d18e4c8ce99abc48bfc6a01522d0452cacb4"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_datetime.h": {
+    "size": 1132,
+    "sha256": "89988e08d06b5eaf33c11188bcf2cecbc8188fbf0fea9d329379f2695e0998f4"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_select.h": {
+    "size": 1042,
+    "sha256": "47d52deb62dbcb428c24c5afbe1ddaa5bce6df3784335200ea62166ebeac4fc4"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_backend_esp32.h": {
+    "size": 10699,
+    "sha256": "69bad50eb1a2c4d78577208857fba13245a534b911a355711a4e5e6bda478348"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_button.h": {
+    "size": 886,
+    "sha256": "7b76d00441d55b00042a8f1c047939facfbdd39b7ee3977a20fa4bbbaca38b00"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_light.cpp": {
+    "size": 3862,
+    "sha256": "d930f4fa9c93349e01228fe5beb3b4962f0ad4c4dad669ee08819410ab4da37f"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_cover.h": {
+    "size": 1088,
+    "sha256": "34b09405ff66db07c8e855804d38c6e4d23fa9c2aa9aeb940e768324acf87e1d"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_date.cpp": {
+    "size": 2109,
+    "sha256": "c0de98f3c2a1ae83056b739249215dff9928dfc2273dbff56cefb6cbffba90ee"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_date.h": {
+    "size": 1049,
+    "sha256": "e72568be39d2dfb87bc7101247580385497b261df7c69b076232ab3d7fa9e9a5"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_backend_esp8266.h": {
+    "size": 3040,
+    "sha256": "3934e9f5ccf8ef6f6fcb7750e365de389c28c0c46f618a2aa41ca65cf365a570"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_sensor.h": {
+    "size": 1833,
+    "sha256": "f97367e5ddc99da454c823020904ea0762b9f663e909e9e126156cb89b88ba42"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_component.cpp": {
+    "size": 20236,
+    "sha256": "7e45382281785e405c72095d7e32ed0fa4a7cdbcfbfb59882937b25eeffa9ad5"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_update.cpp": {
+    "size": 2263,
+    "sha256": "e70e877c9ef4c852ab20f9a5b5032f2024b7734dbd0ad387f9806a30f4b17fc4"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_switch.h": {
+    "size": 854,
+    "sha256": "343ecf809ea6fb60711bf1b2ff96b65b6faf61f68f7edfd094e3e4f2598012a8"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_sensor.cpp": {
+    "size": 4041,
+    "sha256": "5559795c5f9b6a6688b9343e65c72cdfa839a4e5fe8e40615c3eb7da0510e054"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_switch.cpp": {
+    "size": 2049,
+    "sha256": "38cd566112b1581e736174affa3b8a5089ec07390d6e1927b6a66f736aaff232"
+  },
+  "2026.10.14.13/source/components/mqtt/LICENSE": {
+    "size": 36664,
+    "sha256": "1f312390122725ee382f85af00e3df84f2490cd8fa61b9ea172bc6591cc0ac63"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_climate.cpp": {
+    "size": 17885,
+    "sha256": "9ad5ed804753a365332749a413c7a8923f34938eb7b1cc51502e50f00a65ec0a"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_const.h": {
+    "size": 19567,
+    "sha256": "c76284b4318e1c1902af678311e7e9b723707e16af44d91410c03a708b5dab96"
+  },
+  "2026.10.14.13/source/components/mqtt/custom_mqtt_device.h": {
+    "size": 7841,
+    "sha256": "b8d86b57de51d0ba9e7e8774ab24f1a17638d4ab281fd9e5acbeada317f3f1a8"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_lock.cpp": {
+    "size": 2376,
+    "sha256": "9c7b4d711f47b6fc4fdc1749d2e2c55f14cfab53422b39c2899ce36e36ba3b13"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_backend.h": {
+    "size": 2829,
+    "sha256": "1113ecbd2af60c67806fdb745822dd21bd6ee0cb7e9ef82d16065f8f13181b36"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_client.h": {
+    "size": 16209,
+    "sha256": "4a262db13eb73840b07e4d0abce03f61313133932e521e4bae9da288b12912a3"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_component.h": {
+    "size": 15168,
+    "sha256": "d665a345911e0d999036c33e72e63bd46313e30bdd0fb2ff954476911766352d"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_client.cpp": {
+    "size": 29051,
+    "sha256": "204f55b28abd539c0f52500952a474ce1c4ad440d5f7696f677f0bc2aab73400"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_binary_sensor.h": {
+    "size": 938,
+    "sha256": "58f2b89a30eedf1eacabe6c2bb476a45fa8c601b1979e01104f525cc4ec39049"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_text.cpp": {
+    "size": 1934,
+    "sha256": "70aeb0adcd5781f468821760e4907fc111cf779d217ced9b1b1b4b67ef763f60"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_light.h": {
+    "size": 907,
+    "sha256": "ee4b8aa8f20c58d12303362309b9b7d912067804be6eca56f6964cb509b95a77"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_binary_sensor.cpp": {
+    "size": 2117,
+    "sha256": "575d3f99ad051179ee7356a7c4386b0f7d8e95dba9dbf380df42758f1f69b801"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_climate.h": {
+    "size": 1785,
+    "sha256": "6c0b6acac1f22e2a10ae7400060d1ff13abfbc263b6dcc49c983e6c8b61473a1"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_valve.h": {
+    "size": 805,
+    "sha256": "6aed02d20431966a4831b2f6a0b1eca61abd4f935fac01df1252469a2cc404a1"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_datetime.cpp": {
+    "size": 3211,
+    "sha256": "27b03de4b6f0d04ce8d00c0f2868b62950bb7e58f20621037663218bd5ff34ab"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_time.cpp": {
+    "size": 2148,
+    "sha256": "b9f378889699d1368cdd9bd4ce109cb349e4e4404647ab13704b633420091439"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_time.h": {
+    "size": 1049,
+    "sha256": "cb3d07fdc8cbcc2c3e5f5efd60f2283e874178d8573a7e833dde97a14ce5dd99"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_backend_esp32.cpp": {
+    "size": 11496,
+    "sha256": "808f7946cc97cf17125047eb05e2096cc6dc3389cc97c23e8fc3d44683f1fc0b"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_lock.h": {
+    "size": 818,
+    "sha256": "6e8a7997d49dbd31375901212364a0d48bf7a8c2f5facb40866e8c0238961815"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_number.h": {
+    "size": 1029,
+    "sha256": "e53ec7a9792734ca809a68e1d252be3884ed06e3821c15645c83ed0d15a26229"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_event.cpp": {
+    "size": 1701,
+    "sha256": "611fcd5546590f59494cea217ecd3a28c1958a6f5b64d80a5a35b04a28bdf738"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_alarm_control_panel.cpp": {
+    "size": 5557,
+    "sha256": "00a655e2cd1d390afaa6a288fd88f33b7bd412de90c6b04a5b7fbeed88e58858"
+  },
+  "2026.10.14.13/source/components/mqtt/mqtt_number.cpp": {
+    "size": 2794,
+    "sha256": "563a1abcac8d7291eb5a0f73740c99fbc279bd6c4402dbe3f51815c2c8b418a4"
+  },
+  "2026.10.14.13/source/components/boiler_mqtt_policy/__init__.py": {
+    "size": 338,
+    "sha256": "39bff246eca607f86876cb7137ab7a3636f2b5f0a06c9ccb7f5221aa965d6b13"
+  },
+  "2026.10.14.13/source/components/web_server_base/__init__.py": {
+    "size": 3040,
+    "sha256": "07a4d983dd5b0bcd0bdec5a4da820eeeea147caa8a149c5f9468b22d272a4a6a"
+  },
+  "2026.10.14.13/source/components/web_server_base/web_server_base.cpp": {
+    "size": 682,
+    "sha256": "f60d65c974df1e2303015568570e78669587944f25a91952074770d5a1451c19"
+  },
+  "2026.10.14.13/source/components/web_server_base/LOCAL-PATCH.md": {
+    "size": 190,
+    "sha256": "eac3b8c972421950ea8c84818422ca0e6c6da761c40f0ccf0fb3ebdbec79cc26"
+  },
+  "2026.10.14.13/source/components/web_server_base/web_server_base.h": {
+    "size": 7188,
+    "sha256": "269d20fa50f2a7ea539945038de34b836e89a8365c7aea17e17f3889dd599433"
+  },
+  "2026.10.14.13/source/components/web_server_base/LICENSE": {
+    "size": 36664,
+    "sha256": "1f312390122725ee382f85af00e3df84f2490cd8fa61b9ea172bc6591cc0ac63"
+  },
+  "2026.10.14.13/source/components/web_server_base/fix_rp2040_hash.py.script": {
+    "size": 590,
+    "sha256": "9d64dec0a926f3014df14fa32355f04bedead2cde194050ca89849ba78cdc30d"
+  },
+  "2026.10.14.13/images/firmware.ota.bin": {
+    "size": 1099264,
+    "sha256": "57351af6b90619186c60d4db4ff13e5755d2a63280a804a61275878e9a8712cf"
+  },
+  "2026.10.14.13/images/firmware.factory.bin": {
+    "size": 1164800,
+    "sha256": "c4d76a058e60515a0d02adb4a479a122afdad750c7bb63b50ad565df91ee84ef"
+  },
+  "2026.10.14.13/original-archives/source.tar.gz": {
+    "size": 163516,
+    "sha256": "2673dd6fdb29d9f474e9a794a56a92bfb7ac357cca7d608435b563482aa8e5cc"
+  },
+  "2026.10.19.14/secrets.yaml": {
+    "size": 397,
+    "sha256": "5068876b63f311ca7702b94d8641eb947dabbb2b1ca6befefbd36fe2b17e74bc"
+  },
+  "2026.10.19.14/source/secrets.example.yaml": {
+    "size": 378,
+    "sha256": "2c44f41f72b78da86e17bafaacfe30fc27e9a0e2b9338ad55271fd508be8fe61"
+  },
+  "2026.10.19.14/source/CONTRACT.md": {
+    "size": 1055,
+    "sha256": "252580fc654ab83395f7c95c817ed7bb98c90d40cc69c33bfb3c42a417964d0b"
+  },
+  "2026.10.19.14/source/source-checks.json": {
+    "size": 7937,
+    "sha256": "a75aa65d24b6f2b35106667e1cc627365392be5b02566e96d888250161817d43"
+  },
+  "2026.10.19.14/source/COMMISSIONING.md": {
+    "size": 807,
+    "sha256": "a669a41b3bafce239d9fe666c4989a9b0ec167e94477c362c28c5d584f7139a1"
+  },
+  "2026.10.19.14/source/.gitignore": {
+    "size": 184,
+    "sha256": "6a6bda99854cb9a22ea2948828906c37b02cba0422b735ffb46f18b58baa027f"
+  },
+  "2026.10.19.14/source/boiler-proxy.yaml": {
+    "size": 21865,
+    "sha256": "de3b00095530bdfe0ce76cf033f579acb35a4471e58be946555163e025361bb4"
+  },
+  "2026.10.19.14/source/www/boiler.js": {
+    "size": 34356,
+    "sha256": "9ec3eaae76405965deb39274d5d590f50785f7436ae30d23d22afa5cfc19b9d2"
+  },
+  "2026.10.19.14/source/www/boiler.css": {
+    "size": 5537,
+    "sha256": "64976c6c593cac316210f97bf36ec340a4812c476d015233e9cd2a6b6b65849a"
+  },
+  "2026.10.19.14/source/components/boiler_proxy/__init__.py": {
+    "size": 10542,
+    "sha256": "165813a23fa38b13d2d2717a6c48f6a04a691bfbfd1d9f597048cb914148c73e"
+  },
+  "2026.10.19.14/source/components/boiler_proxy/boiler_proxy.cpp": {
+    "size": 40915,
+    "sha256": "3abe1615a7eb6b4bf58ebeb43d05d1e1b2370b4a91e727343ca2327b19797295"
+  },
+  "2026.10.19.14/source/components/boiler_proxy/boiler_proxy.h": {
+    "size": 12280,
+    "sha256": "642cbd769dc169351abad28c0ac5a694d11b2c62be038e72ba66bb5337927d76"
+  },
+  "2026.10.19.14/source/components/boiler_web_auth/__init__.py": {
+    "size": 621,
+    "sha256": "30e5b609f039dec445a1f56ba64304f5c036c15b634c11813ae599e980cfec52"
+  },
+  "2026.10.19.14/source/components/boiler_web_auth/boiler_web_auth.h": {
+    "size": 3529,
+    "sha256": "afca9ee21bc2882c48a85ff30c0b1a2a0ca902f0662d335682eebd65623f195b"
+  },
+  "2026.10.19.14/source/components/boiler_network/__init__.py": {
+    "size": 799,
+    "sha256": "0f791a0fe472c301b2af93cadcb6c2faaba949380a4c89732e2bc3e702830025"
+  },
+  "2026.10.19.14/source/components/boiler_network/boiler_network.h": {
+    "size": 5864,
+    "sha256": "264a2ae21d38669aa7cc5aedbeef771c97bcc42a602a6590ab40145792781efd"
+  },
+  "2026.10.19.14/source/components/boiler_transport_v4/boiler_transport_v4.h": {
+    "size": 6469,
+    "sha256": "2f4c3b0e62c5ed34604445acbdf4acbd175a0d073a466d012bd86b3a2846f6dd"
+  },
+  "2026.10.19.14/source/components/boiler_transport_v4/__init__.py": {
+    "size": 2392,
+    "sha256": "0506bd9e727c2015e4eafd960ed6fe642bdeaba227159d37550282652030a7af"
+  },
+  "2026.10.19.14/source/components/boiler_transport_v4/boiler_transport_v4.cpp": {
+    "size": 15258,
+    "sha256": "6648d0c8d87efe77eb3820887331f02fcc1f3a5c8ff44fab0435b48b46f52bc3"
+  },
+  "2026.10.19.14/source/components/boiler_transport_v4/bridge_core.h": {
+    "size": 3532,
+    "sha256": "95a5bed6b3e8fca0e04984f9277bc09ad58d7e4872770726c2f725763893a200"
+  },
+  "2026.10.19.14/source/components/boiler_transport_v4/transactions.cpp": {
+    "size": 14924,
+    "sha256": "fc8debba762d69a81ddac64d9aa6705d5e23c066438a2e8a7398e530f167532c"
+  },
+  "2026.10.19.14/source/components/boiler_transport_v4/transaction_core.h": {
+    "size": 2130,
+    "sha256": "b8f4b9a63fabc7bf4550b040c5649cfafcba9b6d3a289d6e7973f3073b4b715b"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_event.h": {
+    "size": 808,
+    "sha256": "0bd2fa83a3577a52eb5d1dcc3147faef0f3038e73b813e6ea2611462f0e99c55"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_alarm_control_panel.h": {
+    "size": 855,
+    "sha256": "dcb1c2068b6b0d5d28225904136e606e63edf609c11976d240e4d01a347ef5b3"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_text_sensor.h": {
+    "size": 1242,
+    "sha256": "e3f803c8a23491ece678d1e26c8a3ec7d60d4720097d589bd7c1feb1193b5265"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_text_sensor.cpp": {
+    "size": 4474,
+    "sha256": "06435cb3626d7dbd77b1b6a80528d4c82f62867e26a279a19bf9a8920c59b4bb"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_cover.cpp": {
+    "size": 7055,
+    "sha256": "59282d2f036b30458ab6b595376c541cc0daca0eeeef9de74de729f8e3601713"
+  },
+  "2026.10.19.14/source/components/mqtt/custom_mqtt_device.cpp": {
+    "size": 1317,
+    "sha256": "4fb10381b20651cdad93ed0bb0f5a94788c90179a068bbebb620b25830ef99bd"
+  },
+  "2026.10.19.14/source/components/mqtt/__init__.py": {
+    "size": 25486,
+    "sha256": "1e0d295510546d1b6f68d6c2c6847ca6ee54c356dacab93ac6fabf0b6ee5426e"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_button.cpp": {
+    "size": 1192,
+    "sha256": "9f4213b9592dfebe1c24728a18486021c57f8cfc7e6287162f00e867e0f48590"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_valve.cpp": {
+    "size": 3704,
+    "sha256": "a91b375b537ecddce21e343a781cf6ae6a7704cb304ec7a83e0b2555047175c5"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_fan.cpp": {
+    "size": 8829,
+    "sha256": "a4c7d0c500e0d390da6abb059979d00ee6d1e40e57ce2b18cc4966d8b7ff9e25"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_backend_libretiny.h": {
+    "size": 3057,
+    "sha256": "12ae276ef7766e15195f485573a49da919ca9ad0339d382c3a036fb30b2ea573"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_text.h": {
+    "size": 1016,
+    "sha256": "a7835a65f8fb3d2742709387b56d0c5ea8e395a83b659bbec3cec830a190fc86"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_update.h": {
+    "size": 874,
+    "sha256": "ca356900c760bc146bc651972d239b71a15a5d6b910bc20e7fecde4f00e952d8"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_fan.h": {
+    "size": 1339,
+    "sha256": "a693ed07e3449a150e1edb4479d67a29fa2d1425c82a090275f47b67dd58eaf1"
+  },
+  "2026.10.19.14/source/components/mqtt/LOCAL-PATCH.md": {
+    "size": 569,
+    "sha256": "ebe345434794e8dc979d15fe23f2c75bec7131c49fc5be063506b9086ebb7dcf"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_select.cpp": {
+    "size": 1928,
+    "sha256": "cb9a2f2567d8cc33ae9ab04721a9d18e4c8ce99abc48bfc6a01522d0452cacb4"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_datetime.h": {
+    "size": 1132,
+    "sha256": "89988e08d06b5eaf33c11188bcf2cecbc8188fbf0fea9d329379f2695e0998f4"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_select.h": {
+    "size": 1042,
+    "sha256": "47d52deb62dbcb428c24c5afbe1ddaa5bce6df3784335200ea62166ebeac4fc4"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_backend_esp32.h": {
+    "size": 10699,
+    "sha256": "69bad50eb1a2c4d78577208857fba13245a534b911a355711a4e5e6bda478348"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_button.h": {
+    "size": 886,
+    "sha256": "7b76d00441d55b00042a8f1c047939facfbdd39b7ee3977a20fa4bbbaca38b00"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_light.cpp": {
+    "size": 3862,
+    "sha256": "d930f4fa9c93349e01228fe5beb3b4962f0ad4c4dad669ee08819410ab4da37f"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_cover.h": {
+    "size": 1088,
+    "sha256": "34b09405ff66db07c8e855804d38c6e4d23fa9c2aa9aeb940e768324acf87e1d"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_date.cpp": {
+    "size": 2109,
+    "sha256": "c0de98f3c2a1ae83056b739249215dff9928dfc2273dbff56cefb6cbffba90ee"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_date.h": {
+    "size": 1049,
+    "sha256": "e72568be39d2dfb87bc7101247580385497b261df7c69b076232ab3d7fa9e9a5"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_backend_esp8266.h": {
+    "size": 3040,
+    "sha256": "3934e9f5ccf8ef6f6fcb7750e365de389c28c0c46f618a2aa41ca65cf365a570"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_sensor.h": {
+    "size": 1833,
+    "sha256": "f97367e5ddc99da454c823020904ea0762b9f663e909e9e126156cb89b88ba42"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_component.cpp": {
+    "size": 20236,
+    "sha256": "7e45382281785e405c72095d7e32ed0fa4a7cdbcfbfb59882937b25eeffa9ad5"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_update.cpp": {
+    "size": 2263,
+    "sha256": "e70e877c9ef4c852ab20f9a5b5032f2024b7734dbd0ad387f9806a30f4b17fc4"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_switch.h": {
+    "size": 854,
+    "sha256": "343ecf809ea6fb60711bf1b2ff96b65b6faf61f68f7edfd094e3e4f2598012a8"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_sensor.cpp": {
+    "size": 4041,
+    "sha256": "5559795c5f9b6a6688b9343e65c72cdfa839a4e5fe8e40615c3eb7da0510e054"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_switch.cpp": {
+    "size": 2049,
+    "sha256": "38cd566112b1581e736174affa3b8a5089ec07390d6e1927b6a66f736aaff232"
+  },
+  "2026.10.19.14/source/components/mqtt/LICENSE": {
+    "size": 36664,
+    "sha256": "1f312390122725ee382f85af00e3df84f2490cd8fa61b9ea172bc6591cc0ac63"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_climate.cpp": {
+    "size": 17885,
+    "sha256": "9ad5ed804753a365332749a413c7a8923f34938eb7b1cc51502e50f00a65ec0a"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_const.h": {
+    "size": 19567,
+    "sha256": "c76284b4318e1c1902af678311e7e9b723707e16af44d91410c03a708b5dab96"
+  },
+  "2026.10.19.14/source/components/mqtt/custom_mqtt_device.h": {
+    "size": 7841,
+    "sha256": "b8d86b57de51d0ba9e7e8774ab24f1a17638d4ab281fd9e5acbeada317f3f1a8"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_lock.cpp": {
+    "size": 2376,
+    "sha256": "9c7b4d711f47b6fc4fdc1749d2e2c55f14cfab53422b39c2899ce36e36ba3b13"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_backend.h": {
+    "size": 2829,
+    "sha256": "1113ecbd2af60c67806fdb745822dd21bd6ee0cb7e9ef82d16065f8f13181b36"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_client.h": {
+    "size": 16209,
+    "sha256": "4a262db13eb73840b07e4d0abce03f61313133932e521e4bae9da288b12912a3"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_component.h": {
+    "size": 15168,
+    "sha256": "d665a345911e0d999036c33e72e63bd46313e30bdd0fb2ff954476911766352d"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_client.cpp": {
+    "size": 29051,
+    "sha256": "204f55b28abd539c0f52500952a474ce1c4ad440d5f7696f677f0bc2aab73400"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_binary_sensor.h": {
+    "size": 938,
+    "sha256": "58f2b89a30eedf1eacabe6c2bb476a45fa8c601b1979e01104f525cc4ec39049"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_text.cpp": {
+    "size": 1934,
+    "sha256": "70aeb0adcd5781f468821760e4907fc111cf779d217ced9b1b1b4b67ef763f60"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_light.h": {
+    "size": 907,
+    "sha256": "ee4b8aa8f20c58d12303362309b9b7d912067804be6eca56f6964cb509b95a77"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_binary_sensor.cpp": {
+    "size": 2117,
+    "sha256": "575d3f99ad051179ee7356a7c4386b0f7d8e95dba9dbf380df42758f1f69b801"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_climate.h": {
+    "size": 1785,
+    "sha256": "6c0b6acac1f22e2a10ae7400060d1ff13abfbc263b6dcc49c983e6c8b61473a1"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_valve.h": {
+    "size": 805,
+    "sha256": "6aed02d20431966a4831b2f6a0b1eca61abd4f935fac01df1252469a2cc404a1"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_datetime.cpp": {
+    "size": 3211,
+    "sha256": "27b03de4b6f0d04ce8d00c0f2868b62950bb7e58f20621037663218bd5ff34ab"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_time.cpp": {
+    "size": 2148,
+    "sha256": "b9f378889699d1368cdd9bd4ce109cb349e4e4404647ab13704b633420091439"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_time.h": {
+    "size": 1049,
+    "sha256": "cb3d07fdc8cbcc2c3e5f5efd60f2283e874178d8573a7e833dde97a14ce5dd99"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_backend_esp32.cpp": {
+    "size": 11496,
+    "sha256": "808f7946cc97cf17125047eb05e2096cc6dc3389cc97c23e8fc3d44683f1fc0b"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_lock.h": {
+    "size": 818,
+    "sha256": "6e8a7997d49dbd31375901212364a0d48bf7a8c2f5facb40866e8c0238961815"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_number.h": {
+    "size": 1029,
+    "sha256": "e53ec7a9792734ca809a68e1d252be3884ed06e3821c15645c83ed0d15a26229"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_event.cpp": {
+    "size": 1701,
+    "sha256": "611fcd5546590f59494cea217ecd3a28c1958a6f5b64d80a5a35b04a28bdf738"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_alarm_control_panel.cpp": {
+    "size": 5557,
+    "sha256": "00a655e2cd1d390afaa6a288fd88f33b7bd412de90c6b04a5b7fbeed88e58858"
+  },
+  "2026.10.19.14/source/components/mqtt/mqtt_number.cpp": {
+    "size": 2794,
+    "sha256": "563a1abcac8d7291eb5a0f73740c99fbc279bd6c4402dbe3f51815c2c8b418a4"
+  },
+  "2026.10.19.14/source/components/boiler_mqtt_policy/__init__.py": {
+    "size": 338,
+    "sha256": "39bff246eca607f86876cb7137ab7a3636f2b5f0a06c9ccb7f5221aa965d6b13"
+  },
+  "2026.10.19.14/source/components/web_server_base/__init__.py": {
+    "size": 3040,
+    "sha256": "07a4d983dd5b0bcd0bdec5a4da820eeeea147caa8a149c5f9468b22d272a4a6a"
+  },
+  "2026.10.19.14/source/components/web_server_base/web_server_base.cpp": {
+    "size": 682,
+    "sha256": "f60d65c974df1e2303015568570e78669587944f25a91952074770d5a1451c19"
+  },
+  "2026.10.19.14/source/components/web_server_base/LOCAL-PATCH.md": {
+    "size": 190,
+    "sha256": "eac3b8c972421950ea8c84818422ca0e6c6da761c40f0ccf0fb3ebdbec79cc26"
+  },
+  "2026.10.19.14/source/components/web_server_base/web_server_base.h": {
+    "size": 7188,
+    "sha256": "269d20fa50f2a7ea539945038de34b836e89a8365c7aea17e17f3889dd599433"
+  },
+  "2026.10.19.14/source/components/web_server_base/LICENSE": {
+    "size": 36664,
+    "sha256": "1f312390122725ee382f85af00e3df84f2490cd8fa61b9ea172bc6591cc0ac63"
+  },
+  "2026.10.19.14/source/components/web_server_base/fix_rp2040_hash.py.script": {
+    "size": 590,
+    "sha256": "9d64dec0a926f3014df14fa32355f04bedead2cde194050ca89849ba78cdc30d"
+  },
+  "2026.10.19.14/images/firmware.ota.bin": {
+    "size": 1099568,
+    "sha256": "95913a01451266f82f167b3754f13303cf784da6422cc512e6bb32d700a41b07"
+  },
+  "2026.10.19.14/images/firmware.factory.bin": {
+    "size": 1165104,
+    "sha256": "4512efc0283b897a5ddbe6abbd67313bb723386203bd0f235d0a8f08db210d11"
+  },
+  "2026.10.19.14/original-archives/source.tar.gz": {
+    "size": 163109,
+    "sha256": "d8afc6da798330f0b6848e7062805b972efe749898ba3c481c7a2435dcc830fe"
+  },
+  "2026.10.19.15/secrets.yaml": {
+    "size": 397,
+    "sha256": "5068876b63f311ca7702b94d8641eb947dabbb2b1ca6befefbd36fe2b17e74bc"
+  },
+  "2026.10.19.15/source/secrets.example.yaml": {
+    "size": 378,
+    "sha256": "2c44f41f72b78da86e17bafaacfe30fc27e9a0e2b9338ad55271fd508be8fe61"
+  },
+  "2026.10.19.15/source/CONTRACT.md": {
+    "size": 1734,
+    "sha256": "2d1d8f19d343c8bf075a00980f12a613d51de5e8416a230967655676c79da1a0"
+  },
+  "2026.10.19.15/source/BUILD-MANIFEST.json": {
+    "size": 663,
+    "sha256": "601c46bf7d092ab2f1186ceeb70cfd80087fa73a936f8613687772ae2a33e407"
+  },
+  "2026.10.19.15/source/source-checks.json": {
+    "size": 9697,
+    "sha256": "3f9e657c1df0c186eb57de2b147d398b4942fbc1ed3a24cdff3ed16572d35e54"
+  },
+  "2026.10.19.15/source/COMMISSIONING.md": {
+    "size": 930,
+    "sha256": "5451e968bc65d1fe72306b72a9d4132aed6e2a40e53f8f01dde6a94fae93e992"
+  },
+  "2026.10.19.15/source/.gitignore": {
+    "size": 184,
+    "sha256": "6a6bda99854cb9a22ea2948828906c37b02cba0422b735ffb46f18b58baa027f"
+  },
+  "2026.10.19.15/source/boiler-proxy.yaml": {
+    "size": 21865,
+    "sha256": "afc670163418ee7709eb1baa1b0ca0e2dfb0a31484f3a41516dbf6a26ab18273"
+  },
+  "2026.10.19.15/source/www/boiler.js": {
+    "size": 34356,
+    "sha256": "9ec3eaae76405965deb39274d5d590f50785f7436ae30d23d22afa5cfc19b9d2"
+  },
+  "2026.10.19.15/source/www/boiler.css": {
+    "size": 5537,
+    "sha256": "64976c6c593cac316210f97bf36ec340a4812c476d015233e9cd2a6b6b65849a"
+  },
+  "2026.10.19.15/source/components/boiler_proxy/__init__.py": {
+    "size": 10542,
+    "sha256": "165813a23fa38b13d2d2717a6c48f6a04a691bfbfd1d9f597048cb914148c73e"
+  },
+  "2026.10.19.15/source/components/boiler_proxy/boiler_proxy.cpp": {
+    "size": 40915,
+    "sha256": "3abe1615a7eb6b4bf58ebeb43d05d1e1b2370b4a91e727343ca2327b19797295"
+  },
+  "2026.10.19.15/source/components/boiler_proxy/boiler_proxy.h": {
+    "size": 12280,
+    "sha256": "642cbd769dc169351abad28c0ac5a694d11b2c62be038e72ba66bb5337927d76"
+  },
+  "2026.10.19.15/source/components/boiler_web_auth/__init__.py": {
+    "size": 621,
+    "sha256": "30e5b609f039dec445a1f56ba64304f5c036c15b634c11813ae599e980cfec52"
+  },
+  "2026.10.19.15/source/components/boiler_web_auth/boiler_web_auth.h": {
+    "size": 3529,
+    "sha256": "afca9ee21bc2882c48a85ff30c0b1a2a0ca902f0662d335682eebd65623f195b"
+  },
+  "2026.10.19.15/source/components/boiler_network/__init__.py": {
+    "size": 799,
+    "sha256": "0f791a0fe472c301b2af93cadcb6c2faaba949380a4c89732e2bc3e702830025"
+  },
+  "2026.10.19.15/source/components/boiler_network/boiler_network.h": {
+    "size": 5864,
+    "sha256": "264a2ae21d38669aa7cc5aedbeef771c97bcc42a602a6590ab40145792781efd"
+  },
+  "2026.10.19.15/source/components/boiler_transport_v4/boiler_transport_v4.h": {
+    "size": 6979,
+    "sha256": "9458e23bb46866045a07e8e7f810c7cdb24bcb0cec97257810ea3f938f7c253c"
+  },
+  "2026.10.19.15/source/components/boiler_transport_v4/__init__.py": {
+    "size": 2392,
+    "sha256": "0506bd9e727c2015e4eafd960ed6fe642bdeaba227159d37550282652030a7af"
+  },
+  "2026.10.19.15/source/components/boiler_transport_v4/boiler_transport_v4.cpp": {
+    "size": 15846,
+    "sha256": "66e250f6e0b9cb62781825d83fb21c19c5302a1baeaf79c9c1b065423ffdabb6"
+  },
+  "2026.10.19.15/source/components/boiler_transport_v4/bridge_core.h": {
+    "size": 3532,
+    "sha256": "95a5bed6b3e8fca0e04984f9277bc09ad58d7e4872770726c2f725763893a200"
+  },
+  "2026.10.19.15/source/components/boiler_transport_v4/transactions.cpp": {
+    "size": 17813,
+    "sha256": "1a445a6105444fe0d3b74e768f4dba44ca08c25c98693f8de9c3f5507df4ebae"
+  },
+  "2026.10.19.15/source/components/boiler_transport_v4/transaction_core.h": {
+    "size": 2507,
+    "sha256": "85c338a1ac6f34239b4340709675889fbf2c26143e1d77ffaff0d6e021f65dd0"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_event.h": {
+    "size": 808,
+    "sha256": "0bd2fa83a3577a52eb5d1dcc3147faef0f3038e73b813e6ea2611462f0e99c55"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_alarm_control_panel.h": {
+    "size": 855,
+    "sha256": "dcb1c2068b6b0d5d28225904136e606e63edf609c11976d240e4d01a347ef5b3"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_text_sensor.h": {
+    "size": 1242,
+    "sha256": "e3f803c8a23491ece678d1e26c8a3ec7d60d4720097d589bd7c1feb1193b5265"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_text_sensor.cpp": {
+    "size": 4474,
+    "sha256": "06435cb3626d7dbd77b1b6a80528d4c82f62867e26a279a19bf9a8920c59b4bb"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_cover.cpp": {
+    "size": 7055,
+    "sha256": "59282d2f036b30458ab6b595376c541cc0daca0eeeef9de74de729f8e3601713"
+  },
+  "2026.10.19.15/source/components/mqtt/custom_mqtt_device.cpp": {
+    "size": 1317,
+    "sha256": "4fb10381b20651cdad93ed0bb0f5a94788c90179a068bbebb620b25830ef99bd"
+  },
+  "2026.10.19.15/source/components/mqtt/__init__.py": {
+    "size": 25486,
+    "sha256": "1e0d295510546d1b6f68d6c2c6847ca6ee54c356dacab93ac6fabf0b6ee5426e"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_button.cpp": {
+    "size": 1192,
+    "sha256": "9f4213b9592dfebe1c24728a18486021c57f8cfc7e6287162f00e867e0f48590"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_valve.cpp": {
+    "size": 3704,
+    "sha256": "a91b375b537ecddce21e343a781cf6ae6a7704cb304ec7a83e0b2555047175c5"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_fan.cpp": {
+    "size": 8829,
+    "sha256": "a4c7d0c500e0d390da6abb059979d00ee6d1e40e57ce2b18cc4966d8b7ff9e25"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_backend_libretiny.h": {
+    "size": 3057,
+    "sha256": "12ae276ef7766e15195f485573a49da919ca9ad0339d382c3a036fb30b2ea573"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_text.h": {
+    "size": 1016,
+    "sha256": "a7835a65f8fb3d2742709387b56d0c5ea8e395a83b659bbec3cec830a190fc86"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_update.h": {
+    "size": 874,
+    "sha256": "ca356900c760bc146bc651972d239b71a15a5d6b910bc20e7fecde4f00e952d8"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_fan.h": {
+    "size": 1339,
+    "sha256": "a693ed07e3449a150e1edb4479d67a29fa2d1425c82a090275f47b67dd58eaf1"
+  },
+  "2026.10.19.15/source/components/mqtt/LOCAL-PATCH.md": {
+    "size": 569,
+    "sha256": "ebe345434794e8dc979d15fe23f2c75bec7131c49fc5be063506b9086ebb7dcf"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_select.cpp": {
+    "size": 1928,
+    "sha256": "cb9a2f2567d8cc33ae9ab04721a9d18e4c8ce99abc48bfc6a01522d0452cacb4"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_datetime.h": {
+    "size": 1132,
+    "sha256": "89988e08d06b5eaf33c11188bcf2cecbc8188fbf0fea9d329379f2695e0998f4"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_select.h": {
+    "size": 1042,
+    "sha256": "47d52deb62dbcb428c24c5afbe1ddaa5bce6df3784335200ea62166ebeac4fc4"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_backend_esp32.h": {
+    "size": 10699,
+    "sha256": "69bad50eb1a2c4d78577208857fba13245a534b911a355711a4e5e6bda478348"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_button.h": {
+    "size": 886,
+    "sha256": "7b76d00441d55b00042a8f1c047939facfbdd39b7ee3977a20fa4bbbaca38b00"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_light.cpp": {
+    "size": 3862,
+    "sha256": "d930f4fa9c93349e01228fe5beb3b4962f0ad4c4dad669ee08819410ab4da37f"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_cover.h": {
+    "size": 1088,
+    "sha256": "34b09405ff66db07c8e855804d38c6e4d23fa9c2aa9aeb940e768324acf87e1d"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_date.cpp": {
+    "size": 2109,
+    "sha256": "c0de98f3c2a1ae83056b739249215dff9928dfc2273dbff56cefb6cbffba90ee"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_date.h": {
+    "size": 1049,
+    "sha256": "e72568be39d2dfb87bc7101247580385497b261df7c69b076232ab3d7fa9e9a5"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_backend_esp8266.h": {
+    "size": 3040,
+    "sha256": "3934e9f5ccf8ef6f6fcb7750e365de389c28c0c46f618a2aa41ca65cf365a570"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_sensor.h": {
+    "size": 1833,
+    "sha256": "f97367e5ddc99da454c823020904ea0762b9f663e909e9e126156cb89b88ba42"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_component.cpp": {
+    "size": 20236,
+    "sha256": "7e45382281785e405c72095d7e32ed0fa4a7cdbcfbfb59882937b25eeffa9ad5"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_update.cpp": {
+    "size": 2263,
+    "sha256": "e70e877c9ef4c852ab20f9a5b5032f2024b7734dbd0ad387f9806a30f4b17fc4"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_switch.h": {
+    "size": 854,
+    "sha256": "343ecf809ea6fb60711bf1b2ff96b65b6faf61f68f7edfd094e3e4f2598012a8"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_sensor.cpp": {
+    "size": 4041,
+    "sha256": "5559795c5f9b6a6688b9343e65c72cdfa839a4e5fe8e40615c3eb7da0510e054"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_switch.cpp": {
+    "size": 2049,
+    "sha256": "38cd566112b1581e736174affa3b8a5089ec07390d6e1927b6a66f736aaff232"
+  },
+  "2026.10.19.15/source/components/mqtt/LICENSE": {
+    "size": 36664,
+    "sha256": "1f312390122725ee382f85af00e3df84f2490cd8fa61b9ea172bc6591cc0ac63"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_climate.cpp": {
+    "size": 17885,
+    "sha256": "9ad5ed804753a365332749a413c7a8923f34938eb7b1cc51502e50f00a65ec0a"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_const.h": {
+    "size": 19567,
+    "sha256": "c76284b4318e1c1902af678311e7e9b723707e16af44d91410c03a708b5dab96"
+  },
+  "2026.10.19.15/source/components/mqtt/custom_mqtt_device.h": {
+    "size": 7841,
+    "sha256": "b8d86b57de51d0ba9e7e8774ab24f1a17638d4ab281fd9e5acbeada317f3f1a8"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_lock.cpp": {
+    "size": 2376,
+    "sha256": "9c7b4d711f47b6fc4fdc1749d2e2c55f14cfab53422b39c2899ce36e36ba3b13"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_backend.h": {
+    "size": 2829,
+    "sha256": "1113ecbd2af60c67806fdb745822dd21bd6ee0cb7e9ef82d16065f8f13181b36"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_client.h": {
+    "size": 16209,
+    "sha256": "4a262db13eb73840b07e4d0abce03f61313133932e521e4bae9da288b12912a3"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_component.h": {
+    "size": 15168,
+    "sha256": "d665a345911e0d999036c33e72e63bd46313e30bdd0fb2ff954476911766352d"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_client.cpp": {
+    "size": 29051,
+    "sha256": "204f55b28abd539c0f52500952a474ce1c4ad440d5f7696f677f0bc2aab73400"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_binary_sensor.h": {
+    "size": 938,
+    "sha256": "58f2b89a30eedf1eacabe6c2bb476a45fa8c601b1979e01104f525cc4ec39049"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_text.cpp": {
+    "size": 1934,
+    "sha256": "70aeb0adcd5781f468821760e4907fc111cf779d217ced9b1b1b4b67ef763f60"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_light.h": {
+    "size": 907,
+    "sha256": "ee4b8aa8f20c58d12303362309b9b7d912067804be6eca56f6964cb509b95a77"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_binary_sensor.cpp": {
+    "size": 2117,
+    "sha256": "575d3f99ad051179ee7356a7c4386b0f7d8e95dba9dbf380df42758f1f69b801"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_climate.h": {
+    "size": 1785,
+    "sha256": "6c0b6acac1f22e2a10ae7400060d1ff13abfbc263b6dcc49c983e6c8b61473a1"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_valve.h": {
+    "size": 805,
+    "sha256": "6aed02d20431966a4831b2f6a0b1eca61abd4f935fac01df1252469a2cc404a1"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_datetime.cpp": {
+    "size": 3211,
+    "sha256": "27b03de4b6f0d04ce8d00c0f2868b62950bb7e58f20621037663218bd5ff34ab"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_time.cpp": {
+    "size": 2148,
+    "sha256": "b9f378889699d1368cdd9bd4ce109cb349e4e4404647ab13704b633420091439"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_time.h": {
+    "size": 1049,
+    "sha256": "cb3d07fdc8cbcc2c3e5f5efd60f2283e874178d8573a7e833dde97a14ce5dd99"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_backend_esp32.cpp": {
+    "size": 11496,
+    "sha256": "808f7946cc97cf17125047eb05e2096cc6dc3389cc97c23e8fc3d44683f1fc0b"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_lock.h": {
+    "size": 818,
+    "sha256": "6e8a7997d49dbd31375901212364a0d48bf7a8c2f5facb40866e8c0238961815"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_number.h": {
+    "size": 1029,
+    "sha256": "e53ec7a9792734ca809a68e1d252be3884ed06e3821c15645c83ed0d15a26229"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_event.cpp": {
+    "size": 1701,
+    "sha256": "611fcd5546590f59494cea217ecd3a28c1958a6f5b64d80a5a35b04a28bdf738"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_alarm_control_panel.cpp": {
+    "size": 5557,
+    "sha256": "00a655e2cd1d390afaa6a288fd88f33b7bd412de90c6b04a5b7fbeed88e58858"
+  },
+  "2026.10.19.15/source/components/mqtt/mqtt_number.cpp": {
+    "size": 2794,
+    "sha256": "563a1abcac8d7291eb5a0f73740c99fbc279bd6c4402dbe3f51815c2c8b418a4"
+  },
+  "2026.10.19.15/source/components/boiler_mqtt_policy/__init__.py": {
+    "size": 338,
+    "sha256": "39bff246eca607f86876cb7137ab7a3636f2b5f0a06c9ccb7f5221aa965d6b13"
+  },
+  "2026.10.19.15/source/components/web_server_base/__init__.py": {
+    "size": 3040,
+    "sha256": "07a4d983dd5b0bcd0bdec5a4da820eeeea147caa8a149c5f9468b22d272a4a6a"
+  },
+  "2026.10.19.15/source/components/web_server_base/web_server_base.cpp": {
+    "size": 682,
+    "sha256": "f60d65c974df1e2303015568570e78669587944f25a91952074770d5a1451c19"
+  },
+  "2026.10.19.15/source/components/web_server_base/LOCAL-PATCH.md": {
+    "size": 190,
+    "sha256": "eac3b8c972421950ea8c84818422ca0e6c6da761c40f0ccf0fb3ebdbec79cc26"
+  },
+  "2026.10.19.15/source/components/web_server_base/web_server_base.h": {
+    "size": 7188,
+    "sha256": "269d20fa50f2a7ea539945038de34b836e89a8365c7aea17e17f3889dd599433"
+  },
+  "2026.10.19.15/source/components/web_server_base/LICENSE": {
+    "size": 36664,
+    "sha256": "1f312390122725ee382f85af00e3df84f2490cd8fa61b9ea172bc6591cc0ac63"
+  },
+  "2026.10.19.15/source/components/web_server_base/fix_rp2040_hash.py.script": {
+    "size": 590,
+    "sha256": "9d64dec0a926f3014df14fa32355f04bedead2cde194050ca89849ba78cdc30d"
+  },
+  "2026.10.19.15/images/firmware.ota.bin": {
+    "size": 1100976,
+    "sha256": "6cd7d1ddd0d2dceeb14c587671739aab4cb36b6d3ebccce7aea4c62b982a1067"
+  },
+  "2026.10.19.15/images/firmware.factory.bin": {
+    "size": 1166512,
+    "sha256": "fe3df0f32eec4c053e92c4c046a137cbb75563be323c8d54df912c8e6f8b7674"
+  },
+  "2026.10.19.15/original-archives/source.tar.gz": {
+    "size": 166596,
+    "sha256": "a42f0f38a43c3e337fd620480d1706b92389475c489e1f0c956dc327e85a7e58"
+  },
+  "2026.10.20.16/secrets.yaml": {
+    "size": 397,
+    "sha256": "5068876b63f311ca7702b94d8641eb947dabbb2b1ca6befefbd36fe2b17e74bc"
+  },
+  "2026.10.20.16/source/secrets.example.yaml": {
+    "size": 378,
+    "sha256": "2c44f41f72b78da86e17bafaacfe30fc27e9a0e2b9338ad55271fd508be8fe61"
+  },
+  "2026.10.20.16/source/CONTRACT.md": {
+    "size": 1734,
+    "sha256": "2d1d8f19d343c8bf075a00980f12a613d51de5e8416a230967655676c79da1a0"
+  },
+  "2026.10.20.16/source/BUILD-MANIFEST.json": {
+    "size": 3049,
+    "sha256": "cba9db187a87ef49314ded62e44b8ef4ecbd6722e274b868dac27bd2134996b5"
+  },
+  "2026.10.20.16/source/source-checks.json": {
+    "size": 8746,
+    "sha256": "1fd9a97ea8efda64e98ec2cedda77701cb6a9394a601086a381c52e2ebaa4f88"
+  },
+  "2026.10.20.16/source/COMMISSIONING.md": {
+    "size": 930,
+    "sha256": "5451e968bc65d1fe72306b72a9d4132aed6e2a40e53f8f01dde6a94fae93e992"
+  },
+  "2026.10.20.16/source/.gitignore": {
+    "size": 184,
+    "sha256": "6a6bda99854cb9a22ea2948828906c37b02cba0422b735ffb46f18b58baa027f"
+  },
+  "2026.10.20.16/source/boiler-proxy.yaml": {
+    "size": 21966,
+    "sha256": "5c4aedb605d13cc41ce8efa02186e83927a4b86996ba545069846addf3fbf392"
+  },
+  "2026.10.20.16/source/generated-source-checks.json": {
+    "size": 5328,
+    "sha256": "dbda59cf1fa2094f2e90c0fa1211cc5092c8348b368f44d4c09b09636cd09e28"
+  },
+  "2026.10.20.16/source/www/boiler.js": {
+    "size": 34483,
+    "sha256": "2311c68d1017334272d7884b66832cd4c593163dc612da3708be77ecc841a4a5"
+  },
+  "2026.10.20.16/source/www/boiler.css": {
+    "size": 5537,
+    "sha256": "64976c6c593cac316210f97bf36ec340a4812c476d015233e9cd2a6b6b65849a"
+  },
+  "2026.10.20.16/source/components/boiler_proxy/__init__.py": {
+    "size": 10542,
+    "sha256": "165813a23fa38b13d2d2717a6c48f6a04a691bfbfd1d9f597048cb914148c73e"
+  },
+  "2026.10.20.16/source/components/boiler_proxy/boiler_proxy.cpp": {
+    "size": 41618,
+    "sha256": "d7912dc43637bb01670be555cd73a0e56eed66b1bb19e99bdd320710310f9d48"
+  },
+  "2026.10.20.16/source/components/boiler_proxy/boiler_proxy.h": {
+    "size": 12358,
+    "sha256": "076e9662d1c921089346212a6c8160bc2da693fe3084f62ea773c3b950f08af4"
+  },
+  "2026.10.20.16/source/components/boiler_web_auth/__init__.py": {
+    "size": 621,
+    "sha256": "30e5b609f039dec445a1f56ba64304f5c036c15b634c11813ae599e980cfec52"
+  },
+  "2026.10.20.16/source/components/boiler_web_auth/boiler_web_auth.h": {
+    "size": 3529,
+    "sha256": "afca9ee21bc2882c48a85ff30c0b1a2a0ca902f0662d335682eebd65623f195b"
+  },
+  "2026.10.20.16/source/components/boiler_network/__init__.py": {
+    "size": 799,
+    "sha256": "0f791a0fe472c301b2af93cadcb6c2faaba949380a4c89732e2bc3e702830025"
+  },
+  "2026.10.20.16/source/components/boiler_network/boiler_network.h": {
+    "size": 5864,
+    "sha256": "264a2ae21d38669aa7cc5aedbeef771c97bcc42a602a6590ab40145792781efd"
+  },
+  "2026.10.20.16/source/components/boiler_transport_v4/boiler_transport_v4.h": {
+    "size": 7125,
+    "sha256": "7671b745864c55023a7cf4c307917bcb69c30c6b1ccadcf85d1f41f015d5d949"
+  },
+  "2026.10.20.16/source/components/boiler_transport_v4/__init__.py": {
+    "size": 2392,
+    "sha256": "0506bd9e727c2015e4eafd960ed6fe642bdeaba227159d37550282652030a7af"
+  },
+  "2026.10.20.16/source/components/boiler_transport_v4/boiler_transport_v4.cpp": {
+    "size": 16026,
+    "sha256": "c04154369f39a5a61c4ed91f20bd89fa4cd2a6bdfb97b26b8a1840e9f6647356"
+  },
+  "2026.10.20.16/source/components/boiler_transport_v4/bridge_core.h": {
+    "size": 3532,
+    "sha256": "95a5bed6b3e8fca0e04984f9277bc09ad58d7e4872770726c2f725763893a200"
+  },
+  "2026.10.20.16/source/components/boiler_transport_v4/transactions.cpp": {
+    "size": 19543,
+    "sha256": "b1d7893fc180811671d091ab7daa444c921c66a9969880d03645f2da4f8c3bbc"
+  },
+  "2026.10.20.16/source/components/boiler_transport_v4/transaction_core.h": {
+    "size": 2520,
+    "sha256": "b9f95a26555326f12d7f05af58ece0053d76c2b9ca2504a0be95bb302455eca6"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_event.h": {
+    "size": 808,
+    "sha256": "0bd2fa83a3577a52eb5d1dcc3147faef0f3038e73b813e6ea2611462f0e99c55"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_alarm_control_panel.h": {
+    "size": 855,
+    "sha256": "dcb1c2068b6b0d5d28225904136e606e63edf609c11976d240e4d01a347ef5b3"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_text_sensor.h": {
+    "size": 1242,
+    "sha256": "e3f803c8a23491ece678d1e26c8a3ec7d60d4720097d589bd7c1feb1193b5265"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_text_sensor.cpp": {
+    "size": 4474,
+    "sha256": "06435cb3626d7dbd77b1b6a80528d4c82f62867e26a279a19bf9a8920c59b4bb"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_cover.cpp": {
+    "size": 7055,
+    "sha256": "59282d2f036b30458ab6b595376c541cc0daca0eeeef9de74de729f8e3601713"
+  },
+  "2026.10.20.16/source/components/mqtt/custom_mqtt_device.cpp": {
+    "size": 1317,
+    "sha256": "4fb10381b20651cdad93ed0bb0f5a94788c90179a068bbebb620b25830ef99bd"
+  },
+  "2026.10.20.16/source/components/mqtt/__init__.py": {
+    "size": 25486,
+    "sha256": "1e0d295510546d1b6f68d6c2c6847ca6ee54c356dacab93ac6fabf0b6ee5426e"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_button.cpp": {
+    "size": 1192,
+    "sha256": "9f4213b9592dfebe1c24728a18486021c57f8cfc7e6287162f00e867e0f48590"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_valve.cpp": {
+    "size": 3704,
+    "sha256": "a91b375b537ecddce21e343a781cf6ae6a7704cb304ec7a83e0b2555047175c5"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_fan.cpp": {
+    "size": 8829,
+    "sha256": "a4c7d0c500e0d390da6abb059979d00ee6d1e40e57ce2b18cc4966d8b7ff9e25"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_backend_libretiny.h": {
+    "size": 3057,
+    "sha256": "12ae276ef7766e15195f485573a49da919ca9ad0339d382c3a036fb30b2ea573"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_text.h": {
+    "size": 1016,
+    "sha256": "a7835a65f8fb3d2742709387b56d0c5ea8e395a83b659bbec3cec830a190fc86"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_update.h": {
+    "size": 874,
+    "sha256": "ca356900c760bc146bc651972d239b71a15a5d6b910bc20e7fecde4f00e952d8"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_fan.h": {
+    "size": 1339,
+    "sha256": "a693ed07e3449a150e1edb4479d67a29fa2d1425c82a090275f47b67dd58eaf1"
+  },
+  "2026.10.20.16/source/components/mqtt/LOCAL-PATCH.md": {
+    "size": 569,
+    "sha256": "ebe345434794e8dc979d15fe23f2c75bec7131c49fc5be063506b9086ebb7dcf"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_select.cpp": {
+    "size": 1928,
+    "sha256": "cb9a2f2567d8cc33ae9ab04721a9d18e4c8ce99abc48bfc6a01522d0452cacb4"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_datetime.h": {
+    "size": 1132,
+    "sha256": "89988e08d06b5eaf33c11188bcf2cecbc8188fbf0fea9d329379f2695e0998f4"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_select.h": {
+    "size": 1042,
+    "sha256": "47d52deb62dbcb428c24c5afbe1ddaa5bce6df3784335200ea62166ebeac4fc4"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_backend_esp32.h": {
+    "size": 10699,
+    "sha256": "69bad50eb1a2c4d78577208857fba13245a534b911a355711a4e5e6bda478348"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_button.h": {
+    "size": 886,
+    "sha256": "7b76d00441d55b00042a8f1c047939facfbdd39b7ee3977a20fa4bbbaca38b00"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_light.cpp": {
+    "size": 3862,
+    "sha256": "d930f4fa9c93349e01228fe5beb3b4962f0ad4c4dad669ee08819410ab4da37f"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_cover.h": {
+    "size": 1088,
+    "sha256": "34b09405ff66db07c8e855804d38c6e4d23fa9c2aa9aeb940e768324acf87e1d"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_date.cpp": {
+    "size": 2109,
+    "sha256": "c0de98f3c2a1ae83056b739249215dff9928dfc2273dbff56cefb6cbffba90ee"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_date.h": {
+    "size": 1049,
+    "sha256": "e72568be39d2dfb87bc7101247580385497b261df7c69b076232ab3d7fa9e9a5"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_backend_esp8266.h": {
+    "size": 3040,
+    "sha256": "3934e9f5ccf8ef6f6fcb7750e365de389c28c0c46f618a2aa41ca65cf365a570"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_sensor.h": {
+    "size": 1833,
+    "sha256": "f97367e5ddc99da454c823020904ea0762b9f663e909e9e126156cb89b88ba42"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_component.cpp": {
+    "size": 20236,
+    "sha256": "7e45382281785e405c72095d7e32ed0fa4a7cdbcfbfb59882937b25eeffa9ad5"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_update.cpp": {
+    "size": 2263,
+    "sha256": "e70e877c9ef4c852ab20f9a5b5032f2024b7734dbd0ad387f9806a30f4b17fc4"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_switch.h": {
+    "size": 854,
+    "sha256": "343ecf809ea6fb60711bf1b2ff96b65b6faf61f68f7edfd094e3e4f2598012a8"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_sensor.cpp": {
+    "size": 4041,
+    "sha256": "5559795c5f9b6a6688b9343e65c72cdfa839a4e5fe8e40615c3eb7da0510e054"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_switch.cpp": {
+    "size": 2049,
+    "sha256": "38cd566112b1581e736174affa3b8a5089ec07390d6e1927b6a66f736aaff232"
+  },
+  "2026.10.20.16/source/components/mqtt/LICENSE": {
+    "size": 36664,
+    "sha256": "1f312390122725ee382f85af00e3df84f2490cd8fa61b9ea172bc6591cc0ac63"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_climate.cpp": {
+    "size": 17885,
+    "sha256": "9ad5ed804753a365332749a413c7a8923f34938eb7b1cc51502e50f00a65ec0a"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_const.h": {
+    "size": 19567,
+    "sha256": "c76284b4318e1c1902af678311e7e9b723707e16af44d91410c03a708b5dab96"
+  },
+  "2026.10.20.16/source/components/mqtt/custom_mqtt_device.h": {
+    "size": 7841,
+    "sha256": "b8d86b57de51d0ba9e7e8774ab24f1a17638d4ab281fd9e5acbeada317f3f1a8"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_lock.cpp": {
+    "size": 2376,
+    "sha256": "9c7b4d711f47b6fc4fdc1749d2e2c55f14cfab53422b39c2899ce36e36ba3b13"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_backend.h": {
+    "size": 2829,
+    "sha256": "1113ecbd2af60c67806fdb745822dd21bd6ee0cb7e9ef82d16065f8f13181b36"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_client.h": {
+    "size": 16209,
+    "sha256": "4a262db13eb73840b07e4d0abce03f61313133932e521e4bae9da288b12912a3"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_component.h": {
+    "size": 15168,
+    "sha256": "d665a345911e0d999036c33e72e63bd46313e30bdd0fb2ff954476911766352d"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_client.cpp": {
+    "size": 29051,
+    "sha256": "204f55b28abd539c0f52500952a474ce1c4ad440d5f7696f677f0bc2aab73400"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_binary_sensor.h": {
+    "size": 938,
+    "sha256": "58f2b89a30eedf1eacabe6c2bb476a45fa8c601b1979e01104f525cc4ec39049"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_text.cpp": {
+    "size": 1934,
+    "sha256": "70aeb0adcd5781f468821760e4907fc111cf779d217ced9b1b1b4b67ef763f60"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_light.h": {
+    "size": 907,
+    "sha256": "ee4b8aa8f20c58d12303362309b9b7d912067804be6eca56f6964cb509b95a77"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_binary_sensor.cpp": {
+    "size": 2117,
+    "sha256": "575d3f99ad051179ee7356a7c4386b0f7d8e95dba9dbf380df42758f1f69b801"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_climate.h": {
+    "size": 1785,
+    "sha256": "6c0b6acac1f22e2a10ae7400060d1ff13abfbc263b6dcc49c983e6c8b61473a1"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_valve.h": {
+    "size": 805,
+    "sha256": "6aed02d20431966a4831b2f6a0b1eca61abd4f935fac01df1252469a2cc404a1"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_datetime.cpp": {
+    "size": 3211,
+    "sha256": "27b03de4b6f0d04ce8d00c0f2868b62950bb7e58f20621037663218bd5ff34ab"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_time.cpp": {
+    "size": 2148,
+    "sha256": "b9f378889699d1368cdd9bd4ce109cb349e4e4404647ab13704b633420091439"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_time.h": {
+    "size": 1049,
+    "sha256": "cb3d07fdc8cbcc2c3e5f5efd60f2283e874178d8573a7e833dde97a14ce5dd99"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_backend_esp32.cpp": {
+    "size": 11496,
+    "sha256": "808f7946cc97cf17125047eb05e2096cc6dc3389cc97c23e8fc3d44683f1fc0b"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_lock.h": {
+    "size": 818,
+    "sha256": "6e8a7997d49dbd31375901212364a0d48bf7a8c2f5facb40866e8c0238961815"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_number.h": {
+    "size": 1029,
+    "sha256": "e53ec7a9792734ca809a68e1d252be3884ed06e3821c15645c83ed0d15a26229"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_event.cpp": {
+    "size": 1701,
+    "sha256": "611fcd5546590f59494cea217ecd3a28c1958a6f5b64d80a5a35b04a28bdf738"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_alarm_control_panel.cpp": {
+    "size": 5557,
+    "sha256": "00a655e2cd1d390afaa6a288fd88f33b7bd412de90c6b04a5b7fbeed88e58858"
+  },
+  "2026.10.20.16/source/components/mqtt/mqtt_number.cpp": {
+    "size": 2794,
+    "sha256": "563a1abcac8d7291eb5a0f73740c99fbc279bd6c4402dbe3f51815c2c8b418a4"
+  },
+  "2026.10.20.16/source/components/boiler_mqtt_policy/__init__.py": {
+    "size": 338,
+    "sha256": "39bff246eca607f86876cb7137ab7a3636f2b5f0a06c9ccb7f5221aa965d6b13"
+  },
+  "2026.10.20.16/source/components/web_server_base/__init__.py": {
+    "size": 3040,
+    "sha256": "07a4d983dd5b0bcd0bdec5a4da820eeeea147caa8a149c5f9468b22d272a4a6a"
+  },
+  "2026.10.20.16/source/components/web_server_base/web_server_base.cpp": {
+    "size": 682,
+    "sha256": "f60d65c974df1e2303015568570e78669587944f25a91952074770d5a1451c19"
+  },
+  "2026.10.20.16/source/components/web_server_base/LOCAL-PATCH.md": {
+    "size": 190,
+    "sha256": "eac3b8c972421950ea8c84818422ca0e6c6da761c40f0ccf0fb3ebdbec79cc26"
+  },
+  "2026.10.20.16/source/components/web_server_base/web_server_base.h": {
+    "size": 7188,
+    "sha256": "269d20fa50f2a7ea539945038de34b836e89a8365c7aea17e17f3889dd599433"
+  },
+  "2026.10.20.16/source/components/web_server_base/LICENSE": {
+    "size": 36664,
+    "sha256": "1f312390122725ee382f85af00e3df84f2490cd8fa61b9ea172bc6591cc0ac63"
+  },
+  "2026.10.20.16/source/components/web_server_base/fix_rp2040_hash.py.script": {
+    "size": 590,
+    "sha256": "9d64dec0a926f3014df14fa32355f04bedead2cde194050ca89849ba78cdc30d"
+  },
+  "2026.10.20.16/images/firmware.ota.bin": {
+    "size": 1102144,
+    "sha256": "531cf400abeba6a30d45b1c892bac8c3b2ce1ca70f067d1b9a76dbc0940347d2"
+  },
+  "2026.10.20.16/images/firmware.factory.bin": {
+    "size": 1167680,
+    "sha256": "ece7a68c03da8b5bc94cd40d2c6309885f63fb55a6f7252e581947ccf68570d3"
+  },
+  "2026.10.20.16/original-archives/source.tar.gz": {
+    "size": 142112,
+    "sha256": "dfe9bb1e85c965f932fea5e4dcc0d6ad9cacb62de24dea4041bd4c90d0390bad"
+  }
+}

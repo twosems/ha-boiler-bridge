@@ -1,0 +1,10 @@
+{
+  "format": "BOILER-HYBRID-v1",
+  "filename": "boiler-2026.10.12.6-office-private.zip.encrypted",
+  "sha256": "f52151f1f56a0595dfdd97e8593053b51af6afc435f12db8d0ece279bbcc5ca0",
+  "size": 1483151,
+  "plaintext_format": "zip",
+  "plaintext_sha256": "f8d2ab932de814fc9bfd57046fc32f4b95d70f7d7813df0c28ad48ebba37defb",
+  "verification": "AES-GCM roundtrip PASS; existing RSA public key used; user private key not read",
+  "source": "User Library original installer package"
+}

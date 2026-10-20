@@ -1,3 +1,15 @@
+# Boiler Bridge — firmware и Home Assistant
+
+**Текущий firmware:2026.10.20.16**, установлен; проверенные пользователем переходы/значения физически совпали. Длительная стабильность ещё не доказана. Начать с [текущего состояния](docs/CURRENT.md), [реестра переноса](docs/SYNC-20261020.md), [порядкаGitHub](docs/GITHUB-WORKFLOW.md) и [AGENTS.md](AGENTS.md).
+
+Ветка с последней историей: `feature/firmware-history-through-16-20261020`; до её слияния `main` не является последним срезом. Исходники новых версий — `firmware/candidates/`; прежние варианты — `firmware/snapshots/`. Приватные образы зашифрованы в `recovery/20261020/`; ключ хранится у пользователя отдельно. Сохранение кода не прошивает устройство.
+
+КарточкаHACS разрабатывается в [twosems/boiler-control-card](https://github.com/twosems/boiler-control-card). Ближайшая задача: допусккоманд в существующей домашней карточке.
+
+---
+
+## Историческое описание интеграции
+
 # Boiler Bridge
 
 Custom Home Assistant integration for an ESP32 UART bridge connected to a boiler controller and its stock HMI.
