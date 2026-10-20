@@ -453,5 +453,96 @@
     "captured_date": "2026-10-12",
     "network_profile": "home_wifi_in_original_secrets; office deployment blocked pending target configuration",
     "generated_cpp_h_match": true
+  },
+  {
+    "snapshot_id": "2026.10.12.5-office-passive",
+    "declared_version": "2026.10.12.5",
+    "origin_host": "current-isolated-workspace",
+    "origin_path": "firmware/candidates/2026.10.12.5",
+    "status": "Local build PASS; passive controls/active GET disabled; private office binaries excluded from public GitHub; hardware NOT_TESTED; OTA_ATTEMPTED_UNCONFIRMED (HTTP 408, device became unreachable); OFFICE_READY=false",
+    "files": [
+      {
+        "path": "boiler-proxy.yaml",
+        "sha256": "2e134d78d4807acb3d7d2556da1b134998298eca39e1024ef126dac68dc80dbe",
+        "size": 18962
+      },
+      {
+        "path": "components/boiler_transport_v4/__init__.py",
+        "sha256": "e364839d181c9a916f9e5e768e4bb69981efb726682825c56d4a77e0973bc14c",
+        "size": 2305
+      },
+      {
+        "path": "components/boiler_transport_v4/boiler_transport_v4.cpp",
+        "sha256": "9701ebd11a58fa0fb807614c3dc183ff4fbd14b4ea37b9d6e64e174423d17f90",
+        "size": 12700
+      },
+      {
+        "path": "components/boiler_transport_v4/boiler_transport_v4.h",
+        "sha256": "304e1e54ac6b1114b065c5bfb47df463a045edec3ded3ac1a1a22f99686c11d8",
+        "size": 3000
+      },
+      {
+        "path": "components/boiler_transport_v4/bridge_core.h",
+        "sha256": "95a5bed6b3e8fca0e04984f9277bc09ad58d7e4872770726c2f725763893a200",
+        "size": 3532
+      },
+      {
+        "path": "components/boiler_proxy/__init__.py",
+        "sha256": "165813a23fa38b13d2d2717a6c48f6a04a691bfbfd1d9f597048cb914148c73e",
+        "size": 10542
+      },
+      {
+        "path": "www/boiler.js",
+        "sha256": "f2d5346e965ada2370e008cc2a1dbf8a509e76bf52246c0a2d9e6d5315357c11",
+        "size": 24043
+      },
+      {
+        "path": "www/boiler.css",
+        "sha256": "64976c6c593cac316210f97bf36ec340a4812c476d015233e9cd2a6b6b65849a",
+        "size": 5537
+      }
+    ],
+    "binaries": [
+      {
+        "path": "private-workspace/boiler-fw-2026.10.12.5-office-private-factory.bin",
+        "size": 1132352,
+        "sha256": "ac373c4935e985a5a0d12e3e55e9ea105808945d280e1d8eb8088ddafcb17ba3",
+        "visibility": "private local workspace; not uploaded to public GitHub"
+      },
+      {
+        "path": "private-workspace/boiler-fw-2026.10.12.5-office-private-ota.bin",
+        "size": 1066816,
+        "sha256": "b92c7feb47d71f0af486df62e5f20d70efd7ada65a1636fa25629970b422f1f7",
+        "visibility": "private local workspace; not uploaded to public GitHub"
+      }
+    ],
+    "device_verified": false,
+    "captured_date": "2026-10-12",
+    "network_profile": "office Wi-Fi via ignored local secrets; credentials not stored in public repository",
+    "toolchain": {
+      "esphome": "2026.9.0",
+      "esp_idf": "5.5.5",
+      "framework": "Arduino ESP32 3.3.11"
+    },
+    "generated_cpp_h_match": true,
+    "bootloader_rollback_compiled": true
+  },
+  {
+    "version": "2026.10.12.6",
+    "status": "FULL_CANDIDATE_BUILT_HARDWARE_NOT_TESTED",
+    "path": "firmware/candidates/2026.10.12.6",
+    "office_ready": false,
+    "artifacts": {
+      "factory": {
+        "filename": "boiler-2026.10.12.6.factory.bin",
+        "size": 1143552,
+        "sha256": "582c36eb453d228d88f5a562e1537b0fb460864d3b5a2ceaf251ac8865c640cb"
+      },
+      "ota": {
+        "filename": "boiler-2026.10.12.6.ota.bin",
+        "size": 1078016,
+        "sha256": "dc433de50f7f0699f379c78502f5baee7ba2498fd1047f602f919a4ebba6cc04"
+      }
+    }
   }
 ]

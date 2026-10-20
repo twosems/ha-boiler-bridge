@@ -1,0 +1,58 @@
+{
+  "version": "2026.10.19.14",
+  "source_commit": "55641d502788ba945af36a464c06468f68126816",
+  "source_base": "Recovered exact v13 build archive; original worktree Git history not available",
+  "build_job": "job_6b5f0d139634",
+  "build_host": "host_b5648365d9b64ade",
+  "build_status": "PASS",
+  "deployment": "INSTALLED / BOOT_CONFIRMED / TELEMETRY_BLOCKED / REAL_HMI_CONTROL_UNTESTED",
+  "ota": {
+    "bytes": 1099568,
+    "sha256": "95913a01451266f82f167b3754f13303cf784da6422cc512e6bb32d700a41b07"
+  },
+  "factory": {
+    "bytes": 1165104,
+    "sha256": "4512efc0283b897a5ddbe6abbd67313bb723386203bd0f235d0a8f08db210d11"
+  },
+  "generated_sources": 49,
+  "registry_lines": 177,
+  "registry_unchanged": true,
+  "transport_same_except_version": true,
+  "source_archive_sha256": "d8afc6da798330f0b6848e7062805b972efe749898ba3c481c7a2435dcc830fe",
+  "encrypted_backup": {
+    "path": "/var/lib/sentinelx/uploads/boiler-fw-20261019-14/boiler-v14-private.tar.xz.encrypted",
+    "bytes": 853674,
+    "sha256": "b9605365df89fcaef447f47e2dd999b9ae76e1aa3ac8afae6936c3b8280120e0",
+    "authenticated_roundtrip": true
+  },
+  "rollback": {
+    "version": "2026.10.14.13",
+    "private_on": "office-pc boiler13/firmware.ota.bin",
+    "sha256": "57351af6b90619186c60d4db4ff13e5755d2a63280a804a61275878e9a8712cf"
+  },
+  "ram_bytes": 103824,
+  "flash_bytes": 1099455,
+  "installation": {
+    "date_utc": "2026-10-19",
+    "ota_job": "script_job_6af3137279d04042a81c4be33d6b5bb8",
+    "ota_seconds": 9.41,
+    "boot_version_confirmed": "2026.10.19.14",
+    "postflight_jobs": [
+      "script_job_abd8343fd1074420bc48e84e4038c766",
+      "script_job_cd734b91c926443b92441d7f1694587a"
+    ],
+    "uart_rx_and_accepted": [
+      2328,
+      6868
+    ],
+    "uart_errors": 0,
+    "mirror_drops": 0,
+    "ownership_fault": true,
+    "telemetry_enabled": false,
+    "write_capable": false,
+    "mode": "READ_ONLY_TELEMETRY",
+    "live_temperature_messages": 0,
+    "hardware_command_test_performed": false,
+    "additional_restart_or_rollback_performed": false
+  }
+}

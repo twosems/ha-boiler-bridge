@@ -1,0 +1,23 @@
+{
+  "branch": "fix/boiler-web-command-handler-20261019",
+  "head": "a5fcb4283e6d5ae4200414b45a913d90fc5210e2",
+  "commits_oldest_first": [
+    "2a179c5e9f07f766d4ec7070b26fbe3f97932492",
+    "55641d502788ba945af36a464c06468f68126816",
+    "d6032aea3fb69a9174d8010c43b6b7d58f02f053",
+    "458a470b90feb4a851fbe5eaaf6028d1ec373796",
+    "aa30f7051b17992b9066ba22d3b54afb5c78eaa9",
+    "7a5adb16203271f29493a6f899923f9f89e5e5cb",
+    "0063440318fa3632d85cf7f28e083fbf216a1424",
+    "f11ac2a6fa0c2ea0ccdeb5bb93c1e07a35198a33",
+    "d33fb450d446ec60075aed1502ac6d848cc164a2",
+    "4fa0e0afb7d17e43956e483d2a9fbdb99be41eb2",
+    "774b65859fb6db409f1f3da811f132b8b25e9f1f",
+    "4d7fcf00173f8eac556938bb0b10404a0cebf8d5",
+    "c5feb6fe42aad815ca07785fec84efb4bde64472",
+    "e8fed60391a05a09d55add893a91753d9e5841c7",
+    "a5fcb4283e6d5ae4200414b45a913d90fc5210e2"
+  ],
+  "bundle": "recovery/20261020/work-recovery.git.bundle",
+  "upstream_ancestry": "unrelated recovered local history; not merged automatically"
+}

@@ -1,0 +1,89 @@
+substitutions:
+  firmware_version: "2026.10.12.4"
+
+esphome:
+  name: boiler-proxy
+  friendly_name: Котёл UART Proxy
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+    advanced:
+      # Standard ESPHome rollback requires its safe_mode. Our component explicitly
+      # enables the IDF option and owns validation instead.
+      enable_ota_rollback: false
+
+logger:
+  baud_rate: 115200
+  level: WARN
+
+# No SSID/password compiled in. USB provisioning required; old configured-SSID
+# preferences are NOT assumed to migrate to this profile.
+wifi:
+  reboot_timeout: 0s
+  power_save_mode: none
+
+improv_serial:
+
+api:
+  reboot_timeout: 0s
+  encryption:
+    key: !secret api_encryption_key
+
+safe_mode:
+  disabled: true
+
+# No HTTP web_server OTA, actuator buttons, restart or network-reset endpoint.
+ota:
+  - platform: esphome
+    password: !secret ota_password
+    on_begin:
+      then:
+        - lambda: id(transport).set_maintenance(true);
+    on_error:
+      then:
+        - lambda: id(transport).set_maintenance(false);
+
+web_server:
+  port: 80
+  version: 3
+  local: true
+  log: false
+  ota: false
+
+external_components:
+  - source:
+      type: local
+      path: components
+
+boiler_transport_v4:
+  id: transport
+  observer_enabled: true
+  allow_boot_confirm: false
+  diagnostics:
+    name: "Мост диагностика BRIDGE_DIAG"
+  current_page:
+    name: "Текущая страница PAGE"
+
+text_sensor:
+  - platform: template
+    name: "Версия прошивки FW"
+    lambda: return {"${firmware_version}"};
+    update_interval: 60s
+  - platform: template
+    name: "Возможности CAPABILITIES"
+    lambda: return {"PASSIVE;write_capable=false;BENCH_ONLY;PAGE_ONLY;USB_WIFI_PROVISIONING;BOOT_CONFIRM_DISABLED"};
+    update_interval: 60s
+  - platform: wifi_info
+    ip_address:
+      name: "WiFi IP STATUS"
+    ssid:
+      name: "WiFi SSID STATUS"
+
+sensor:
+  - platform: uptime
+    name: "ESP Uptime STATUS"
+  - platform: wifi_signal
+    name: "WiFi RSSI STATUS"
+    update_interval: 60s

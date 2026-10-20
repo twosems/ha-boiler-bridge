@@ -7,3 +7,13 @@ secrets.yaml
 **/.esphome/
 **/__pycache__/
 *.pyc
+
+# New office images contain compiled credentials; publish encrypted archives only.
+*.bin
+*.elf
+*.map
+*.zip
+*.tar.gz
+*.tar.xz
+**/.venv/
+**/.pio/

@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "esphome_config": "PASS",
+    "python_syntax": "PASS",
+    "javascript_syntax": "PASS",
+    "single_transport_owner": "PASS: generated component C++ matches candidate source; sole uart_read_bytes/uart_tx_chars owner",
+    "generated_cpp_h": "PASS: exact byte comparison with source",
+    "safe_mode": "PASS: explicitly disabled; no should_enter_safe_mode early return in generated main.cpp",
+    "idf_rollback": "PASS: CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE=y; two 0x1c0000 OTA app partitions",
+    "linker_wrappers": "PASS: watchdog feed exemption and OTA mark-valid guards present in ELF",
+    "controls_and_active_get": "DISABLED",
+    "compile": "PASS: ESPHome 2026.9.0 / ESP-IDF 5.5.5",
+    "portable_core": "PASS: 100000 randomized ring operations, 100000 concurrent mirror records and framing/health checks under ASan/UBSan",
+    "hardware": "NOT_RUN"
+  },
+  "scope": "local compile/generated-code checks plus portable host test; no physical UART/hardware execution"
+}

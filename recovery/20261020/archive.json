@@ -1,0 +1,21 @@
+{
+  "format": "BOILER-HYBRID-v1",
+  "filename": "boiler-originals-through-16.tar.xz.encrypted",
+  "size": 2911805,
+  "sha256": "1aefb4a0e636e24622288cb0410cfc3f10ecff7ec0129c8448cfb616e6240a27",
+  "public_key_sha256": "bc69b0c9993603069ef742d7f479005fa6bf9eb8b42912768963150b82dfd7c3",
+  "key": "Existing user-held boiler-recovery-private-20261012.pem; never uploaded",
+  "verification": "AES-GCM roundtrip passed; RSA public key wrapping performed; private-key decryption not attempted",
+  "versions": [
+    "2026.10.12.4",
+    "2026.10.13.7",
+    "2026.10.13.8",
+    "2026.10.13.9",
+    "2026.10.13.10",
+    "2026.10.14.12",
+    "2026.10.14.13",
+    "2026.10.19.14",
+    "2026.10.19.15",
+    "2026.10.20.16"
+  ]
+}

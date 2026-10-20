@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "one_tx_writer_no_command_insertion": "PASS",
+    "zero_idf_tx_ring": "PASS",
+    "no_rx_flush": "PASS",
+    "supervisor_created_before_bridge": "PASS",
+    "bridge_ready_before_main_wdt_removal": "PASS",
+    "wdt_feed_exemption_only_detached_loop": "PASS",
+    "silence_not_a_transport_fault": "PASS",
+    "consistent_health_snapshot": "PASS",
+    "copy_loss_checked_before_decoding": "PASS",
+    "uart_epoch_invalidates_without_new_copy": "PASS",
+    "stock_get_reply_attribution_disabled": "PASS",
+    "standard_safe_mode_disabled": "PASS",
+    "custom_idf_rollback_explicit": "PASS",
+    "wifi_api_loss_no_restart": "PASS",
+    "public_bench_profile_no_ssid": "PASS",
+    "no_actuators_mqtt_http_ota": "PASS",
+    "no_auto_confirm_for_bench": "PASS"
+  },
+  "scope": "static source only; no driver, task, GPIO or hardware execution"
+}

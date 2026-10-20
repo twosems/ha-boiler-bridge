@@ -1,4 +1,45 @@
+# Дополнение20.10: история через.16
+
+Полный новый реестр: [SYNC-20261020.md](SYNC-20261020.md), machine-readable `firmware/catalog-20261020.json`. Текущая установленная версия.16; данные ниже — неизменённая историческая таблица.
+
+---
+
+# Обновление 2026-10-12: FW 2026.10.12.6
+
+Полный кандидат собран: изолированный UART мост, защищённые активные запросы/кнопки, телеметрия, Web/MQTT/HA, журнал смены Wi-Fi, ручной Setup. Проверки host transport/network/web прошли; аппаратура не проверена, ACTIVE_REQUESTS=OFF. Текущая установленная версия неизвестна после неудачной OTA. Следующий этап: USB backup-first и проверка в офисе 13 октября. Контракт/ограничения/артефакты: firmware/candidates/2026.10.12.6/. Секреты не публикуются.
+
 # Версии и артефакты
+
+## Текущий кандидат .5 (2026-10-12)
+
+`2026.10.12.5` / `firmware/candidates/2026.10.12.5` / ветка
+`feature/boiler-fw-2026-10-12-5`: private office profile for `2Soffice`, local
+ignored secrets. ESPHome 2026.9.0 / ESP-IDF 5.5.5; BUILD_PASS locally. OTA
+1066816 bytes, SHA256 `b92c7feb47d71f0af486df62e5f20d70efd7ada65a1636fa25629970b422f1f7`.
+Passive observer only; full active GET and boiler controls disabled. Hardware NOT
+TESTED, OFFICE_READY=false. OTA was attempted; POST `/update` returned HTTP 408.
+Device is currently UNCONFIRMED/UNREACHABLE by HTTP and OTA at `.172`; IP scanner
+still identifies `boiler-proxy` there. Do not report installed version or repeat
+OTA until connectivity and firmware status are verified. Recovery `.1` was staged
+on office-pc (SHA256 `e99f27b74c0c9d05246dc97604359034bfabd70fb9eade909c5b1e39bdb1a0c3`),
+but contains the historical home Wi-Fi profile. `.5` is not a complete replacement
+for `.1`.
+Do not publish private OTA/factory binaries because they include office credentials.
+See candidate `BUILD-MANIFEST.json`, `CONTRACT.md`, and `COMMISSIONING.md`.
+
+## Новый кандидат .4
+
+`2026.10.12.4` / `firmware/candidates/2026.10.12.4` / ветка
+`feature/boiler-fw-2026-10-12-4`: PASSIVE BENCH_ONLY, source/core checks PASS,
+ESP32 BUILD_PASS + generated checks PASS, hardware NOT TESTED, NOT DEPLOYED.
+Source SHA `f801357f21ef7aa6aaa813096da99b903ed606a4`; финальный job_8a7cc4fe3ffb.
+OTA 912384 bytes / `0f8902261d0098a6bc53aecd1a261225c09a5082b10b065644f76b5673cf6e70`.
+Factory 977920 bytes / `49b332333e49d2a27183974cf4987b7129abbc02d97e3550c15766d5ce5b1221`.
+Полные flags/toolchain/source/generated checks — candidate BUILD-MANIFEST.json.
+Состав: собственные UART1/2, static RT tasks, bounded rings, events/progress counters,
+optional observer PAGE-only, main-TWDT handoff, guarded OTA validation (disabled by default).
+Это не полнофункциональная legacy/Web/MQTT firmware и не офисный OTA-ready образ.
+Публичный bench-профиль без SSID, с USB provisioning; secrets.example не защищает deployment.
 
 Снимки неизменяемы. Все бинарники находятся внутри `recovery/boiler-originals-20261012.tar.xz.encrypted`; ключ отдельно. Хэши/размеры — фактически прочитанные файлы, не объявление эксплуатационной готовности. Полный машинный реестр: `firmware/versions.json`.
 
@@ -23,3 +64,11 @@
 - .1: исторически Update Successful 12.10 02:23, затем пропала сеть; домашние Wi-Fi настройки. Повторно не устанавливать без исправленного целевого профиля.
 - Два разных .3 — выявленная коллизия: rtbridge (priority18, streams) и isolated-transport (priority20, отдельный класс/queue). Следующий изменённый кандидат должен иметь новый номер.
 - Наличие factory/OTA в каталоге не подтверждает соответствие текущему исходнику: перед выпуском сопоставить generated main.cpp, toolchain, журнал и manifest.
+
+
+
+## Candidate 2026.10.12.5
+
+| Variant | FW | OTA | Factory | Status |
+|---|---|---|---|---|
+| office-passive | 2026.10.12.5 | 1066816 bytes, SHA256 `b92c7feb47d71f0af486df62e5f20d70efd7ada65a1636fa25629970b422f1f7` | 1132352 bytes, SHA256 `ac373c4935e985a5a0d12e3e55e9ea105808945d280e1d8eb8088ddafcb17ba3` | Local build PASS; ESPHome 2026.9.0 / IDF 5.5.5; binaries contain office secrets and are kept outside public GitHub; PASSIVE controls/active GET disabled; hardware NOT_TESTED; NOT_DEPLOYED; OFFICE_READY=false |

@@ -1,0 +1,77 @@
+{
+  "ota_job": "script_job_f669856ad70a4513918e6ae0992b7bdd",
+  "postflight_jobs": [
+    "script_job_dfd8eae87e38456cbb2e6d12b87f50ca",
+    "script_job_838c4a7c352c47bba999e8ce1101bff7"
+  ],
+  "captures": [
+    "C:\\ProgramData\\SentinelX\\uploads\\boiler15\\check-1792423431.jsonl",
+    "C:\\ProgramData\\SentinelX\\uploads\\boiler15\\check-1792423480.jsonl"
+  ],
+  "final_diagnostic": {
+    "fw": "2026.10.19.15",
+    "mode": "READ_ONLY_TELEMETRY",
+    "control_supported": true,
+    "marker_verified": false,
+    "panel_bkcmd": 2,
+    "bkcmd_verified": true,
+    "telemetry_enabled": true,
+    "write_capable": false,
+    "ready": true,
+    "fault": 0,
+    "bridge_age_ms": 0,
+    "main_age_ms": 0,
+    "bridge_wdt": true,
+    "loop_detached": true,
+    "rx": [
+      3253,
+      4730
+    ],
+    "tx_fifo_accepted": [
+      1596,
+      7736
+    ],
+    "pending": [
+      0,
+      0
+    ],
+    "high_water": [
+      3,
+      3
+    ],
+    "fifo_loss": 0,
+    "rx_full": 0,
+    "frame_errors": 0,
+    "parity_errors": 0,
+    "api_errors": 0,
+    "mirror_drops": 0,
+    "injected": 3006,
+    "suppressed": 1657,
+    "request_drops": 0,
+    "expired": 0,
+    "own_timeouts": 0,
+    "result_drops": 0,
+    "ownership_fault": false,
+    "bkcmd_zero": false,
+    "observer_age_ms": 946,
+    "ota_state": 2,
+    "ota_result": 0,
+    "reset_reason": 3,
+    "click_id": 0,
+    "click_stage": 0,
+    "click_target": 0,
+    "read_retries": 17,
+    "boot_sync": 2,
+    "sync_discards": 1,
+    "sync_stock_errors": 1,
+    "ownership_reason": 0,
+    "ownership_at_ms": 0,
+    "ownership_detail": 0,
+    "ownership_injected": 0
+  },
+  "temperatures_c": {
+    "boiler": 43.3,
+    "dhw": 39.1
+  },
+  "ota_seconds": 9.14
+}

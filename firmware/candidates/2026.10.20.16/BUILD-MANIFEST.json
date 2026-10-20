@@ -1,0 +1,13 @@
+{
+  "firmware": "2026.10.20.16",
+  "base": "2026.10.19.15",
+  "tests": "host transaction ASan/UBSan and actual web JS PASS",
+  "raw_transport": "unchanged from .15",
+  "deployment": "installed, boot confirmed; read-only page2 updates verified in two 35s windows",
+  "notes": "Unsupported page2 .val polling removed; fenced numeric/text queries; per-boot unsupported read quarantine; unknown page UI fix. Binary hashes added after successful build.",
+  "source_commit": "c5feb6f",
+  "ota_size": 1102144,
+  "ota_sha256": "531cf400abeba6a30d45b1c892bac8c3b2ce1ca70f067d1b9a76dbc0940347d2",
+  "factory_sha256": "ece7a68c03da8b5bc94cd40d2c6309885f63fb55a6f7252e581947ccf68570d3",
+  "limitations": "No live temperatures while page2 active; no control or physical screen validation."
+}

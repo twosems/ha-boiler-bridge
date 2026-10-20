@@ -1,0 +1,11 @@
+{
+  "build": "PASS",
+  "transport_host": "PASS: 10000 traces; TTL; late replies; ownership; page; traffic; atomic click; wraparound",
+  "network_host": "PASS: rollback; sameSSID; interrupted journal; write failure; AP; scan",
+  "web_host": "PASS: form drafts; exact MQTT order; port; unknown page",
+  "hardware": "NOT_TESTED",
+  "limitations": [
+    "host mocks do not prove electrical/protocol behavior",
+    "no verified production fallback"
+  ]
+}

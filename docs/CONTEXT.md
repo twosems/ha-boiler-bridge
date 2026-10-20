@@ -1,4 +1,146 @@
+# Актуально: 20.10.2026, .16 установлена
+
+Текущий статус и next step: [CURRENT.md](CURRENT.md). История и образы: [SYNC-20261020.md](SYNC-20261020.md). ПорядокGitHub: [GITHUB-WORKFLOW.md](GITHUB-WORKFLOW.md). До слиянияPR использовать веткуfeature/firmware-history-through-16-20261020. Ниже сохранён прежний контекст12.10, а не текущая версияESP.
+
+---
+
+# Обновление 2026-10-12: FW 2026.10.12.6
+
+Полный кандидат собран: изолированный UART мост, защищённые активные запросы/кнопки, телеметрия, Web/MQTT/HA, журнал смены Wi-Fi, ручной Setup. Проверки host transport/network/web прошли; аппаратура не проверена, ACTIVE_REQUESTS=OFF. Текущая установленная версия неизвестна после неудачной OTA. Следующий этап: USB backup-first и проверка в офисе 13 октября. Контракт/ограничения/артефакты: firmware/candidates/2026.10.12.6/. Секреты не публикуются.
+
 # Контекст продолжения «ХА — котёл»
+
+## Срочная актуальная точка — OTA .5 не подтверждена (12.10.2026, Томск)
+
+Пользователь дал команду обновить живой ESP. До записи на `office-pc` переданы и
+проверены по SHA оба образа: .5 OTA (`b92c7feb…422f1f7`, 1066816 байт) и
+архивный .1 recovery OTA (`e99f27b7…db1a0c3`, 1076832 байта). `office-pc` не
+имеет COM-портов. С `.172` до попытки проверялся HTTP 200; порт 3232 был открыт.
+После POST multipart `/update` сервер ответил HTTP 408. Затем ESP перестал
+отвечать на 80/3232/6053; сканер пользователя ещё показывал устройство, но
+повторная проверка браузерного HTTP с офисного ПК не проходила. SSID
+`Boiler-Setup` офисным ПК не обнаружен. Принятая версия сейчас UNKNOWN:
+невозможно подтвердить, записался ли образ и загрузился ли ESP. Не повторять
+OTA пока ESP не найден и не подтверждён ответ диагностикой. Офисный PC staging:
+`C:\\ProgramData\\SentinelX\\uploads\\boiler-fw-2026.10.12.5-office-private-ota.bin`
+и `boiler-fw-2026.10.12.1-recovery-ota.bin`; оба файла SHA проверены после передачи.
+Образ `.1` исторически использует домашний Wi-Fi профиль, не считать его
+гарантированным офисным откатом. `.5` — пассивный кандидат без HA control/active
+GET. Hardware/bench не тестировались, rollback на установленном bootloader
+неизвестен.
+
+Следующий шаг: получить фактический IP/состояние по IP-сканеру пользователя и
+проверить 80/3232/API на этом адресе; записанное пока состояние устройства —
+UNKNOWN. Не рестартовать HA и не отправлять образ повторно вслепую.
+
+## Результат сборки — .5 собрана локально, 12.10 около 21:09 Tomsk
+
+Пользователь попросил сделать прошивку в текущем окружении и загрузить её на GitHub, без использования рабочего ПК. Кандидат `2026.10.12.5` собран локально: ESPHome 2026.9.0 / ESP-IDF 5.5.5. Финальный build manifest: `firmware/candidates/2026.10.12.5/BUILD-MANIFEST.json`. OTA SHA256 `b92c7feb47d71f0af486df62e5f20d70efd7ada65a1636fa25629970b422f1f7` (1066816 bytes); factory SHA256 `ac373c4935e985a5a0d12e3e55e9ea105808945d280e1d8eb8088ddafcb17ba3` (1132352 bytes). Артефакты локально: `/workspace/scratch/f608745efdda/boiler-firmware-output/`. Они содержат офисные секреты; в публичный GitHub бинарники не загружать. Исходники и manifest публикуются в `feature/boiler-fw-2026-10-12-5`.
+
+Во время финальной проверки отключён стандартный ESPHome `safe_mode` (иначе recovery path мог завершиться до запуска моста), IDF rollback отдельно проверен включённым, диагностическая версия исправлена с `.4` на `.5`. Generated C++/H byte-identical исходникам; `should_enter_safe_mode` early return отсутствует; wrappers watchdog/OTA есть в ELF. Portable ASan/UBSan core tests PASS.
+
+**Критическое ограничение:** это пассивный кандидат. Управление котлом и активные `get`-опросы выключены, sensor freshness и MQTT restored preferences не проверены. Нет двух-peer UART стенда, hardware fault-injection и подтверждения rollback на установленном bootloader. Поэтому `OFFICE_READY=false`; не выдавать `.5` за полную замену `.1`. OTA уже пытались отправить, но приём/запуск не подтверждены: см. актуальный инцидент вверху. Установленная версия неизвестна.
+
+## Предыдущий статус запроса на офисную замену
+
+
+Пользователь приложил скрин, на нём SSID `2Soffice`, и передал пароль сети
+(не записывать его в Git/обычные логи). С office-pc повторно проверен живой ESP:
+`192.168.1.172`, FW `2026.10.12.1`, SSID `2Soffice`, MQTT `OFF`, uptime около
+9424 s; MQTT broker `192.168.1.203`, login `Sergey`. Значит, отсутствие MQTT
+не объясняется потерей Wi-Fi.
+
+Пользователь прямо поручил подготовить замену: новый безопасный офисный образ с
+автоподключением к `2Soffice`, сохранив HA/MQTT и управление. Образ `.4` нельзя
+ставить: BENCH_ONLY/PAGE_ONLY, нет старых сущностей и команд. `.2` сохраняет
+функции, но аудит выявил опасные watchdog/recovery пути. В текущем `.5` parser-copy связан с единственным UART transport; удалены UART
+читатель/писатель и legacy fallback из boiler_proxy. Для пассивной кандидатной сборки
+активные GET и кнопки котла отключены, UI предупреждает об этом; поэтому `.5` пока
+не сохраняет полную функциональность HA и не заменяет `.1` на живом ESP. Wi-Fi
+профиль берёт офисную сеть из ignored local secrets; пароль не хранить здесь/Git.
+На момент той записи локальной сборки ещё не было, DE job считался ожидающим результат. Этот статус заменён верхней актуальной записью о локальной BUILD_PASS. Hardware bench, свежесть сенсоров, миграция MQTT prefs и OTA rollback на установленном ESP не проверены.
+
+## Новая точка доступа: office-pc, 12.10 19:44 Tomsk
+
+DESKTOP-H0NBTQ5 / label office-pc / host_6d74202de72b5430 подключён к SentinelX,
+operational=true, agent0.23.17. LAN192.168.1.144, gateway192.168.1.1.
+С него подтверждены ESP192.168.1.172 HTTP200 / FW2026.10.12.1 / SSID2Soffice,
+HA192.168.1.203:8123 и broker1883 доступны. Предпочитать этот постоянный офисный
+хост ноутбуку esp-pc для следующих диагностик; не путать с домашней сетью.
+MQTT снова OFF при корректных broker192.168.1.203:1883 и user-confirmed login.
+Причина отключения не установлена. Uptime8344s; BTEMP40.2 — сохранённое показание,
+свежесть физического UART не доказана. COM-порты не обнаружены этой проверкой.
+Только read-only; настроек/прошивки/restart в ходе проверки office-pc не было.
+
+## Последняя проверка: MQTT ON после исправления office credentials
+
+12.10 около 17:20 Tomsk: пользователь уточнил офисный логин (с заглавной буквы)
+и пароль. Все четыре поля записаны через native API и сверены read-back;
+пароль в Git не сохранять. Сервер 192.168.1.203:1883, supplied credential CONNECT
+получил CONNACK0. После переподключения live MQTT status=true/ON.
+Firmware остаётся 2026.10.12.1; новая .4 не устанавливалась.
+Во время работ uptime снизился с >1600 до ~152s; инициатор/причина reset не установлены.
+Наша попытка graceful restart остановилась ДО POST на несовпадении broker read-back;
+утверждать, что мы выполнили этот restart, нельзя. Финальная проверка uptime182s,
+MQTT ON. ESP публикует BTEMP40.2; физически эта температура не сверена.
+UI rerender defect и архитектурные ограничения .1 остаются. ON не является стабильностью.
+
+## OFFICE DEVICE_VERIFIED 12.10 около 17:14 Tomsk
+
+У пользователя только действующий ESP; штатный экран работает (USER_REPORT).
+С офисного ноутбука 2S-LapTop / host_637532310b5cb99d подтверждены HTTP200,
+ESP 192.168.1.172, MAC A0-A3-B3-2A-87-F8, firmware **2026.10.12.1**,
+SSID **2Soffice**. Ноутбук 192.168.1.89, офисный HA 192.168.1.203.
+В начале доступа были timeout/ARP incomplete, затем устройство появилось;
+причина непостоянной доступности не установлена, ESP не перезагружался нами.
+Live JS содержит полный rerender на каждом SSE state; MQTT input теряется.
+MQTT host был некорректным `йзья1`; через штатный text/set API исправлен на
+192.168.1.203 и подтверждён read-back. MQTT apply вызван, без UART/actuator commands.
+Broker port1883 доступен, но CONNECT с текущими ESP credentials получает CONNACK5;
+одна проверка ранее известных credentials также CONNACK5. MQTT OFF.
+Пароль не изменён. Нужны действительные офисные MQTT credentials.
+Пользователь срочно требует stable reflash; готового проверенного office replacement
+нет, .4 остаётся BENCH_ONLY без MQTT/прежнего управления и НЕ УСТАНОВЛЕНА.
+Не объявлять изменение MQTT или BUILD_PASS выполненной stable перепрошивкой.
+
+## Последний результат: .4 BUILD_PASS (12.10)
+
+Окончательный job_8a7cc4fe3ffb succeeded / exit 0; source Git
+`f801357f21ef7aa6aaa813096da99b903ed606a4`. См. candidate BUILD-MANIFEST.json.
+Generated C++/H побайтно совпадают; rollback=y, USE_OTA_ROLLBACK, TWDT panic5s,
+IWDT и оба linker wrappers проверены. Standard safe_mode не зарегистрирован.
+17 structural checks, portable C++ ASan/UBSan + concurrency PASS, не аппаратный тест.
+OTA 912384 bytes / SHA256 0f8902261d0098a6bc53aecd1a261225c09a5082b10b065644f76b5673cf6e70.
+Factory 977920 bytes / SHA256 49b332333e49d2a27183974cf4987b7129abbc02d97e3550c15766d5ce5b1221.
+Это публичный bench profile, USB provisioning, boot confirmation disabled.
+OFFICE_READY=false; NOT_TESTED on hardware; NOT_DEPLOYED. ESP и HA не менялись.
+Next step: уточнить USB/OTA и запасной/живой ESP, backup/recovery/target-profile,
+затем первый serial-peer стенд; действующий котёл не прошивать автоматически.
+
+## Текущая рабочая точка .4 (12.10, новая ветка)
+
+Ветка `feature/boiler-fw-2026-10-12-4`, base `cc642c0ed76f6697ed542a9bab470314718da7c2`.
+Исходники в `firmware/candidates/2026.10.12.4`. Это сокращённый PASSIVE BENCH_ONLY:
+RAW UART, диагностика, unsolicited PAGE; без уставок/режимов/MQTT/управления.
+Ни один старый снимок не изменён. Не трактовать как полноценную замену старой firmware.
+Wi-Fi не зашит: USB Improv, прежняя сеть из NVS не гарантирована. API/OTA — публичные
+стендовые placeholders. Boot confirmation выключен; unattended OTA запрещена.
+Core tests (ASan/UBSan, leak detection disabled because runtime ptrace) и 17 structural
+checks PASS; аппаратных проверок нет. На DE `host_b5648365d9b64ade` запущена сборка
+`job_9df373508348`; каталог `/var/lib/sentinelx/uploads/boiler-fw-20261012-4`.
+Промежуточная сборка b предшествует последней правке watchdog feed wrapper;
+окончательный rebuild и manifest обязательны. Лог: `boiler-fw-20261012-4-build-b.log`.
+Проверять результат Sentinel notifications, а не обещать фоновую работу диалога.
+Актуализация: b и c успешно скомпилированы, но не являются окончательным artifact.
+Финальный job `job_e7d85d58cc0f`, лог `boiler-fw-20261012-4-build-d.log`:
+включает age_ms против межъядерной гонки timestamp, PRIu32 и явное включение
+IDF rollback (ESPHome отключает standard rollback при disabled safe_mode).
+Последняя source-правка: revision-protected health snapshot исключает смешивание
+old pending с cleared/new oldest timestamp. Окончательный incremental job
+`job_8a7cc4fe3ffb`, лог `boiler-fw-20261012-4-build-e.log`, после окончания d.
+Пользователь хочет ускорить подготовку и прошить; конкретные USB/OTA, стенд/живой ESP
+не подтверждены. ESP/HA/котёл не прошивались и не перезагружались.
+Датчик бункера — отдельное независимое устройство, вне этой firmware.
 
 Срез: 12 октября 2026, Asia/Tomsk. Основа: вся приложенная переписка «Котел в ХА 3.md» (3645 строк), повторная сверка решений/версий/незавершённых работ и чтение файлов на DE. Оригинальная переписка находится в зашифрованном архиве, публичная копия — `history/conversation-20260930-20261012.redacted.md`.
 

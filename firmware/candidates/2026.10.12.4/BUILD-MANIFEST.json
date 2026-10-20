@@ -1,0 +1,108 @@
+{
+  "version": "2026.10.12.4",
+  "variant": "passive-page-only-public-bench",
+  "repository": "twosems/ha-boiler-bridge",
+  "branch": "feature/boiler-fw-2026-10-12-4",
+  "source_commit": "f801357f21ef7aa6aaa813096da99b903ed606a4",
+  "host_id": "host_b5648365d9b64ade",
+  "job_id": "job_8a7cc4fe3ffb",
+  "build_status": "PASS",
+  "generated_checks": "PASS",
+  "hardware_status": "NOT_TESTED",
+  "deployment_status": "NOT_DEPLOYED",
+  "office_ready": false,
+  "profile": "PUBLIC_BENCH_PLACEHOLDERS_NO_SSID_USB_PROVISIONING",
+  "write_capable": false,
+  "boot_confirmation_enabled": false,
+  "board": "esp32dev / classic dual-core ESP32",
+  "flash_bytes": 4194304,
+  "factory_flash_offset": 0,
+  "flash_settings": {"flash_mode": "dio", "flash_size": "4MB", "flash_freq": "40m"},
+  "git_binary_transfer_verified": true,
+  "uart": [
+    {
+      "port": 1,
+      "rx": 16,
+      "tx": 17
+    },
+    {
+      "port": 2,
+      "rx": 18,
+      "tx": 19
+    }
+  ],
+  "serial": "9600 8N1",
+  "toolchain": {
+    "esphome": "2026.9.0",
+    "esp_idf": "5.5.5",
+    "gcc": "14.2.0_20260121",
+    "configured_framework": "arduino"
+  },
+  "build_root": "/var/lib/sentinelx/uploads/boiler-fw-20261012-4/firmware/candidates/2026.10.12.4/.esphome/build/boiler-proxy",
+  "log_path": "/var/lib/sentinelx/uploads/boiler-fw-20261012-4-build-e.log",
+  "log_sha256": "1000c96b8352e0134eddc70825271d0b97ec55fc2c873325fb9c4da309d48314",
+  "memory_and_config": [
+    "RAM:   [====      ]  40.7% (used 73568 bytes from 180736 bytes)",
+    "Flash: [=====     ]  49.7% (used 912263 bytes from 1835008 bytes)",
+    "INFO Build Info: config_hash=0xe59aeb38 build_time_str=2026-10-12 10:03:34 +0200"
+  ],
+  "artifacts": {
+    "firmware.ota.bin": {
+      "bytes": 912384,
+      "sha256": "0f8902261d0098a6bc53aecd1a261225c09a5082b10b065644f76b5673cf6e70"
+    },
+    "firmware.factory.bin": {
+      "bytes": 977920,
+      "sha256": "49b332333e49d2a27183974cf4987b7129abbc02d97e3550c15766d5ce5b1221"
+    },
+    "firmware.elf": {
+      "bytes": 15437032,
+      "sha256": "625184ed308cd0834e97866eb47f2fe42b741cf9c481b1cd29f28721d23e6124"
+    },
+    "bootloader/bootloader.bin": {
+      "bytes": 26144,
+      "sha256": "3918d7d60781866016e929fa18a2abedb307851180801321ed92fdc2ad4be2ce"
+    },
+    "partitions.csv": {
+      "bytes": 210,
+      "sha256": "d09e3bae295d0104fe91537cf30ab5ea032c7cd01a14bc58f02e4fa721416070"
+    }
+  },
+  "source_hashes": {
+    "boiler-proxy.yaml": "830f68c13c2944d6e2d5e647274be2fefc7af8d4e313083e093d5676377a1ecc",
+    "secrets.example.yaml": "72828c743bd8a626f616c3192c696355e19ae9278144bc0f7adda0b7561106d1",
+    "components/boiler_transport_v4/__init__.py": "e469d667e5f54ca4a395aadb1946ba8f0981319aa6289e89dc0887b0a73b7986",
+    "components/boiler_transport_v4/bridge_core.h": "95a5bed6b3e8fca0e04984f9277bc09ad58d7e4872770726c2f725763893a200",
+    "components/boiler_transport_v4/boiler_transport_v4.h": "735f24e20e06a3cf89c0f9d4a1a3e94be36e118b17856a06de2db90aa72574ef",
+    "components/boiler_transport_v4/boiler_transport_v4.cpp": "87879304eefca0911f43e90b7da3908e0873bd1aabf4823ea276a4fb3c916350"
+  },
+  "checks": [
+    "explicit_IDF_rollback",
+    "standard_safe_mode_not_registered",
+    "public_bench_profile",
+    "static_component_storage",
+    "source_equals_generated_CPP",
+    "watchdogs_retained",
+    "both_linker_wrappers_present",
+    "boot_confirmation_disabled",
+    "wifi_api_no_restart"
+  ],
+  "limits": [
+    "bench timeouts not validated on boiler",
+    "reset/OTA/power failure interrupt UART",
+    "installed bootloader and previous image unknown",
+    "no guaranteed Wi-Fi NVS migration",
+    "no MQTT/actuators/setpoint attribution",
+    "no hardware/runtime fault-injection pass"
+  ],
+  "tests": {
+    "core": "PASS: 100000 randomized ByteRing operations, 100000 mirror records, 100000 health snapshot writes, framing/rollover/boot-gate tests",
+    "sanitizers": "AddressSanitizer + UndefinedBehaviorSanitizer; LeakSanitizer disabled due runtime ptrace",
+    "source_checks": "17 PASS; structural only",
+    "hardware": "NOT_TESTED"
+  },
+  "git_blobs": {
+    "firmware.factory.bin": "ed944543fd51baf16f4b08d51a70726e34f40639",
+    "firmware.ota.bin": "1670467383a077e2c0d3b3117b2fe57aa4c8b86a"
+  }
+}
