@@ -72,3 +72,11 @@ optional observer PAGE-only, main-TWDT handoff, guarded OTA validation (disabled
 | Variant | FW | OTA | Factory | Status |
 |---|---|---|---|---|
 | office-passive | 2026.10.12.5 | 1066816 bytes, SHA256 `b92c7feb47d71f0af486df62e5f20d70efd7ada65a1636fa25629970b422f1f7` | 1132352 bytes, SHA256 `ac373c4935e985a5a0d12e3e55e9ea105808945d280e1d8eb8088ddafcb17ba3` | Local build PASS; ESPHome 2026.9.0 / IDF 5.5.5; binaries contain office secrets and are kept outside public GitHub; PASSIVE controls/active GET disabled; hardware NOT_TESTED; NOT_DEPLOYED; OFFICE_READY=false |
+
+## Кандидат 2026.10.23.17 — OFFSCREEN_READ
+
+- Основа: 2026.10.20.16, Git SHA b884bcc7a517fa5f42a2a001dc39d393dbb5908b.
+- Только ручной read-only GET page10.TsR.val с проверкой действующей страницы. Нет записи уставки, смены страницы, click или изменения режима котла.
+- ESPHome config PASS; тест настоящего transactions.cpp с ASan/UBSan и четырьмя дополнительными проверками PASS.
+- Полная ESPHome сборка: отдельная проверка; номера SHA256 указывать только после её успешного завершения.
+- NOT_INSTALLED, NOT_HARDWARE_TESTED. Не считать безопасной для OTA только по программным тестам.
