@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "target_ip": "192.168.1.172",
+  "images": {
+    "v17": {
+      "version": "2026.10.23.17",
+      "expected_before": "2026.10.20.16",
+      "relative_path": "firmware.ota.bin",
+      "bytes": 1103248,
+      "sha256": "b33b87fc8b8c5d724272fd78c2fd47e7036a830bfdb73391d3a3f072a93e695b"
+    },
+    "v16": {
+      "version": "2026.10.20.16",
+      "expected_before": "2026.10.23.17",
+      "relative_path": "../boiler16/firmware.ota.bin",
+      "bytes": 1102144,
+      "sha256": "531cf400abeba6a30d45b1c892bac8c3b2ce1ca70f067d1b9a76dbc0940347d2"
+    }
+  }
+}

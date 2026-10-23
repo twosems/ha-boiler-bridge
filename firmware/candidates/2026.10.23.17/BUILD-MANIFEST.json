@@ -1,0 +1,40 @@
+{
+  "version": "2026.10.23.17",
+  "source_repo": "twosems/ha-boiler-bridge",
+  "source_branch": "feature/offscreen-read-probe-20261023",
+  "firmware_capabilities": [
+    "MANUAL_OFFSCREEN_READ_ONLY"
+  ],
+  "base_firmware": "2026.10.20.16",
+  "compiler": "ESPHome 2026.9.0 / ESP-IDF 5.5.5",
+  "configuration": "ESPHome config PASS; office SSID verified (secret value not recorded)",
+  "tests": [
+    "ASan/UBSan actual transactions.cpp PASS",
+    "Four additional offscreen probe host scenarios PASS",
+    "image-info valid checksum/hash"
+  ],
+  "images": {
+    "ota": {
+      "file": "firmware.ota.bin",
+      "sha256": "b33b87fc8b8c5d724272fd78c2fd47e7036a830bfdb73391d3a3f072a93e695b",
+      "size_bytes": 1103248
+    },
+    "factory": {
+      "file": "firmware.factory.bin",
+      "sha256": "cfda94a4664859828f52e7f81c2e8811002aae95feae48b8e2d9735fb5eb72bc",
+      "size_bytes": 1168784
+    }
+  },
+  "deploy": {
+    "performed": false,
+    "device_firmware_after": "not queried",
+    "test_at_boiler": "NOT_TESTED",
+    "authorization": "NOT_GRANTED"
+  },
+  "caveats": [
+    "Original build timed out, left an orphan process, and overlapped initial part of resume; old process terminated and subsequent single build succeeded.",
+    "Repeated builds did not yield identical SHA-256; use the pinned verified artifact, do not infer sha from new compilation.",
+    "OTA interrupts inline UART; physical observation and separate user authorization required.",
+    "Read-only probe does not demonstrate setting write or EEPROM persistence."
+  ]
+}
